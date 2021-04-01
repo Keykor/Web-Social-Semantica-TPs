@@ -56,5 +56,5 @@ if __name__ == "__main__":
         movieList.append(movieDict)
     
     #guarda los datos en un json
-    with open("cinemalaplata.json","w") as file:
+    with open("cinemalaplata.json","w",encoding="utf-8") as file:
         json.dump(movieList, file, ensure_ascii=False, indent=4)
