@@ -46,11 +46,14 @@ if __name__ == "__main__":
                 horaList = funciones.text.split(" ")
                 #elimina elementos innecesarios '' y '-' de la lista
                 horaList = list(filter(lambda x: (x != '' and x != '-'), horaList))
-                funcionDict = {}
                 #en la lista generada el primer elemento es el idioma y los demás horarios
                 idioma = horaList.pop(0).replace(':','')
-                funcionDict[idioma] = horaList
-                cineDict["Funciones"].append(funcionDict)
+                for hora in horaList:
+                    funcionDict = {}
+                    funcionDict["Idioma"] = idioma
+                    funcionDict["Hora"] = hora
+                    cineDict["Funciones"].append(funcionDict)
+                
             movieDict["Cines"].append(cineDict)
 
         movieList.append(movieDict)
