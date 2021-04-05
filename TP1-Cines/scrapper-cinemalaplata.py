@@ -15,9 +15,10 @@ if __name__ == "__main__":
         movie_data = movie_Soup.find_all('div', attrs={"class":"dropcap6"})
         movie_dict = {}
 
-        #obtiene y parsea titulo de la película
+        #obtiene y parsea titulo y sinopsis de la película
         movie_dict["Titulo"] = movie_Soup.find_all('div', attrs={"class":"post-container page-title"})[0].string.strip()
-        
+        movie_dict["Sinopsis"] = movie_Soup.find_all('span', attrs={"id":"ctl00_cph_lblSinopsis"})[0].string.strip()
+
         #parsea datos de la película
         for data in movie_data:
             title = data.h4.string.strip()

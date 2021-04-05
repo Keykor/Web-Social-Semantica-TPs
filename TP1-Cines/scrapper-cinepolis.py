@@ -14,9 +14,10 @@ if __name__ == "__main__":
     for link in links:
         driver.get(link)
 
-        #parsea título de la película
+        #parsea título y sinopsis de la película
         dataDict = {}
         dataDict["Titulo"] = driver.find_element_by_xpath("//*[@id='app']/main/div[1]/div/h2").text
+        dataDict["Sinopsis"] = driver.find_element_by_xpath("//*[@id='sinopsis']").text
 
         #tengo que clickear para que aparezca la info técnica
         driver.find_element_by_xpath("//*[@id='tecnicos-tab']").click()
