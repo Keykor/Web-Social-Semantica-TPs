@@ -1,6 +1,10 @@
 import json
 import time
 from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support.expected_conditions import visibility_of, element_to_be_clickable
+from selenium.webdriver.common.by import By
+
 
 if __name__ == "__main__":
     url = 'https://www.cinepolis.com.ar/'
@@ -20,12 +24,11 @@ if __name__ == "__main__":
         dataDict["Sinopsis"] = driver.find_element_by_xpath("//*[@id='sinopsis']").text
 
         #tengo que clickear para que aparezca la info técnica
+        movieData = driver.find_element_by_xpath("//*[@id='tecnicos']")
         driver.find_element_by_xpath("//*[@id='tecnicos-tab']").click()
+        WebDriverWait(driver, timeout=5).until(lambda x: 'show' in movieData.get_attribute('class'))
 
         #parsea los datos técnicos
-        movieData = driver.find_element_by_xpath("//*[@id='tecnicos']/p")
-        while movieData.text == '':
-            time.sleep(1)
         dataList = movieData.text.splitlines()
         for data in dataList:
             atributos = data.split(": ")
@@ -40,22 +43,16 @@ if __name__ == "__main__":
             else:
                 dataDict[atributos[0]] = atributos[1]
 
-        cinesList = driver.find_elements_by_xpath("//*[@id='app']/main/div[2]/div/div[2]/div/div/div[2]/div/div/div")
-        #para sacar dato ultimo feo
-        cinesList.pop()
+        WebDriverWait(driver, timeout=5).until(element_to_be_clickable((By.XPATH, "//*[@id='app']/main/div[2]/div/div[2]/div/div/div[2]")))
+        cinesList = driver.find_elements_by_xpath("//*[@class='card panel panel-primary']")
 
         dataDict['Cines'] = []
         for cine in cinesList:
+            panel_element = cine.find_element_by_class_name('panel-collapse.collapse')
             cine.click()
-            encontre = False
-            while not encontre:
-                try:
-                    panel_collapse = cine.find_element_by_class_name('panel-collapse.collapse.show')
-                    encontre = True
-                except:
-                    time.sleep(0.05)
-            dataList = cine.text.splitlines()
-            
+            WebDriverWait(driver, 5).until(lambda x: 'show' in panel_element.get_attribute('class'))
+
+            dataList = cine.text.splitlines() 
             cineDict = {}
             cineDict['Nombre'] = dataList.pop(0)
             
