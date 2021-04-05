@@ -42,18 +42,46 @@ if __name__ == "__main__":
         cinesList = driver.find_elements_by_xpath("//*[@id='app']/main/div[2]/div/div[2]/div/div/div[2]/div/div/div")
         #para sacar dato ultimo feo
         cinesList.pop()
+
+        dataDict['Cines'] = []
         for cine in cinesList:
-            nombreCine = cine.text
             cine.click()
-            while cine.text == nombreCine:
-                time.sleep(1)
-            print(cine.text)
-        movieList
-        
+            encontre = False
+            while not encontre:
+                try:
+                    panel_collapse = cine.find_element_by_class_name('panel-collapse.collapse.show')
+                    encontre = True
+                except:
+                    time.sleep(0.05)
+            dataList = cine.text.splitlines()
+            
+            cineDict = {}
+            cineDict['Nombre'] = dataList.pop(0)
+            
+            typesAparecidos = {}
+            typesActual = ''
+            for data in dataList:
+                try:
+                    time.strptime(data,'%H:%M')
+                    typesAparecidos[typesActual].append(data)
+                except:
+                    typesActual = data
+                    if typesActual not in typesAparecidos:
+                        typesAparecidos[data] = []
+
+            cineDict['Funciones'] = []
+            for key in typesAparecidos:
+                typesList = key.split(' • ')
+                funcion = {}
+                funcion['Sala'] = typesList[0] 
+                funcion['Formato'] = typesList[1]
+                funcion['Idioma'] = typesList[2]
+                funcion['Horas'] = typesAparecidos[key]
+                cineDict['Funciones'].append(funcion)
+
+            dataDict['Cines'].append(cineDict)
+
         movieList.append(dataDict)
-
-
-
 
     driver.quit()
 
