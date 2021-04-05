@@ -1,4 +1,5 @@
 import json
+import os
 
 def add_without_duplicates(list1, list2):
     return list(set(list1.extend(list2)))
@@ -6,14 +7,19 @@ def add_without_duplicates(list1, list2):
 def title_equals(cinepolis, cinemalaplata, original):
     return cinemalaplata.upper() == cinepolis or cinemalaplata == original
 
-if __name__ == "__main__":
+def create_data_directory_path(file_name):
+    return os.path.abspath(os.path.join(*[os.path.dirname(__file__), os.pardir, "data", file_name]))
+
+def main():
     cinemalaplata_data = None
     cinepolis_data = None
 
-    with open('cinemalaplata.json', encoding="utf-8") as file:
+    with open(create_data_directory_path('cinemalaplata.json'), encoding="utf-8") as file:
         cinemalaplata_data = json.load(file)
-    with open('cinepolis.json', encoding="utf-8") as file:
+    with open(create_data_directory_path('cinepolis.json'), encoding="utf-8") as file:
         cinepolis_data = json.load(file)
+
+    print("Merge de la información -> Comenzando")
 
     analized_movies = []
     for movie_cinepolis in cinepolis_data:
@@ -40,5 +46,11 @@ if __name__ == "__main__":
             movie["Distribuidora"] = "Desconocido"
             cinepolis_data.append(movie)
 
-    with open("merge.json","w",encoding="utf-8") as file:
+    print("Merge de la información -> Terminado")
+
+    with open(create_data_directory_path("merge.json"),"w",encoding="utf-8") as file:
         json.dump(cinepolis_data, file, ensure_ascii=False, indent=4)
+    print("Merge de la información -> Guardado")
+
+if __name__ == "__main__":
+    main()

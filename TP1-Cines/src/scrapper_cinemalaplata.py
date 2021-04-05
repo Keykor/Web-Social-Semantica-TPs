@@ -1,8 +1,10 @@
 import bs4
 import requests
 import json
+import os
 
-if __name__ == "__main__":
+def main():
+    print("Scrapping de Cinema La Plata -> Comenzando")
     pageHTMLCartelera = requests.get("http://www.cinemalaplata.com/cartelera.aspx").text
     soup = bs4.BeautifulSoup(pageHTMLCartelera, "html.parser")
     movies = soup.find_all('div', attrs={"class":"page-container singlepost"})
@@ -74,7 +76,14 @@ if __name__ == "__main__":
             movie_dict["Cines"].append(cine_dict)
 
         movieList.append(movie_dict)
-    
+    print("Scrapping de Cinema La Plata -> Terminado")
+
     #guarda los datos en un json
-    with open("cinemalaplata.json","w",encoding="utf-8") as file:
+    
+    data_directory = os.path.join(*[os.path.dirname(__file__), os.pardir, "data", "cinemalaplata.json"])
+    with open(os.path.abspath(data_directory),"w",encoding="utf-8") as file:
         json.dump(movieList, file, ensure_ascii=False, indent=4)
+    print("Scrapping de Cinema La Plata -> Guardado")
+
+if __name__ == "__main__":
+    main()

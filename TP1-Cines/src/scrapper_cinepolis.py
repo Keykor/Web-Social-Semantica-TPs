@@ -1,12 +1,13 @@
 import json
 import time
+import os
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.expected_conditions import visibility_of, element_to_be_clickable
 from selenium.webdriver.common.by import By
 
-
-if __name__ == "__main__":
+def main():
+    print("Scrapping de Cinepolis -> Comenzando")
     url = 'https://www.cinepolis.com.ar/'
     driver = webdriver.Chrome()
     driver.get(url)
@@ -80,9 +81,14 @@ if __name__ == "__main__":
             dataDict['Cines'].append(cineDict)
 
         movieList.append(dataDict)
-
     driver.quit()
+    print("Scrapping de Cinepolis -> Terminado")
 
     #guarda los datos en un json
-    with open("cinepolis.json","w", encoding="utf-8") as file:
+    data_directory = os.path.join(*[os.path.dirname(__file__), os.pardir, "data", "cinepolis.json"])
+    with open(os.path.abspath(data_directory),"w", encoding="utf-8") as file:
         json.dump(movieList, file, ensure_ascii=False, indent=4)
+    print("Scrapping de Cinepolis -> Guardado")
+
+if __name__ == "__main__":
+    main()
