@@ -31,6 +31,13 @@ if __name__ == "__main__":
             elif (title == "Duracion"):
                 #transforma el primero en numero
                 movie_dict[title] = int(info.split(" ")[0])
+            elif (title == "Género"):
+                if (", " in info):
+                    movie_dict[title] = info.split(", ")
+                elif (" / " in info):
+                    movie_dict[title] = info.split(" / ")
+                else:
+                    movie_dict[title] = [info]            
             else:
                 movie_dict[title]=info
         
