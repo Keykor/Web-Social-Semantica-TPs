@@ -1,11 +1,22 @@
 import json
 import os
+import unicodedata
 
 def add_without_duplicates(list1, list2):
-    return list(set(list1.extend(list2)))
+    new_list = []
+    new_list.extend(list1)
+    new_list.extend(list2)
+    return list(set(new_list))
 
-def title_equals(cinepolis, cinemalaplata, original):
-    return cinemalaplata.upper() == cinepolis or cinemalaplata == original
+def normalizar_strings(s):
+    s = unicodedata.normalize("NFD",s)
+    return s.encode("utf8").decode("ascii","ignore").upper()
+
+def title_equals(cinemalaplata, cinepolis, original):
+    cinemalaplata = normalizar_strings(cinemalaplata)
+    cinepolis = normalizar_strings(cinepolis)
+    original = normalizar_strings(original)
+    return cinemalaplata == cinepolis or cinemalaplata == original
 
 def create_data_directory_path(file_name):
     return os.path.abspath(os.path.join(*[os.path.dirname(__file__), os.pardir, "data", file_name]))
