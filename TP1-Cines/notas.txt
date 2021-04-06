@@ -1,0 +1,139 @@
+# Principales problemas
+
+## Scrapper de Cinema La Plata:
+
+   La página de Cinema La Plata es principalmente estática, por lo que no hubo problemas
+para ubicar los links de cada película en la cartelera y luego tomar la información de 
+cada una, en su propia página.
+   El problema central ocurrio a la hora de querer la extracción particular de datos, ya que
+la información no estaba escrita siempre de la misma forma, por lo que a veces para un 
+mismo campo debía implementar diferentes casos. Un ejemplo:
+- Los géneros de la película a veces estaban separados por ", " y a veces por " / ", por lo
+que tuve que hacer un analisis previo del string antes de dividirlo y guardarlo.
+- Con los actores y directores a veces cerraban el párrafo en punto y a veces no, por lo que
+tenía que remover este último punto para que no se mezcle con el último nombre
+   También note que en algunos casos particulares se ponía la información en cualquier parte de
+la página, cómo ocurrió con la película de "Trolls 2" dónde en actores decía "animación" 
+pero los nombres estaban en un banner especial que en las demás películas se utiliza para 
+anuncios y avisos.
+
+
+
+## Scrapper de Cinepolis:
+
+1) La página a scrappear era Village Cines, pero están en medio de un cambio tecnológico y de
+nombre, por lo que cuando intentaba acceder me dirigía a su nueva página de Cinepolis.
+   Ésta nueva página es totalmente dinámica, hecha con React, por lo que a la hora de querer
+utilizar BeautifulSoup para analizarla se me dificultaba de gran manera, porque debía de
+alguna forma debía simular todos los llamados realizados en javascript cuando se utiliza y
+se explora con navegador.
+   Luego de batallar y, recomendado por mensajes del foro, decidí utilizar una librería más 
+apropiada para scrappear páginas dinámicas: Selenium.
+
+2) Selenium utiliza el navegador, por lo que necesitaba para funcionar un driver del mismo,
+que dependía del navegador a utilizar. Elegí Chrome por cómodidad, la explicación de cómo
+instalarlo está en 'src.txt'.
+   Este driver abre de forma predeterminada el navegador y realiza las acciones pedidas. Pero
+si se llegaba a tocar esta ventana el scrapping se podía romper por lo que tuve que configurarlo
+para que pueda funcionar sin que se muestre esta ventana (lo que oportunamente mejoró también
+el tiempo de ejecución del algoritmo).
+
+3) Con Selenium hay que simular los clicks por lo que hay que esperar que terminen de ocurrir
+los cambios de la información dinámica.
+   La finalización de los cambios era diferente según cada caso y elegir el caso incorrecto
+podía llevar a problemas cómo obtener la mitad de la información. Por ejemplo:
+- La finalización del cambio cuando debía esperar la información técnica de la película se
+daba porque a la clase de css del elemento web se le añadía una clase más llamada 'show'
+(linea 33 en scrapper_cinepolis.py)
+- La finalización del cambio cuando debía esperar la información de los cines y sus horarios
+se daba porque el panel dónde aparecían se volvía clickable.
+(línea 51 en scrapper_cinepolis.py)
+
+4) Cada vez que entraba en una página de una película y miraba sus horarios por cine, podían
+llegar la misma información pero en diferentes elementos html. Por ejemplo podían venir de 
+la siguiente forma:
+- Intento uno con Cine Recoleta en película Godzilla vs Kong:
+    - 4D • 2D • SUBTITULADO -> 16:00 19:00
+    - 4D • 2D • SUBTITULADO -> 22:00
+    - CLASSIC • 2D • SUBTITULADO -> 16:30 17:00 19:30 20:00 20:30 21:30
+    - CLASSIC • 2D • SUBTITULADO -> 22:30 23:00
+- Intento dos con Cine Recoleta en película Godzilla vs Kong:
+    - 4D • 2D • SUBTITULADO -> 16:00 
+    - 4D • 2D • SUBTITULADO -> 19:00 22:00
+    - CLASSIC • 2D • SUBTITULADO -> 16:30 17:00 19:30 20:00 20:30 21:30 22:30 23:00
+   Por lo que había que esperar que llegara toda la información, procesarla unificando los
+casos separados y después armar los diccionarios específicos de las funciones.
+
+
+
+## Merge de los datos:
+
+1) Para identificar y poder relacionar las películas de ambos cines utilicé el título, pero
+esto conllevó varios problemas.
+   En Cinema La Plata los títulos a veces tienen tildes y están en minúscula con las
+primeras letras en mayúscula. Además el título puede llegar a estar en español o en 
+el idioma original.
+   Mientras que en Cinepolis todos los títulos están con correcta puntuación en español
+y en mayúscula. En la info técnica además posee el título original de la película.
+   Tales diferencias llevo a la necesidad de normalizar los títulos para poder compararlos
+de una forma más correcta decantando por llevarlos a mayúsculas y transformar los caracteres
+especiales a su forma "simple", por ejemplo la que la 'Á' sea una 'A'.
+   Ocurrió un caso un caso partícular que me llamó la atención: existe actualmente una película
+llamada "Trolls World Tour" que en Cinema La Plata se llama "Trolls 2: World Tour" y en
+Cinepolis se llama "TROLLS 2: GIRA MUNDIAL" y "Trolls 2". En ninguna de las páginas el nombre 
+es correcto por lo que se me ocurrieron varias ideas:
+- Traducir el nombre con alguna libreria, ya sea a español o inglés, para compararlos. Pero las
+traducciones podrían ser totalmente incorrectas.
+- Utilizar una librería llamada fuzzywuzzy que permite comparaciones por semejanza. Pero el
+indice de semejanza conseguido era muy bajo por lo que tampoco determiran que fueran el mismo
+título.
+- En casos de títulos divididos por ':' comparar solo la primera parte previa a ese caracter.
+Pero podría haber películas que llevarían a mergeos erróneos, por inventar un ejemplo las
+películas "Avengers: Age of Ultron" y "Avengers: End Game" serían aceptadas y no son la misma.
+- Agregar a la comparación de títulos un chequeo de si tienen los mismos actores y directores.
+Pero según la página muestran más o menos actores y directores, por lo que pensé en chequear
+que un conjunto contenga al otro pero tampoco sirve, ya que podrían haber películas
+con actores y/o directores compartidos haciendo relaciones erroneas.
+   Terminé por dejar la identificación cómo estaba, estaba enfrentandome con el problema
+de que carguen datos erroneos.
+
+2) Siendo que cargaban datos erroneos... ¿Cómo podía saber qué página tenía los datos más
+correctos a la hora de mergear?.
+   Lo único que se me ocurrió fue contrastar contra la "información oficial" que sería la
+base de datos de películas de IMDB, pero se complicaba encontrar las películas y se iba de 
+lo que proponía el trabajo.
+   Como no lo podía determinar, terminé por hacer lo siguiente en los datos del merge:
+- Utilizar las películas de Cinepolis cómo "datos oficiales" con respecto a título, título
+original, duración, origen, calificación y sinopsis.
+- Recorrer las películas de Cinepolis y, si estaba la misma película en Cinema La Plata,
+agregarle su info partícular como "Web Oficial" y mezclar las listas de actores, directores, 
+géneros y cines.
+- Si habían películas de Cinema La Plata que no estaban en Cinepolis, simplemente las agregué
+al archivo.
+
+3) Ambos cines poseían información diferente de sus películas y las películas podía ser que no
+estuvieran en ambos cines, y si este era el caso ocurria que en el archivo resultante quedaban
+con diferente estructuras, lo que dificultaría su futuro analisis con computadora.
+   Lo que hice fue rellenar con el dato "Desconocido" si faltiba. Los casos que ocurrieron son:
+- Si la película está en Cinepolis y no en Cinema La Plata: le agregué a "Web Oficial" el
+dato "Desconocido".
+- Si la película está en Cinema La Plata y no en Cinepolis: la agregué a "Título Original"
+y "Distribuidora" el dato "Desconocido".
+
+
+
+## Otros tema
+
+   Decidí guardar la información de los scrappers y merge en formato JSON ya que es un formato
+popular, es liviano, muy usado para la transferencia de datos, la mayoría de lenguajes
+permiten su procesamiento y es comprensible su lectura tanto para humanos cómo para máquinas.
+   Traté de darle a la información de las películas y funciones una estructura en JSON que sea
+útil, imaginandome su futuro procesamiento y cómo si viniera de un pedido de una API. Lo armé
+en base a la experiencia con proyectos de materias anteriores.
+   Leí que existen muchas guías de estilos de cómo hacer este trabajo cómo el de Google
+(https://google.github.io/styleguide/jsoncstyleguide.xml), el cuál, comparando, no respeté 
+la nomenclatura  de 'keys' que deberían ser en camelCase. Pero con la estructura que definí 
+se podría procesar el archivo del merge y transformarlo fácilmente, ya que sería renombrar 
+las keys de la forma:
+- Si es una palabra como "Titulo" llevarlo a "titulo".
+- Si son dos palabras como "Web Oficial" llevarlo a "webOficial".

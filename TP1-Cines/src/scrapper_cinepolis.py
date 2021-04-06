@@ -65,7 +65,6 @@ def main():
             cine_dict['Nombre'] = data_list.pop(0)
             
             #pueden aparecer datos con la misma sala y formato pero separados
-            #entonces primero los proceso y luego los guardo
             appeared_types = {}
             actual_type = ''
             for data in data_list:
@@ -81,8 +80,7 @@ def main():
             for key in appeared_types:
                 typesList = key.split(' • ')
                 show = {}
-                show['Sala'] = typesList[0] 
-                show['Formato'] = typesList[1]
+                show['Sala'] = typesList[0] + ' ' + typesList[1]
                 show['Idioma'] = typesList[2]
                 show['Horas'] = appeared_types[key]
                 cine_dict['Funciones'].append(show)
