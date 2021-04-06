@@ -35,6 +35,7 @@ def main():
                 #transforma el primero en numero
                 movie_dict[title] = int(info.split(" ")[0])
             elif (title == "Género"):
+                #a veces los separan por coma y a veces por slash
                 if (", " in info):
                     movie_dict[title] = info.split(", ")
                 elif (" / " in info):
@@ -79,7 +80,6 @@ def main():
     print("Scrapping de Cinema La Plata -> Terminado")
 
     #guarda los datos en un json
-    
     data_directory = os.path.join(*[os.path.dirname(__file__), os.pardir, "data", "cinemalaplata.json"])
     with open(os.path.abspath(data_directory),"w",encoding="utf-8") as file:
         json.dump(movieList, file, ensure_ascii=False, indent=4)
