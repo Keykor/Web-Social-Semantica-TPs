@@ -23,10 +23,10 @@ anuncios y avisos.
 
 1) La página a scrappear era Village Cines, pero están en medio de un cambio tecnológico y de
 nombre, por lo que cuando intentaba acceder me dirigía a su nueva página de Cinepolis.
-   Ésta nueva página es totalmente dinámica, hecha con React, por lo que a la hora de querer
-utilizar BeautifulSoup para analizarla se me dificultaba de gran manera, porque debía de
-alguna forma debía simular todos los llamados realizados en javascript cuando se utiliza y
-se explora con navegador.
+   Ésta nueva página es totalmente dinámica por lo que a la hora de querer utilizar 
+BeautifulSoup para analizarla se me dificultaba de gran manera, porque debía de alguna forma 
+debía simular todos los llamados realizados en javascript cuando se utiliza y se explora con 
+navegador.
    Luego de batallar y, recomendado por mensajes del foro, decidí utilizar una librería más 
 apropiada para scrappear páginas dinámicas: Selenium.
 
@@ -34,9 +34,9 @@ apropiada para scrappear páginas dinámicas: Selenium.
 que dependía del navegador a utilizar. Elegí Chrome por cómodidad, la explicación de cómo
 instalarlo está en 'src.txt'.
    Este driver abre de forma predeterminada el navegador y realiza las acciones pedidas. Pero
-si se llegaba a tocar esta ventana el scrapping se podía romper por lo que tuve que configurarlo
-para que pueda funcionar sin que se muestre esta ventana (lo que oportunamente mejoró también
-el tiempo de ejecución del algoritmo).
+si se llegaba a tocar esta ventana el scrapping se podía romper, por lo que tuve que 
+configurarlo para que pueda funcionar sin que se muestre esta ventana 
+(lo que oportunamente mejoró también el tiempo de ejecución del algoritmo).
 
 3) Con Selenium hay que simular los clicks por lo que hay que esperar que terminen de ocurrir
 los cambios de la información dinámica.
@@ -67,6 +67,9 @@ casos separados y después armar los diccionarios específicos de las funciones.
 
 
 ## Merge de los datos:
+
+Cómo podía llegar a haber datos duplicados entre los datos de ambos cines, decidí hacer un
+merge de la información, lo que condujo a varios problemas de interés:
 
 1) Para identificar y poder relacionar las películas de ambos cines utilicé el título, pero
 esto conllevó varios problemas.
@@ -99,10 +102,22 @@ de que carguen datos erroneos.
 
 2) Siendo que cargaban datos erroneos... ¿Cómo podía saber qué página tenía los datos más
 correctos a la hora de mergear?.
-   Lo único que se me ocurrió fue contrastar contra la "información oficial" que sería la
-base de datos de películas de IMDB, pero se complicaba encontrar las películas y se iba de 
-lo que proponía el trabajo.
-   Como no lo podía determinar, terminé por hacer lo siguiente en los datos del merge:
+   Mi primera idea fue que si había datos de un mismo campo pero diferidos según cada página 
+guardar la información junto con la referencia de dónde salió. Por poner un ejemplo con la 
+duración: "115 (Cinépolis)".
+   Luego llegué a la conclusión de que había campos que guardar esa información redundante
+no era necesario y dificultaba su futuro procesamiento, siguiendo con la duración: ¿Me
+conviene tener muchas duraciones diferentes que difieren por pocos minutos? y ¿Me conviene
+tener un string en vez de un número si estoy hablando de tiempo?
+   Así que pensé hacer que los campos sigan algún tipo de lógica: con la duración mantener
+el "peor caso", es decir, el número más grande, por el hecho de pensar el máximo que podría
+llegar a tardar una película. Pero igual podrían ser conclusiones totalmente erróneas
+porque quizás la duración real es la menor, o peor aún, ninguna de las dos.
+   Lo único que se me ocurrió para tener los datos correctos fue contrastar la información
+scrapeada contra la "información oficial" que sería la base de datos de películas de IMDB, 
+pero se complicaba encontrar las películas y se iba de lo que proponía el trabajo.
+   Como no lo pude determinar y viendo que la información de Cinepolis solía ser mayor y de
+mejor calidad, terminé por hacer lo siguiente en los datos del merge:
 - Utilizar las películas de Cinepolis cómo "datos oficiales" con respecto a título, título
 original, duración, origen, calificación y sinopsis.
 - Recorrer las películas de Cinepolis y, si estaba la misma película en Cinema La Plata,

@@ -1,4 +1,4 @@
-#Instrucciones de uso
+# Instrucciones de uso
 
 ## Antes de ejecutar
 1. Instalar python 3 y pip.
@@ -9,8 +9,9 @@
         1. Crear directorio '${HOME}/bin'.
         2. Descargar el driver (http://chromedriver.chromium.org/downloads) y guardarlo en '${HOME}/bin'.
         3. 'cd ${HOME}/bin && chmod +x chromedriver' para hacerlo ejecutable.
-        4. Abrir '${HOME}/.bash_profile' con un editor de texto.
-        5. Agregar la linea 'export PATH="${PATH}:${HOME}/bin"' y guardar el archivo.
+        4. Abrir '${HOME}/.bash_profile' (Mac) o '${HOME}/.profile' (Linux) con un editor de texto.
+        5. Agregar la linea 'export PATH="${PATH}:${HOME}/bin"' (Mac) o 'export PATH="$HOME/bin:$PATH"'
+        (Linux) y guardar el archivo.
         6. Reiniciar la terminal.
         7. Verificar que está bien instalado con 'chromedriver -v'
     - En Windows:
