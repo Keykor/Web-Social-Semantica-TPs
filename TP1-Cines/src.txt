@@ -1,0 +1,27 @@
+#Instrucciones de uso
+
+## Antes de ejecutar
+1. Instalar python 3 y pip.
+2. Instalar las depencias necesarias que se encuentra en requeriments.txt con:
+    'pip install -r requeriments.txt'
+3. Descargar e instalar el Chromedriver para que funcione Selenium:
+    - En Mac y Linux:
+        1. Crear directorio '${HOME}/bin'.
+        2. Descargar el driver (http://chromedriver.chromium.org/downloads) y guardarlo en '${HOME}/bin'.
+        3. 'cd ${HOME}/bin && chmod +x chromedriver' para hacerlo ejecutable.
+        4. Abrir '${HOME}/.bash_profile' con un editor de texto.
+        5. Agregar la linea 'export PATH="${PATH}:${HOME}/bin"' y guardar el archivo.
+        6. Reiniciar la terminal.
+        7. Verificar que está bien instalado con 'chromedriver -v'
+    - En Windows:
+        1. Crear directorio 'C:\bin'
+        2. Descargar el driver (http://chromedriver.chromium.org/downloads) y guardarlo en 'C:\bin'.
+        3. Abrir el CMD y setear la variable PATH con 'setx PATH "%PATH%;C:\bin"'
+        4. Reiniciar el CMD.
+        5. Verificar que está bien instalado con 'chromedriver.exe -v'
+
+## Cómo ejecutar
+Para ejecutar el programa abrir la consola en la carpeta src y utilizar el comando 'python main.py'.
+Este archivo lo que hace es ejecutar secuencialmente los archivos 'scrapper_cinemalaplata.py',
+'scrapper_cinepolis' y 'merge.py', los cuales se pueden ejecutar individualmente pero es necesario
+haber ejecutado los dos primeros para ejecutar el merge, porque son necesarios los datos que generan. 
