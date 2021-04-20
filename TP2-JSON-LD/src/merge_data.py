@@ -26,7 +26,7 @@ def main():
     #Revisando los datos que brinda cada página elegí cuales quiero quedarme
     #y de qué forma, si simples o lista
     properties_list_simple = ['@context', '@type', 'name', 'image', 'description', 'duration', 'trailer', 'productionCompany', 'countryOfOrigin', 'releasedEvent', 'hasPart']
-    properties_list_list = ['genre', 'actor', 'director', 'creator', 'review', 'author']
+    properties_list_list = ['aggregateRating', 'genre', 'actor', 'director', 'creator', 'review', 'author', 'character']
 
     movie = {}
     for prop in properties_list_simple:
@@ -44,7 +44,7 @@ def main():
         
         for prop in properties_list_list:
             if prop in page_movie:
-                if prop == 'genre':
+                if prop == 'genre' or prop == 'character':
                     comparison_method = string_prop_comparison
                 elif prop == 'review':
                     comparison_method = review_prop_comparison
@@ -52,7 +52,7 @@ def main():
                     comparison_method = dict_prop_comparison
 
                 #A veces el dato que quiero que sea una lista en la extraccion no es una lista
-                if not list.__instancecheck__(page_movie[prop]):
+                if not isinstance(page_movie[prop], list):
                     page_movie[prop] = [page_movie[prop]]
 
                 for item_page_movie in page_movie[prop]:

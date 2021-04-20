@@ -1,0 +1,32 @@
+¿Cuán complejos son, en comparación con los scrappers que escribió en el TP1, los extractores que tuvo que escribir ahora?
+El scrapper de este trabajo fue muy simple en comparación a los del trabajo anterior
+
+¿Tuvo que hacer uno para cada página o pudo reutilizarlos? Si encontráramos otro sitio que hable de una pelicula utilizando Schema.org y Microdatos o JSON-LD como mecanismo de serialización, ¿podríamos utilizar estos extractores?
+Pude hacer uno que funcione para todas las páginas. Serviría para otras páginas pero que utilizen JSON-LD
+
+¿Cuáles cree que son las ventajas y desventajas de utilizar Microdata?
+Ventaja:
+- se sirve de html
+- da formato
+Desventaja:
+- puede estar disperso por html y dificil encontrarlo
+- mezcla html y estilo con datos, limitando al programador
+
+¿Cuáles cree que son las ventajas y desventajas de utilizar JSON-LD?
+Ventaja:
+- esta en json, es muy procesable
+- separa datos de html
+Desventaja:
+- hace más pesado el archivo html
+- no es algo muy usado todavia
+
+¿Cuáles cree que son las ventajas y desventajas de utilizar el vocabulario de Schema.org?
+Ventaja:
+- da un formato piola y estandarizado para los datos
+- se puede implementar en varias formas, como microdata y json LD
+desventajas:
+
+
+
+¿Cuáles cree que son los desafíos que todavía quedan por resolver?
+El tema de la validez de los datos y la identificacion, y que no se respetan los formatos
