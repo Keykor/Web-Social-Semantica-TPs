@@ -1,0 +1,18 @@
+[
+    {
+        "name": "imdb",
+        "url": "https://www.imdb.com/title/tt7126948/"
+    },
+    {
+        "name": "rottentomatoes",
+        "url": "https://www.rottentomatoes.com/m/wonder_woman_1984"
+    },
+    {
+        "name": "metacritic",
+        "url": "https://www.metacritic.com/movie/wonder-woman-1984"
+    },
+    {
+        "name": "ecartelera",
+        "url": "https://www.ecartelera.com/peliculas/wonder-woman-1984"
+    }
+]

@@ -6,9 +6,7 @@ import os
 def create_data_directory_path(file_name):
     return os.path.abspath(os.path.join(*[os.path.dirname(__file__), os.pardir, "data", file_name]))
 
-
-if __name__ == "__main__":
-
+def main():
     pages_to_scrap = None
     with open(create_data_directory_path('pages_to_scrap.json'), encoding="utf-8") as file:
         pages_to_scrap = json.load(file)
@@ -22,3 +20,6 @@ if __name__ == "__main__":
     
         with open(create_data_directory_path(page["name"] + ".json"),"w",encoding="utf-8") as file:
             json.dump(data, file, ensure_ascii=False, indent=4)
+
+if __name__ == "__main__":
+    main()

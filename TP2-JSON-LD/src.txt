@@ -1,0 +1,14 @@
+# Instrucciones de uso
+
+## Cómo ejecutar
+Para ejecutar el programa abrir la consola en la carpeta src y utilizar el comando 'python main.py'.
+Este archivo lo que hace es ejecutar secuencialmente los archivos 'scrapper_jsonld.py', y 'merge_data.py',
+los cuales se pueden ejecutar individualmente pero es necesario haber ejecutado el scrapper para ejecutar 
+el merge, porque son necesarios los datos que generan. 
+
+## Otras configuraciones
+Si se quiere scrappear y mergear otra película de las mismas páginas, sólo es necesario cambiar los url
+del archivo 'pages_to_scrap.json'.
+El orden establece prioridad en cuanto a qué datos se guardarán primero a la hora de mergear.
+Se pueden agregar al archivo más páginas que contengan archivos JSON-LD en formato 'schema.org' con el fin
+de scrappear. Cuidado, el merge no funcionará para estas otras páginas y generará resultados con errores. 
