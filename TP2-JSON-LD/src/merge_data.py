@@ -22,9 +22,7 @@ def main():
     with open(create_data_directory_path('pages_to_scrap.json'), encoding="utf-8") as file:
         pages_to_scrap = json.load(file)
 
-    #movie['aggregateRating'] = [] (en duda como guardarlo)
-    #Revisando los datos que brinda cada página elegí cuales quiero quedarme
-    #y de qué forma, si simples o lista
+    # Datos elegidos para guardar en el mergeo
     properties_list_simple = ['@context', '@type', 'name', 'image', 'description', 'duration', 'trailer', 'productionCompany', 'countryOfOrigin', 'releasedEvent', 'hasPart']
     properties_list_list = ['aggregateRating', 'genre', 'actor', 'director', 'creator', 'review', 'author', 'character']
 
@@ -44,6 +42,7 @@ def main():
         
         for prop in properties_list_list:
             if prop in page_movie:
+                # Según la clave, utilizo una forma diferente de comparación
                 if prop == 'genre' or prop == 'character':
                     comparison_method = string_prop_comparison
                 elif prop == 'review':
@@ -51,7 +50,7 @@ def main():
                 else:
                     comparison_method = dict_prop_comparison
 
-                #A veces el dato que quiero que sea una lista en la extraccion no es una lista
+                # A veces el dato que quiero que sea una lista en la extraccion no es una lista
                 if not isinstance(page_movie[prop], list):
                     page_movie[prop] = [page_movie[prop]]
 

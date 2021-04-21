@@ -2,9 +2,10 @@
 
 ## Cómo ejecutar
 Para ejecutar el programa abrir la consola en la carpeta src y utilizar el comando 'python main.py'.
-Este archivo lo que hace es ejecutar secuencialmente los archivos 'scrapper_jsonld.py', y 'merge_data.py',
-los cuales se pueden ejecutar individualmente pero es necesario haber ejecutado el scrapper para ejecutar 
-el merge, porque son necesarios los datos que generan. 
+Este archivo lo que hace es ejecutar secuencialmente los archivos 'scrapper_jsonld.py', 'normalize.py'
+y 'merge_data.py', los cuales se pueden ejecutar individualmente pero es necesario haber ejecutado 
+el scrapper y el normalizador para ejecutar el merge, porque son necesarios los datos que generan
+y formatean para que de un resultado correcto. 
 
 ## Otras configuraciones
 Si se quiere scrappear y mergear otra película de las mismas páginas, sólo es necesario cambiar los url

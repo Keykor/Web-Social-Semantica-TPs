@@ -1,32 +1,49 @@
 ¿Cuán complejos son, en comparación con los scrappers que escribió en el TP1, los extractores que tuvo que escribir ahora?
-El scrapper de este trabajo fue muy simple en comparación a los del trabajo anterior
+El scrapper de este trabajo fue muy simple en comparación a los del trabajo anterior, ya que lo único que hace
+es encontrar el script de tipo '"type":"application/ld+json"', sacar el texto, parsear a json y guardar los datos.
+En los extractores anteriores, cómo las páginas no seguían ningún standart, los datos estaban dispersos y de
+diferentes formas, por lo que para extraerlos era necesario hacer un scrapper específico para cada página.
 
 ¿Tuvo que hacer uno para cada página o pudo reutilizarlos? Si encontráramos otro sitio que hable de una pelicula utilizando Schema.org y Microdatos o JSON-LD como mecanismo de serialización, ¿podríamos utilizar estos extractores?
-Pude hacer uno que funcione para todas las páginas. Serviría para otras páginas pero que utilizen JSON-LD
+Cómo las páginas usaban JSON-LD con 'schema.org', pude hacer uno solo extractor que funcione para todas las páginas. 
+Este mismo serviría para otras páginas que utilizen el mismo archivo con el mismo formato, pero no para Microdatos
+u otros, ya que conllevaría una búsqueda de datos diferente a la implementada para JSON-LD.
 
 ¿Cuáles cree que son las ventajas y desventajas de utilizar Microdata?
-Ventaja:
-- se sirve de html
-- da formato
-Desventaja:
-- puede estar disperso por html y dificil encontrarlo
-- mezcla html y estilo con datos, limitando al programador
+Ventajas:
+- Brindan semántica y estructura a los datos que se encuentran dentro de un archivo HTML.
+Desventajas:
+- Se mezcla la escritura de la estructura de una página web (y su estilo) con la información a procesar.
+- Los datos pueden estar dispersos por el HTML, complicando su búsqueda para la extracción.
 
 ¿Cuáles cree que son las ventajas y desventajas de utilizar JSON-LD?
-Ventaja:
-- esta en json, es muy procesable
-- separa datos de html
-Desventaja:
-- hace más pesado el archivo html
-- no es algo muy usado todavia
+Ventajas:
+- Separa los datos a procesar de la estructura de la página, lo que da libertad para cómo armar la página.
+- Al estar en formato JSON y este ser popular, es fácil procesarlos y guardarlos.
+Desventajas:
+- Hace que el archivo HTML sea más pesado, ya que incluye el script con JSON-LD, lo que puede hacer que la
+página tarde más en transferirse a nuestra computadora.
+- Todavía no es muy popular, por lo que mucha gente no lo utiliza ni sabe procesarlos.
 
 ¿Cuáles cree que son las ventajas y desventajas de utilizar el vocabulario de Schema.org?
-Ventaja:
-- da un formato piola y estandarizado para los datos
-- se puede implementar en varias formas, como microdata y json LD
-desventajas:
-
-
+Ventajas:
+- Brinda a los datos un formato que simplifica el contenido y facilita su procesamiento para la computadora.
+- Al ser un vocabulario, puede ser implementado de diferentes formas cómo Microdata, JSON-LD o RDFa.
+- Es popular y reconocido por los navegadores.
+Desventajas:
+- Implementarlo puede ser costoso, ya que hay que conocer el extenso vocabulario y utilizarlo correctamente.
+- Podrían existir datos a representar que todavía no estén en en el vocabulario porque no fueron contemplados, 
+por lo que se debería contactar con 'schema.org' para hacer un pedido de creación y esperar que se acepte para
+cumplir con el estandar.
 
 ¿Cuáles cree que son los desafíos que todavía quedan por resolver?
-El tema de la validez de los datos y la identificacion, y que no se respetan los formatos
+Los desafíos que encontré que aún quedan por resolver son:
+- Determinar los datos válidos u "oficiales": hasta ahora no se ha podido determinar de manera
+efectiva qué página tiene los datos correctos sobre una película, cuando los datos entre todos
+las extracciones difiere.
+- La correcta identificación de los datos: identificar por nombre de película ha traido problemas
+ya que en diferentes páginas la misma película puede llamarse diferente.
+- Problemas de formatos y estandares: cómo no todas las páginas tienen datos estructurados, o si
+los tienen no son respetados en todas al 100%, a la hora de mergear sigue siendo necesario
+normalizar o formatear los datos para que se adecuén a combinarlos, ya sea porque están mal escritos,
+faltan o la representación del tipo es diferente.

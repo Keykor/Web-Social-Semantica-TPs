@@ -4,7 +4,8 @@ import os
 def create_data_directory_path(file_name):
     return os.path.abspath(os.path.join(*[os.path.dirname(__file__), os.pardir, "data", file_name]))
 
-#poner los url imdb
+# Como IMDB da url relativos a su página, los completo 
+# para que al mergear se sepa de dónde vienen
 def change_imdb_url(dictionary):
     for key in dictionary:
         if isinstance(dictionary[key], dict):
@@ -17,12 +18,14 @@ def change_imdb_url(dictionary):
             if 'https://www.imdb.com' not in dictionary[key]:
                 dictionary[key] = 'https://www.imdb.com' + dictionary[key]
 
-#cambiar actors por actor de rotten tomatoes
+# En el scrappeo de Rotten Tomatoes hay una clave llamada
+# 'actors' que debería llamarse 'actor' para respetar el esquema
 def change_actor_prop_name(movie):
     if 'actors' in movie:
         movie['actor'] = movie.pop('actors')
 
-#dividir los géneros de rottentomatoes
+# En el scrappeo de Rotten Tomatoes pueden haber varios géneros
+# diferentes en un solo string separados por ' & '
 def separate_genres(movie):
     newList = []
     for genre in movie['genre']:
@@ -32,7 +35,8 @@ def separate_genres(movie):
             newList.append(genre)
     movie['genre'] = newList
 
-#agregarle organization al aggregation
+# Agrega organización de dónde proviene al valor 'aggregateRating'
+# para que al mergear la info no se pierda
 def add_organization_to_aggregate_rating(movie, name, url):
     movie['aggregateRating']['author'] = {"@type": "Organization", "name": name, "url": url}
 

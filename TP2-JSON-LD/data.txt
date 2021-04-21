@@ -1,0 +1,16 @@
+Los datos se encuentra en la carpeta data, donde podremos encontrar los siguientes archivos:
+- "pages_to_scrap.json": Es un archivo JSON compuesta por un arreglo de objetos que representan páginas que contienen 
+un 'name' identificador, un 'nombreReal', un 'website' que es un url con el inicio de su sitio y un 'url' que es el 
+url específico de la página de película que se quiera scrappear. Es utilizado por los scripts 'merge_data.py', 'normalize.py'
+y 'scrapper_jsonld.py'.
+- "merge.json": Es un archivo JSON que contiene un objeto que representa una película originada de un mergeo de varios archivos.
+El mismo intenta respetar el 'schema.org' y guarda los siguientes datos seleccionados:
+    - Simple: Datos que se guarda de forma única y no se reemplazan. Estos son: '@context', '@type', 'name', 'image', 
+    'description', 'duration', 'trailer', 'productionCompany', 'countryOfOrigin', 'releasedEvent' y 'hasPart'.
+    - Lista: Datos que se guardan en forma de lista y se mezclan de cada extracción, sin dejar repetidos. Estos son: 
+    'aggregateRating', 'genre', 'actor', 'director', 'creator', 'review', 'author' y 'character'.
+Tener en cuenta que en el guardado de los datos 'Simple' es influido por el orden del el archivo "pages_to_scrap.json", ya que la
+primera película en ser procesada es el guarda esos datos, siempre y cuando los poseea. Por defecto he dejado cómo primera página
+a IMDB ya que considero que sus datos son "más oficiales" que las otras páginas que están orientadas a opiniones.
+- Otros archivos json: Son archivos JSON que contienen un objeto que representa una película según el formato de 'schema.org'.
+Poseen el nombre (name) identificador de la página de donde fueron extraídas, indicada en el archivo 'pages_to_scrap.json'.
