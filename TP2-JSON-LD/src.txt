@@ -1,5 +1,10 @@
 # Instrucciones de uso
 
+## Antes de ejecutar
+1. Instalar python 3 y pip.
+2. Instalar las depencias necesarias que se encuentra en requeriments.txt con:
+    'pip install -r requeriments.txt'
+
 ## Cómo ejecutar
 Para ejecutar el programa abrir la consola en la carpeta src y utilizar el comando 'python main.py'.
 Este archivo lo que hace es ejecutar secuencialmente los archivos 'scrapper_jsonld.py', 'normalize.py'
@@ -9,7 +14,14 @@ y formatean para que de un resultado correcto.
 
 ## Otras configuraciones
 Si se quiere scrappear y mergear otra película de las mismas páginas, sólo es necesario cambiar los url
-del archivo 'pages_to_scrap.json'.
-El orden establece prioridad en cuanto a qué datos se guardarán primero a la hora de mergear.
+del archivo 'pages_to_scrap.json'. Links de la película de Matrix para probar:
+- IMDB: https://www.imdb.com/title/tt0133093/
+- Rotten Tomatoes: https://www.rottentomatoes.com/m/matrix
+- Metacritic: https://www.metacritic.com/movie/the-matrix
+- eCartelera: https://www.ecartelera.com/peliculas/matrix/
+El orden establece prioridad en cuanto a qué datos se guardarán primero a la hora de mergear. Por defecto he 
+dejado cómo primera página a IMDB ya que considero que sus datos son "más oficiales" que las otras páginas 
+que están orientadas a opiniones.
 Se pueden agregar al archivo más páginas que contengan archivos JSON-LD en formato 'schema.org' con el fin
 de scrappear. Cuidado, el merge no funcionará para estas otras páginas y generará resultados con errores. 
+

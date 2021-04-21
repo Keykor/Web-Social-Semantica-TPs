@@ -6,7 +6,7 @@ y 'scrapper_jsonld.py'.
 - "merge.json": Es un archivo JSON que contiene un objeto que representa una película originada de un mergeo de varios archivos.
 El mismo intenta respetar el 'schema.org' y guarda los siguientes datos seleccionados:
     - Simple: Datos que se guarda de forma única y no se reemplazan. Estos son: '@context', '@type', 'name', 'image', 
-    'description', 'duration', 'trailer', 'productionCompany', 'countryOfOrigin', 'releasedEvent' y 'hasPart'.
+    'description', 'duration', ,contentRating', 'trailer', 'productionCompany', 'countryOfOrigin', 'releasedEvent' y 'hasPart'.
     - Lista: Datos que se guardan en forma de lista y se mezclan de cada extracción, sin dejar repetidos. Estos son: 
     'aggregateRating', 'genre', 'actor', 'director', 'creator', 'review', 'author' y 'character'.
 Tener en cuenta que en el guardado de los datos 'Simple' es influido por el orden del el archivo "pages_to_scrap.json", ya que la

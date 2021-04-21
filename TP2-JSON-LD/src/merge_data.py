@@ -23,7 +23,7 @@ def main():
         pages_to_scrap = json.load(file)
 
     # Datos elegidos para guardar en el mergeo
-    properties_list_simple = ['@context', '@type', 'name', 'image', 'description', 'duration', 'trailer', 'productionCompany', 'countryOfOrigin', 'releasedEvent', 'hasPart']
+    properties_list_simple = ['@context', '@type', 'name', 'image', 'description', 'duration', 'contentRating', 'trailer', 'productionCompany', 'countryOfOrigin', 'releasedEvent', 'hasPart']
     properties_list_list = ['aggregateRating', 'genre', 'actor', 'director', 'creator', 'review', 'author', 'character']
 
     movie = {}
