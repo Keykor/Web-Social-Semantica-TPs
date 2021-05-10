@@ -1,1393 +1,1277 @@
-[ {
-  "@id" : "_:genid1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid100",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Place"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid104",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid107",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Offer"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid111",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid114",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/ImageObject"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid118",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/CreativeWork"
-    }, {
-      "@id" : "https://schema.org/Event"
-    }, {
-      "@id" : "https://schema.org/PronounceableText"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid122",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid125",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/AggregateRating"
-    }, {
-      "@id" : "https://schema.org/Review"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid128",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/Thing"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid13",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Clip"
-    }, {
-      "@id" : "https://schema.org/Movie"
-    }, {
-      "@id" : "https://schema.org/VideoObject"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid132",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid135",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Action"
-    }, {
-      "@id" : "https://schema.org/Event"
-    }, {
-      "@id" : "https://schema.org/Organization"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid139",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Place"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid143",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/CreativeWork"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid147",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid150",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Action"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid154",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/MediaObject"
-    }, {
-      "@id" : "https://schema.org/Movie"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid157",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Organization"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid161",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Organization"
-    }, {
-      "@id" : "https://schema.org/Person"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid166",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Number"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid17",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Person"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid170",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid173",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/CreativeWork"
-    }, {
-      "@id" : "https://schema.org/Event"
-    }, {
-      "@id" : "https://schema.org/Offer"
-    }, {
-      "@id" : "https://schema.org/Organization"
-    }, {
-      "@id" : "https://schema.org/Place"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid179",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Review"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid183",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid186",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Rating"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid190",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid193",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Event"
-    }, {
-      "@id" : "https://schema.org/Schedule"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid196",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Date"
-    }, {
-      "@id" : "https://schema.org/DateTime"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid199",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/EntryPoint"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid203",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/ImageObject"
-    }, {
-      "@id" : "https://schema.org/VideoObject"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid206",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/ImageObject"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid21",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/CreativeWork"
-    }, {
-      "@id" : "https://schema.org/Event"
-    }, {
-      "@id" : "https://schema.org/Offer"
-    }, {
-      "@id" : "https://schema.org/Organization"
-    }, {
-      "@id" : "https://schema.org/Place"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid210",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid213",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid216",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    }, {
-      "@id" : "https://schema.org/VideoObject"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid220",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid223",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid226",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Number"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid27",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/AggregateRating"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid31",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/CreativeWork"
-    }, {
-      "@id" : "https://schema.org/Rating"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid34",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Organization"
-    }, {
-      "@id" : "https://schema.org/Person"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid39",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Date"
-    }, {
-      "@id" : "https://schema.org/DateTime"
-    }, {
-      "@id" : "https://schema.org/Time"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Clip"
-    }, {
-      "@id" : "https://schema.org/Event"
-    }, {
-      "@id" : "https://schema.org/Movie"
-    }, {
-      "@id" : "https://schema.org/VideoObject"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid43",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Number"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid47",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/Thing"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid51",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Person"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid55",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Rating"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid59",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid62",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Country"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid66",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Organization"
-    }, {
-      "@id" : "https://schema.org/Person"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid71",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Date"
-    }, {
-      "@id" : "https://schema.org/DateTime"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid74",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Date"
-    }, {
-      "@id" : "https://schema.org/DateTime"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid77",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Date"
-    }, {
-      "@id" : "https://schema.org/DateTime"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid80",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid83",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Clip"
-    }, {
-      "@id" : "https://schema.org/Event"
-    }, {
-      "@id" : "https://schema.org/Movie"
-    }, {
-      "@id" : "https://schema.org/VideoObject"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid88",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Person"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid9",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Person"
-    }, {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid92",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Event"
-    }, {
-      "@id" : "https://schema.org/MediaObject"
-    }, {
-      "@id" : "https://schema.org/Movie"
-    }, {
-      "@id" : "https://schema.org/Schedule"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid97",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://schema.org/Text"
-    }, {
-      "@id" : "https://schema.org/URL"
-    } ]
-  } ]
-}, {
-  "@id" : "http://www.w3.org/2000/01/rdf-schema#Class",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
-}, {
-  "@id" : "https://schema.org/Action",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/Thing"
-  } ]
-}, {
-  "@id" : "https://schema.org/AdministrativeArea",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/Place"
-  } ]
-}, {
-  "@id" : "https://schema.org/AggregateRating",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/MediaObject"
-  } ]
-}, {
-  "@id" : "https://schema.org/Boolean",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/DataType"
-  } ]
-}, {
-  "@id" : "https://schema.org/CivicStructure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/Place"
-  } ]
-}, {
-  "@id" : "https://schema.org/Clip",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/CreativeWork"
-  } ]
-}, {
-  "@id" : "https://schema.org/ConsumeAction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/Action"
-  } ]
-}, {
-  "@id" : "https://schema.org/Country",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/AdministrativeArea"
-  } ]
-}, {
-  "@id" : "https://schema.org/CreativeWork",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/Thing"
-  } ]
-}, {
-  "@id" : "https://schema.org/CssSelectorType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/Text"
-  } ]
-}, {
-  "@id" : "https://schema.org/DataType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Class"
-  } ]
-}, {
-  "@id" : "https://schema.org/Date",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/DataType"
-  } ]
-}, {
-  "@id" : "https://schema.org/DateTime",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/DataType"
-  } ]
-}, {
-  "@id" : "https://schema.org/EntryPoint",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/Intangible"
-  } ]
-}, {
-  "@id" : "https://schema.org/Event",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/Thing"
-  } ]
-}, {
-  "@id" : "https://schema.org/Float",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/Number"
-  } ]
-}, {
-  "@id" : "https://schema.org/ImageObject",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/MediaObject"
-  } ]
-}, {
-  "@id" : "https://schema.org/Intangible",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/Thing"
-  } ]
-}, {
-  "@id" : "https://schema.org/Integer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/Number"
-  } ]
-}, {
-  "@id" : "https://schema.org/MediaObject",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/CreativeWork"
-  } ]
-}, {
-  "@id" : "https://schema.org/Movie",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/CreativeWork"
-  } ]
-}, {
-  "@id" : "https://schema.org/MovieTheater",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/CivicStructure"
-  } ]
-}, {
-  "@id" : "https://schema.org/Number",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/DataType"
-  } ]
-}, {
-  "@id" : "https://schema.org/Offer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/Intangible"
-  } ]
-}, {
-  "@id" : "https://schema.org/Organization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/Thing"
-  } ]
-}, {
-  "@id" : "https://schema.org/Person",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/Thing"
-  } ]
-}, {
-  "@id" : "https://schema.org/Place",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/Thing"
-  } ]
-}, {
-  "@id" : "https://schema.org/PronounceableText",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/Text"
-  } ]
-}, {
-  "@id" : "https://schema.org/Rating",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/Intangible"
-  } ]
-}, {
-  "@id" : "https://schema.org/Review",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/CreativeWork"
-  } ]
-}, {
-  "@id" : "https://schema.org/Schedule",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/Intangible"
-  } ]
-}, {
-  "@id" : "https://schema.org/ScreeningEvent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/Event"
-  } ]
-}, {
-  "@id" : "https://schema.org/Text",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/DataType"
-  } ]
-}, {
-  "@id" : "https://schema.org/Thing",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://schema.org/Time",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/DataType"
-  } ]
-}, {
-  "@id" : "https://schema.org/URL",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/Text"
-  } ]
-}, {
-  "@id" : "https://schema.org/VideoObject",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/MediaObject"
-  } ]
-}, {
-  "@id" : "https://schema.org/WatchAction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/ConsumeAction"
-  } ]
-}, {
-  "@id" : "https://schema.org/XPathType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://schema.org/Text"
-  } ]
-}, {
-  "@id" : "https://schema.org/actionPlatform",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/EntryPoint"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid1"
-  } ]
-}, {
-  "@id" : "https://schema.org/actor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid4"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid9"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
-    "@id" : "https://schema.org/actors"
-  } ]
-}, {
-  "@id" : "https://schema.org/actors",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid13"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid17"
-  } ]
-}, {
-  "@id" : "https://schema.org/aggregateRating",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid21"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid27"
-  } ]
-}, {
-  "@id" : "https://schema.org/author",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid31"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid34"
-  } ]
-}, {
-  "@id" : "https://schema.org/availabilityStarts",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/Offer"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid39"
-  } ]
-}, {
-  "@id" : "https://schema.org/bestRating",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/Rating"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid43"
-  } ]
-}, {
-  "@id" : "https://schema.org/category",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/Offer"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid47"
-  } ]
-}, {
-  "@id" : "https://schema.org/character",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/CreativeWork"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid51"
-  } ]
-}, {
-  "@id" : "https://schema.org/contentRating",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/CreativeWork"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid55"
-  } ]
-}, {
-  "@id" : "https://schema.org/contentUrl",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/MediaObject"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid59"
-  } ]
-}, {
-  "@id" : "https://schema.org/countryOfOrigin",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/Movie"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid62"
-  } ]
-}, {
-  "@id" : "https://schema.org/creator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/CreativeWork"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid66"
-  } ]
-}, {
-  "@id" : "https://schema.org/dateCreated",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/CreativeWork"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid71"
-  } ]
-}, {
-  "@id" : "https://schema.org/dateModified",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/CreativeWork"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid74"
-  } ]
-}, {
-  "@id" : "https://schema.org/datePublished",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/CreativeWork"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid77"
-  } ]
-}, {
-  "@id" : "https://schema.org/description",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/Thing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid80"
-  } ]
-}, {
-  "@id" : "https://schema.org/director",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid83"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid88"
-  } ]
-}, {
-  "@id" : "https://schema.org/duration",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid92"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid97"
-  } ]
-}, {
-  "@id" : "https://schema.org/eligibleRegion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/Offer"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid100"
-  } ]
-}, {
-  "@id" : "https://schema.org/embedUrl",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/MediaObject"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid104"
-  } ]
-}, {
-  "@id" : "https://schema.org/expectsAcceptanceOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/ConsumeAction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid107"
-  } ]
-}, {
-  "@id" : "https://schema.org/genre",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/CreativeWork"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid111"
-  } ]
-}, {
-  "@id" : "https://schema.org/image",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/Thing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid114"
-  } ]
-}, {
-  "@id" : "https://schema.org/inLanguage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid118"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid122"
-  } ]
-}, {
-  "@id" : "https://schema.org/itemReviewed",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid125"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid128"
-  } ]
-}, {
-  "@id" : "https://schema.org/keywords",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/CreativeWork"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid132"
-  } ]
-}, {
-  "@id" : "https://schema.org/location",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid135"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid139"
-  } ]
-}, {
-  "@id" : "https://schema.org/mainEntityOfPage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/Thing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid143"
-  } ]
-}, {
-  "@id" : "https://schema.org/name",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/Thing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid147"
-  } ]
-}, {
-  "@id" : "https://schema.org/potentialAction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/Thing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid150"
-  } ]
-}, {
-  "@id" : "https://schema.org/productionCompany",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid154"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid157"
-  } ]
-}, {
-  "@id" : "https://schema.org/publisher",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/CreativeWork"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid161"
-  } ]
-}, {
-  "@id" : "https://schema.org/ratingCount",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/AggregateRating"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://schema.org/Integer"
-  } ]
-}, {
-  "@id" : "https://schema.org/ratingValue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/Rating"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid166"
-  } ]
-}, {
-  "@id" : "https://schema.org/releasedEvent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/CreativeWork"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid170"
-  } ]
-}, {
-  "@id" : "https://schema.org/review",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid173"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid179"
-  } ]
-}, {
-  "@id" : "https://schema.org/reviewBody",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/Review"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid183"
-  } ]
-}, {
-  "@id" : "https://schema.org/reviewRating",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/Review"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid186"
-  } ]
-}, {
-  "@id" : "https://schema.org/sameAs",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/Thing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid190"
-  } ]
-}, {
-  "@id" : "https://schema.org/startDate",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid193"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid196"
-  } ]
-}, {
-  "@id" : "https://schema.org/target",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/Action"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid199"
-  } ]
-}, {
-  "@id" : "https://schema.org/thumbnail",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid203"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid206"
-  } ]
-}, {
-  "@id" : "https://schema.org/thumbnailUrl",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/CreativeWork"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid210"
-  } ]
-}, {
-  "@id" : "https://schema.org/timeRequired",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/CreativeWork"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid213"
-  } ]
-}, {
-  "@id" : "https://schema.org/trailer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/Movie"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid216"
-  } ]
-}, {
-  "@id" : "https://schema.org/uploadDate",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/MediaObject"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://schema.org/Date"
-  } ]
-}, {
-  "@id" : "https://schema.org/url",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/Thing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid220"
-  } ]
-}, {
-  "@id" : "https://schema.org/urlTemplate",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/EntryPoint"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid223"
-  } ]
-}, {
-  "@id" : "https://schema.org/worstRating",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://schema.org/Rating"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid226"
-  } ]
-} ]
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#"
+     xml:base="https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://schema.org/actionPlatform -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/actionPlatform">
+        <rdfs:domain rdf:resource="https://schema.org/EntryPoint"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/actor -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/actor">
+        <owl:equivalentProperty rdf:resource="https://schema.org/actors"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Clip"/>
+                    <rdf:Description rdf:about="https://schema.org/Event"/>
+                    <rdf:Description rdf:about="https://schema.org/Movie"/>
+                    <rdf:Description rdf:about="https://schema.org/VideoObject"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/actors -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/actors">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Clip"/>
+                    <rdf:Description rdf:about="https://schema.org/Movie"/>
+                    <rdf:Description rdf:about="https://schema.org/VideoObject"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/aggregateRating -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/aggregateRating">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/CreativeWork"/>
+                    <rdf:Description rdf:about="https://schema.org/Event"/>
+                    <rdf:Description rdf:about="https://schema.org/Offer"/>
+                    <rdf:Description rdf:about="https://schema.org/Organization"/>
+                    <rdf:Description rdf:about="https://schema.org/Place"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/AggregateRating"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/author -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/author">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/CreativeWork"/>
+                    <rdf:Description rdf:about="https://schema.org/Rating"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Organization"/>
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/availabilityStarts -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/availabilityStarts">
+        <rdfs:domain rdf:resource="https://schema.org/Offer"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Date"/>
+                    <rdf:Description rdf:about="https://schema.org/DateTime"/>
+                    <rdf:Description rdf:about="https://schema.org/Time"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/bestRating -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/bestRating">
+        <rdfs:domain rdf:resource="https://schema.org/Rating"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Number"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/category -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/category">
+        <rdfs:domain rdf:resource="https://schema.org/Offer"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/Thing"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/character -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/character">
+        <rdfs:domain rdf:resource="https://schema.org/CreativeWork"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/contentRating -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/contentRating">
+        <rdfs:domain rdf:resource="https://schema.org/CreativeWork"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Rating"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/contentUrl -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/contentUrl">
+        <rdfs:domain rdf:resource="https://schema.org/MediaObject"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/countryOfOrigin -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/countryOfOrigin">
+        <rdfs:domain rdf:resource="https://schema.org/Movie"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Country"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/creator -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/creator">
+        <rdfs:domain rdf:resource="https://schema.org/CreativeWork"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Organization"/>
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/dateCreated -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/dateCreated">
+        <rdfs:domain rdf:resource="https://schema.org/CreativeWork"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Date"/>
+                    <rdf:Description rdf:about="https://schema.org/DateTime"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/dateModified -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/dateModified">
+        <rdfs:domain rdf:resource="https://schema.org/CreativeWork"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Date"/>
+                    <rdf:Description rdf:about="https://schema.org/DateTime"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/datePublished -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/datePublished">
+        <rdfs:domain rdf:resource="https://schema.org/CreativeWork"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Date"/>
+                    <rdf:Description rdf:about="https://schema.org/DateTime"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/description -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/description">
+        <rdfs:domain rdf:resource="https://schema.org/Thing"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/director -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/director">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Clip"/>
+                    <rdf:Description rdf:about="https://schema.org/Event"/>
+                    <rdf:Description rdf:about="https://schema.org/Movie"/>
+                    <rdf:Description rdf:about="https://schema.org/VideoObject"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/duration -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/duration">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Event"/>
+                    <rdf:Description rdf:about="https://schema.org/MediaObject"/>
+                    <rdf:Description rdf:about="https://schema.org/Movie"/>
+                    <rdf:Description rdf:about="https://schema.org/Schedule"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/eligibleRegion -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/eligibleRegion">
+        <rdfs:domain rdf:resource="https://schema.org/Offer"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Place"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/embedUrl -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/embedUrl">
+        <rdfs:domain rdf:resource="https://schema.org/MediaObject"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/expectsAcceptanceOf -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/expectsAcceptanceOf">
+        <rdfs:domain rdf:resource="https://schema.org/ConsumeAction"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Offer"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/genre -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/genre">
+        <rdfs:domain rdf:resource="https://schema.org/CreativeWork"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/image -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/image">
+        <rdfs:domain rdf:resource="https://schema.org/Thing"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/ImageObject"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/inLanguage -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/inLanguage">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/CreativeWork"/>
+                    <rdf:Description rdf:about="https://schema.org/Event"/>
+                    <rdf:Description rdf:about="https://schema.org/PronounceableText"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/itemReviewed -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/itemReviewed">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/AggregateRating"/>
+                    <rdf:Description rdf:about="https://schema.org/Review"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/Thing"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/keywords -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/keywords">
+        <rdfs:domain rdf:resource="https://schema.org/CreativeWork"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/location -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/location">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Action"/>
+                    <rdf:Description rdf:about="https://schema.org/Event"/>
+                    <rdf:Description rdf:about="https://schema.org/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Place"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/mainEntityOfPage -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/mainEntityOfPage">
+        <rdfs:domain rdf:resource="https://schema.org/Thing"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/CreativeWork"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/name -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/name">
+        <rdfs:domain rdf:resource="https://schema.org/Thing"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/potentialAction -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/potentialAction">
+        <rdfs:domain rdf:resource="https://schema.org/Thing"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Action"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/productionCompany -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/productionCompany">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/MediaObject"/>
+                    <rdf:Description rdf:about="https://schema.org/Movie"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Organization"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/publisher -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/publisher">
+        <rdfs:domain rdf:resource="https://schema.org/CreativeWork"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Organization"/>
+                    <rdf:Description rdf:about="https://schema.org/Person"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/ratingCount -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/ratingCount">
+        <rdfs:domain rdf:resource="https://schema.org/AggregateRating"/>
+        <rdfs:range rdf:resource="https://schema.org/Integer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/ratingValue -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/ratingValue">
+        <rdfs:domain rdf:resource="https://schema.org/Rating"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Number"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/releasedEvent -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/releasedEvent">
+        <rdfs:domain rdf:resource="https://schema.org/CreativeWork"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/review -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/review">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/CreativeWork"/>
+                    <rdf:Description rdf:about="https://schema.org/Event"/>
+                    <rdf:Description rdf:about="https://schema.org/Offer"/>
+                    <rdf:Description rdf:about="https://schema.org/Organization"/>
+                    <rdf:Description rdf:about="https://schema.org/Place"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Review"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/reviewBody -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/reviewBody">
+        <rdfs:domain rdf:resource="https://schema.org/Review"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/reviewRating -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/reviewRating">
+        <rdfs:domain rdf:resource="https://schema.org/Review"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Rating"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/sameAs -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/sameAs">
+        <rdfs:domain rdf:resource="https://schema.org/Thing"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/startDate -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/startDate">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Event"/>
+                    <rdf:Description rdf:about="https://schema.org/Schedule"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Date"/>
+                    <rdf:Description rdf:about="https://schema.org/DateTime"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/target -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/target">
+        <rdfs:domain rdf:resource="https://schema.org/Action"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/EntryPoint"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/thumbnail -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/thumbnail">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/ImageObject"/>
+                    <rdf:Description rdf:about="https://schema.org/VideoObject"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/ImageObject"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/thumbnailUrl -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/thumbnailUrl">
+        <rdfs:domain rdf:resource="https://schema.org/CreativeWork"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/timeRequired -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/timeRequired">
+        <rdfs:domain rdf:resource="https://schema.org/CreativeWork"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/trailer -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/trailer">
+        <rdfs:domain rdf:resource="https://schema.org/Movie"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                    <rdf:Description rdf:about="https://schema.org/VideoObject"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/uploadDate -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/uploadDate">
+        <rdfs:domain rdf:resource="https://schema.org/MediaObject"/>
+        <rdfs:range rdf:resource="https://schema.org/Date"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/url -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/url">
+        <rdfs:domain rdf:resource="https://schema.org/Thing"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/urlTemplate -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/urlTemplate">
+        <rdfs:domain rdf:resource="https://schema.org/EntryPoint"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/worstRating -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/worstRating">
+        <rdfs:domain rdf:resource="https://schema.org/Rating"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://schema.org/Number"/>
+                    <rdf:Description rdf:about="https://schema.org/Text"/>
+                    <rdf:Description rdf:about="https://schema.org/URL"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Class -->
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    
+
+
+    <!-- https://schema.org/Action -->
+
+    <owl:Class rdf:about="https://schema.org/Action">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/AdministrativeArea -->
+
+    <owl:Class rdf:about="https://schema.org/AdministrativeArea">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/AggregateRating -->
+
+    <owl:Class rdf:about="https://schema.org/AggregateRating">
+        <rdfs:subClassOf rdf:resource="https://schema.org/MediaObject"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Boolean -->
+
+    <owl:Class rdf:about="https://schema.org/Boolean">
+        <rdfs:subClassOf rdf:resource="https://schema.org/DataType"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/CivicStructure -->
+
+    <owl:Class rdf:about="https://schema.org/CivicStructure">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Clip -->
+
+    <owl:Class rdf:about="https://schema.org/Clip">
+        <rdfs:subClassOf rdf:resource="https://schema.org/CreativeWork"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/ConsumeAction -->
+
+    <owl:Class rdf:about="https://schema.org/ConsumeAction">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Action"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Country -->
+
+    <owl:Class rdf:about="https://schema.org/Country">
+        <rdfs:subClassOf rdf:resource="https://schema.org/AdministrativeArea"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/CreativeWork -->
+
+    <owl:Class rdf:about="https://schema.org/CreativeWork">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/CssSelectorType -->
+
+    <owl:Class rdf:about="https://schema.org/CssSelectorType">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/DataType -->
+
+    <owl:Class rdf:about="https://schema.org/DataType">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Date -->
+
+    <owl:Class rdf:about="https://schema.org/Date">
+        <rdfs:subClassOf rdf:resource="https://schema.org/DataType"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/DateTime -->
+
+    <owl:Class rdf:about="https://schema.org/DateTime">
+        <rdfs:subClassOf rdf:resource="https://schema.org/DataType"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/EntryPoint -->
+
+    <owl:Class rdf:about="https://schema.org/EntryPoint">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Intangible"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Event -->
+
+    <owl:Class rdf:about="https://schema.org/Event">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Float -->
+
+    <owl:Class rdf:about="https://schema.org/Float">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Number"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/ImageObject -->
+
+    <owl:Class rdf:about="https://schema.org/ImageObject">
+        <rdfs:subClassOf rdf:resource="https://schema.org/MediaObject"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Intangible -->
+
+    <owl:Class rdf:about="https://schema.org/Intangible">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Integer -->
+
+    <owl:Class rdf:about="https://schema.org/Integer">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Number"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/MediaObject -->
+
+    <owl:Class rdf:about="https://schema.org/MediaObject">
+        <rdfs:subClassOf rdf:resource="https://schema.org/CreativeWork"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Movie -->
+
+    <owl:Class rdf:about="https://schema.org/Movie">
+        <rdfs:subClassOf rdf:resource="https://schema.org/CreativeWork"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/MovieTheater -->
+
+    <owl:Class rdf:about="https://schema.org/MovieTheater">
+        <rdfs:subClassOf rdf:resource="https://schema.org/CivicStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Number -->
+
+    <owl:Class rdf:about="https://schema.org/Number">
+        <rdfs:subClassOf rdf:resource="https://schema.org/DataType"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Offer -->
+
+    <owl:Class rdf:about="https://schema.org/Offer">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Intangible"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Organization -->
+
+    <owl:Class rdf:about="https://schema.org/Organization">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Person -->
+
+    <owl:Class rdf:about="https://schema.org/Person">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Place -->
+
+    <owl:Class rdf:about="https://schema.org/Place">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/PronounceableText -->
+
+    <owl:Class rdf:about="https://schema.org/PronounceableText">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Rating -->
+
+    <owl:Class rdf:about="https://schema.org/Rating">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Intangible"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Review -->
+
+    <owl:Class rdf:about="https://schema.org/Review">
+        <rdfs:subClassOf rdf:resource="https://schema.org/CreativeWork"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Schedule -->
+
+    <owl:Class rdf:about="https://schema.org/Schedule">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Intangible"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/ScreeningEvent -->
+
+    <owl:Class rdf:about="https://schema.org/ScreeningEvent">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Event"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Text -->
+
+    <owl:Class rdf:about="https://schema.org/Text">
+        <rdfs:subClassOf rdf:resource="https://schema.org/DataType"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Thing -->
+
+    <owl:Class rdf:about="https://schema.org/Thing"/>
+    
+
+
+    <!-- https://schema.org/Time -->
+
+    <owl:Class rdf:about="https://schema.org/Time">
+        <rdfs:subClassOf rdf:resource="https://schema.org/DataType"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/URL -->
+
+    <owl:Class rdf:about="https://schema.org/URL">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Text"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/VideoObject -->
+
+    <owl:Class rdf:about="https://schema.org/VideoObject">
+        <rdfs:subClassOf rdf:resource="https://schema.org/MediaObject"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/WatchAction -->
+
+    <owl:Class rdf:about="https://schema.org/WatchAction">
+        <rdfs:subClassOf rdf:resource="https://schema.org/ConsumeAction"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/XPathType -->
+
+    <owl:Class rdf:about="https://schema.org/XPathType">
+        <rdfs:subClassOf rdf:resource="https://schema.org/Text"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
