@@ -7,30 +7,40 @@ MY_ONTOLOGY = Namespace("https://raw.githubusercontent.com/Keykor/Web-Social-Sem
 GRAPH = Graph()
 GRAPH.namespace_manager.bind('', MY_ONTOLOGY)
 
-def transform_to_triplets(objeto):
-    node = None
-    if type(objeto) is dict:
-        objeto.pop('@context', None)
+def transform_to_triplets(URI_relativa_padre, objeto):
+    if type(objeto) is not dict:
+        return Literal(objeto)
 
-        if 'name' in objeto:
-            node = MY_ONTOLOGY[objeto['name'].replace(" ", "_")]
-            GRAPH.add((node, RDF.type, OWL.NamedIndividual))
+    objeto.pop('@context', None)
+    tipo = objeto.pop('@type', None)
+
+    if tipo == "Rating":
+        string_name = tipo + "_" + URI_relativa_padre
+    elif tipo == "Review" or tipo == "AggregateRating":
+        string_name = tipo + "_" + objeto['author']['name'] + "_" + URI_relativa_padre
+    elif 'name' in objeto:
+        string_name = objeto['name']
+    elif 'url' in objeto:
+        string_name = tipo + "_" + objeto['url']
+    elif 'embedUrl' in objeto:
+        string_name = tipo + "_" + objeto['embedUrl']
+    elif 'contentUrl' in objeto:
+        string_name = tipo + "_" + objeto['contentUrl']
+    
+    URI_relativa = string_name.replace(" ", "_")
+    nodo = MY_ONTOLOGY[URI_relativa]
+    GRAPH.add((nodo, RDF.type, OWL.NamedIndividual))
+    GRAPH.add((nodo, RDF.type, SCHEMA[tipo]))
+
+    for clave, valor in objeto.items():
+        relation = SCHEMA[clave]
+        if type(valor) is list:
+            for each in valor:
+                GRAPH.add((nodo, relation, transform_to_triplets(URI_relativa, each)))
         else:
-            node = BNode()
+            GRAPH.add((nodo, relation, transform_to_triplets(URI_relativa, valor)))
 
-        tipo = objeto.pop('@type', None)
-        GRAPH.add((node, RDF.type, SCHEMA[tipo]))
-
-        for clave, valor in objeto.items():
-            relation = SCHEMA[clave]
-            if type(valor) is list:
-                for each in valor:
-                    GRAPH.add((node, relation, transform_to_triplets(each)))
-            else:
-                GRAPH.add((node, relation, transform_to_triplets(valor)))
-    else:
-        node = Literal(objeto)
-    return node
+    return nodo
 
 def main():
 
@@ -38,9 +48,10 @@ def main():
     with open('imdb.json', encoding="utf-8") as file:
         json_to_parse = json.load(file)
 
-    transform_to_triplets(json_to_parse)
+    transform_to_triplets("", json_to_parse)
 
-    print(GRAPH.serialize(format="turtle").decode("utf-8"))
+    with open("imdb.ttl","w",encoding="utf-8") as file:
+        file.write(GRAPH.serialize(format="turtle").decode("utf-8"))
 
 if __name__ == "__main__":
     main()
