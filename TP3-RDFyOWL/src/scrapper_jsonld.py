@@ -12,6 +12,7 @@ GRAPH = Graph()
 GRAPH.namespace_manager.bind('', MY_ONTOLOGY)
 COUNTER = {}
 MOVIE_NAME = ""
+ACTUAL_PAGE = ""
 
 def transform_to_triplets(objeto):
     if type(objeto) is not dict:
@@ -24,6 +25,8 @@ def transform_to_triplets(objeto):
     string_name = MOVIE_NAME + '_' + tipo + '_'
     if tipo == 'Review': 
         string_name += objeto['author']['name']
+    elif tipo == 'AggregateRating':
+        string_name += ACTUAL_PAGE
     elif 'name' in objeto:
         if tipo in ["Person", "Organization", "Country"]:
             string_name = tipo + '_' + objeto['name'] 
@@ -67,6 +70,8 @@ def main():
 
         global MOVIE_NAME
         MOVIE_NAME = data['name']
+        global ACTUAL_PAGE
+        ACTUAL_PAGE = page['name']
         transform_to_triplets(data)
     
     with open(create_data_directory_path("individuals" + ".ttl"),"w",encoding="utf-8") as file:
