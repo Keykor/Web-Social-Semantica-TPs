@@ -26,7 +26,6 @@ def create_individual_and_connect(tipo, data, relation, URI_to_connect):
     return each_URI
 
 def main():
-    print("Scrapping de Cinepolis -> Comenzando")
     url = 'https://www.cinepolis.com.ar/'
     options = Options()
     options.headless = True
@@ -140,12 +139,9 @@ def main():
             
 
     driver.quit()
-    print("Scrapping de Cinepolis -> Terminado")
 
     with open(create_data_directory_path("individualsCinepolis" + ".ttl"),"w",encoding="utf-8") as file:
         file.write(GRAPH.serialize(format="turtle").decode("utf-8"))
-
-    print("Scrapping de Cinepolis -> Guardado")
 
 if __name__ == "__main__":
     main()

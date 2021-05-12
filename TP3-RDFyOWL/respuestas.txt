@@ -1,0 +1,36 @@
+¿Qué ventajas supone que hubiese obtenido si en los trabajos anteriores contaba con la información descrita en OWL?
+La ventajas que hubiese obtenido son:
+- Se hubiera facilitado el almacenamiento de la información, ya que el formato es bastante simple de manipular y guardar, 
+sobre todo con la librería rdflib.
+- Se hubiera facilitado la integración de los diferentes scrappeos, ya que no había que tomar decisiones sobre cómo mezclar 
+los datos y con cuál quedarse, pues es inferido por el vocabulario utilizado.
+
+¿Qué ventajas tiene utilizar vocabularios existentes en lugar de crear los propios?
+Las ventajas que encontré fueron:
+- Los vocabularios existentes están mantenidos y tienen bastante documentación, lo que nos brinda mucha ayuda si no nos 
+encontramos familiarizados con el dominio del problema que estamos analizando.
+- La información que encontremos de scrappeos en Internet es altamente probable que esté en alguno de los vocabularios 
+ya existentes y, si está bien respetado correctamente su formato, es fácil incluirlo a nuestros datos sin mucho trabajo.
+
+¿Utilizó solamente clases y propiedades de un único vocabulario?
+Utilicé clases y propiedades de Schema, pero ejercí algunos cambios sobre el mismo.
+Schema presentaba toda propiedad como Object Property, ya que definía clases hasta para los datos primitivos y así los iba
+relacionando, como es el caso que ocurre con Text e Integer. 
+A razón de esto simplifiqué el vocabulario, utilizando las clases que necesitaba para el dominio del problema de los cines y 
+películas, y transformando muchas Object Properties a Data Property para no realizar el enmascarado de datos primitivos, que 
+añadía complejidad innecesaria.
+
+¿Que impacto hubiese tenido al momento de almacenar la información obtenida el contar con un modelo como OWL?
+Hubiese tenido un gran impacto positivo ya que la información habría tenido una estructura a la cuál adecuarse y que además hubiese 
+definido cómo se relaciona. Esto hubiera facilitado totalmente cómo se guarda la información y cómo se mergea (tal cómo expresé en 
+mi primera respuesta).
+
+¿Qué diferencia hay entre utilizar un modelo de objetos para integrar la información que obtuvo (como hizo anteriormente) con utilizar tripletas?
+La diferencia es que las tripletas brindan una mayor facilidad de compresión para la computadora, permitiendole sacar conclusiones 
+sobre la información al darle un valor semántico.
+Además las tripletas nos brindan la capacidad de combinar diferentes datasets y realizar mejores consultas sobre la información.
+
+¿Cuán dificil es generar archivos OWL en otros formatos (por ejemplo N3, RDF/XML) a partir de la información que tiene? Y con su scrapper.
+No es dificil generar archivos OWL en otros formatos con la información obtenida y guardada, y tampoco con el scrapper. Esto es debido
+a que para todo utilicé la librería rdflib que posee la función 'serialize()' donde uno de sus parámetros es 'format' que recibe un
+string con el nombre del formato al cuál se quiere serializar, como los mencionados N3 y RDF/XML.

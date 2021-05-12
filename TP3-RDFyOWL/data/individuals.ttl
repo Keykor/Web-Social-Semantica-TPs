@@ -129,7 +129,7 @@
         :Wonder_Woman_1984_Review_Stephen_Romei,
         :Wonder_Woman_1984_Review_Tony_Medley,
         :Wonder_Woman_1984_Review_Valerie_Kalfrin,
-        :Wonder_Woman_1984_Review_the_real_smile ;
+        :Wonder_Woman_1984_Review_jayg_58 ;
     ns1:trailer :Wonder_Woman_1984_VideoObject_Stream_on_HBO_Max_for_a_Limited_Time,
         <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Wonder_Woman_1984_VideoObject_Wonder_Woman_1984_(Trailer_2)> ;
     ns1:url "/title/tt7126948/",
@@ -566,9 +566,9 @@
     ns1:name "William Moulton Marston" ;
     ns1:url "/name/nm0551376/" .
 
-:Person_the_real_smile a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+:Person_jayg_58 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:Person ;
-    ns1:name "the_real_smile" .
+    ns1:name "jayg_58" .
 
 :Wonder_Woman_1984_AggregateRating_ecartelera a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:AggregateRating ;
@@ -580,7 +580,7 @@
 :Wonder_Woman_1984_AggregateRating_imdb a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:AggregateRating ;
     ns1:bestRating "10.0" ;
-    ns1:ratingCount 199030 ;
+    ns1:ratingCount 199127 ;
     ns1:ratingValue "5.4" ;
     ns1:worstRating "1.0" .
 
@@ -662,7 +662,7 @@
 :Wonder_Woman_1984_Rating_0 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:Rating ;
     ns1:bestRating "10" ;
-    ns1:ratingValue "4" ;
+    ns1:ratingValue "5" ;
     ns1:worstRating "1" .
 
 :Wonder_Woman_1984_Rating_1 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
@@ -1025,14 +1025,14 @@
     ns1:reviewRating :Wonder_Woman_1984_Rating_9 ;
     ns1:url "https://intheirownleague.com/2020/12/29/review-wonder-woman-1984/" .
 
-:Wonder_Woman_1984_Review_the_real_smile a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+:Wonder_Woman_1984_Review_jayg_58 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:Review ;
-    ns1:author :Person_the_real_smile ;
+    ns1:author :Person_jayg_58 ;
     ns1:dateCreated "2021-01-01" ;
     ns1:inLanguage "English" ;
     ns1:itemReviewed :Wonder_Woman_1984_CreativeWork_0 ;
-    ns1:name "Actionhero movie with almost no action" ;
-    ns1:reviewBody "Writer, producer and director Patty Jenkins really did a give this movie a feminine/soap opera touch and by doing so destroyed everything that this movie could have been. The first WW movie was not that great, but Patty did not write that one, this sequel she did and it is worthless. I was wondering if I was watching a drama or a action hero franchise. First the movie is far to long, the dialogue's are pointless and boring, you can skip with ease them because the story is not that complicated. For the action, the effects are good, not worth the time to watch, but still well made, but there are not very much action scenes. If you look at the demographic of the votes you can see girls <18 years are the only ones who love this movie, and that should have been the warning that should have been given with this movie: only see this movie if you are a teenage girl." ;
+    ns1:name "In quarantine, you'll buy anything." ;
+    ns1:reviewBody "Very colorful, lots of money spent. Kristin Wiig was a masterpiece of miscasting. She wasn't funny; she wasn't scary, but great costume. The whole plot was a vehicle to resurrect Chris Pine, but there was no real chemistry between them. It made the lines of endearment quite awkward and the embraces seemed forced. All the usual tropes: WW loses some of her powers, so there can be suspense; she plays Spiderman and holds two vehicles apart. Just nothing new and Gad Gadot proves again that she's a glamour model and poses well. She can't act. Still - entertainment in a vacuum of good movies, so watch it and be distracted for TWO AND A HALF hours." ;
     ns1:reviewRating :Wonder_Woman_1984_Rating_0 .
 
 :Wonder_Woman_1984_VideoObject_Stream_on_HBO_Max_for_a_Limited_Time a <http://www.w3.org/2002/07/owl#NamedIndividual>,

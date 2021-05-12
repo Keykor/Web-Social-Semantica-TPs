@@ -1,0 +1,39 @@
+# Instrucciones de uso
+
+## Antes de ejecutar
+1. Instalar python 3 y pip.
+2. Instalar las depencias necesarias que se encuentra en requeriments.txt con:
+    'pip install -r requeriments.txt'
+3. Descargar e instalar el Chromedriver para que funcione Selenium:
+    - En Mac y Linux:
+        1. Crear directorio '${HOME}/bin'.
+        2. Descargar el driver (http://chromedriver.chromium.org/downloads) y guardarlo en '${HOME}/bin'.
+        3. 'cd ${HOME}/bin && chmod +x chromedriver' para hacerlo ejecutable.
+        4. Abrir '${HOME}/.bash_profile' (Mac) o '${HOME}/.profile' (Linux) con un editor de texto.
+        5. Agregar la linea 'export PATH="${PATH}:${HOME}/bin"' (Mac) o 'export PATH="$HOME/bin:$PATH"'
+        (Linux) y guardar el archivo.
+        6. Reiniciar la terminal.
+        7. Verificar que está bien instalado con 'chromedriver -v'
+    - En Windows:
+        1. Crear directorio 'C:\bin'
+        2. Descargar el driver (http://chromedriver.chromium.org/downloads) y guardarlo en 'C:\bin'.
+        3. Abrir el CMD y setear la variable PATH con 'setx PATH "%PATH%;C:\bin"'
+        4. Reiniciar el CMD.
+        5. Verificar que está bien instalado con 'chromedriver.exe -v'
+
+## Cómo ejecutar
+Para ejecutar el programa abrir la consola en la carpeta src y utilizar el comando 'python main.py'.
+Este archivo lo que hace es ejecutar secuencialmente los archivos 'scrapper_jsonld.py', 'scrapper_cinepolis.py',
+'cinemalaplata_to_turtle.py' y 'combine_graphs.py, los cuales se pueden ejecutar individualmente pero es necesario 
+haber ejecutado los demás scripts antes de ejecutar 'combine_graphs.py', porque son necesarios los datos que 
+generan para que de un resultado correcto. 
+
+## Sobre los archivos en carpeta data
+- 'pages_to_scrap.json': contiene las páginas a scrappear que utiliza 'scrapper_jsonld.py'.
+- 'cinemalaplata.json': por cuestiones de pandemia no hay películas en cartelera, por lo que son los
+datos de la primera entrega que 'cinemalaplata_to_turtle.py' transformará a turtle.
+- 'cohort.ttl': contiene el vocabulario construido en protege, sin individuals.
+- 'individuals.ttl': resultado de 'scrapper_jsonld.py'.
+- 'individualsCinepolis.ttl': resultado de 'scrapper_cinepolis.py'.
+- 'individualsCinemalaplata.ttl': resultado de 'cinemalaplata_to_turtle.py'.
+- 'allCombinated.ttl': resultado final, contiene el vocabulario de 'cohort.ttl' más todos los individuals.

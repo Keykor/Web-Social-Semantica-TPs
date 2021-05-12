@@ -237,16 +237,6 @@ ns1:workPresented rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#startTime
-:startTime rdf:type owl:DatatypeProperty ;
-           rdfs:domain [ rdf:type owl:Class ;
-                         owl:unionOf ( ns1:Schedule
-                                       ns1:ScreeningEvent
-                                     )
-                       ] ;
-           rdfs:range xsd:dateTime .
-
-
 ###  https://schema.org/actionPlatform
 ns1:actionPlatform rdf:type owl:DatatypeProperty ;
                    rdfs:domain ns1:EntryPoint ;
@@ -406,6 +396,16 @@ ns1:startDate rdf:type owl:DatatypeProperty ;
               rdfs:domain [ rdf:type owl:Class ;
                             owl:unionOf ( ns1:Event
                                           ns1:Schedule
+                                        )
+                          ] ;
+              rdfs:range xsd:dateTime .
+
+
+###  https://schema.org/startTime
+ns1:startTime rdf:type owl:DatatypeProperty ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( ns1:Schedule
+                                          ns1:ScreeningEvent
                                         )
                           ] ;
               rdfs:range xsd:dateTime .

@@ -4,56 +4,66 @@
 
 :MovieTheater_Cinépolis_Maipú a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:MovieTheater ;
-    ns1:event :ScreeningEvent_CLASSIC_2D_Cinépolis_Maipú_EL_SEÑOR_DE_LOS_ANILLOS:_EL_RETORNO_DEL_REY,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Maipú_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Maipú_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO,
-        <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ScreeningEvent_GC_2D_Cinépolis_Maipú_100%_LOBO>,
-        :ScreeningEvent_GC_2D_Cinépolis_Maipú_AQUELLOS_QUE_DESEAN_MI_MUERTE,
-        :ScreeningEvent_GC_2D_Cinépolis_Maipú_EN_GUERRA_CON_MI_ABUELO,
-        :ScreeningEvent_GC_2D_Cinépolis_Maipú_ETERNOS_COMPAÑEROS,
-        :ScreeningEvent_GC_2D_Cinépolis_Maipú_VIOLET_EVERGARDEN ;
+    ns1:event :ScreeningEvent_Cinépolis_Maipú_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_EL_RETORNO_DEL_REY,
+        :ScreeningEvent_Cinépolis_Maipú_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES,
+        :ScreeningEvent_Cinépolis_Maipú_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO,
+        :ScreeningEvent_Cinépolis_Maipú_CLASSIC_2D_GODZILLA_VS._KONG,
+        :ScreeningEvent_Cinépolis_Maipú_CLASSIC_2D_MORTAL_KOMBAT,
+        <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ScreeningEvent_Cinépolis_Maipú_GC_2D_100%_LOBO>,
+        :ScreeningEvent_Cinépolis_Maipú_GC_2D_AQUELLOS_QUE_DESEAN_MI_MUERTE,
+        :ScreeningEvent_Cinépolis_Maipú_GC_2D_ATAKAN:_RELIQUIA_DIABÓLICA,
+        :ScreeningEvent_Cinépolis_Maipú_GC_2D_DEMON_SLAYER_MUGEN_TRAIN,
+        :ScreeningEvent_Cinépolis_Maipú_GC_2D_EN_GUERRA_CON_MI_ABUELO,
+        :ScreeningEvent_Cinépolis_Maipú_GC_2D_ETERNOS_COMPAÑEROS,
+        :ScreeningEvent_Cinépolis_Maipú_GC_2D_GODZILLA_VS._KONG,
+        :ScreeningEvent_Cinépolis_Maipú_GC_2D_VIOLET_EVERGARDEN ;
     ns1:name "Cinépolis Maipú" .
 
 :MovieTheater_Cinépolis_Mendoza a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:MovieTheater ;
-    ns1:event <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_100%_LOBO>,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_AQUELLOS_QUE_DESEAN_MI_MUERTE,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_ATAKAN:_RELIQUIA_DIABÓLICA,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_BIGLI,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_DEMON_SLAYER_MUGEN_TRAIN,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_EL_SEÑOR_DE_LOS_ANILLOS:_EL_RETORNO_DEL_REY,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_EN_GUERRA_CON_MI_ABUELO,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_ETERNOS_COMPAÑEROS,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_GODZILLA_VS._KONG,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_LOS_NUEVOS_MUTANTES,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_MORTAL_KOMBAT,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_NOMADLAND,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_TOM_Y_JERRY,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_VIOLET_EVERGARDEN ;
+    ns1:event :ScreeningEvent_Cinépolis_Mendoza_4D_2D_MORTAL_KOMBAT,
+        <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_100%_LOBO>,
+        :ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_AQUELLOS_QUE_DESEAN_MI_MUERTE,
+        :ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_ATAKAN:_RELIQUIA_DIABÓLICA,
+        :ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_BIGLI,
+        :ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_DEMON_SLAYER_MUGEN_TRAIN,
+        :ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_EL_RETORNO_DEL_REY,
+        :ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES,
+        :ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO,
+        :ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_EN_GUERRA_CON_MI_ABUELO,
+        :ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_ETERNOS_COMPAÑEROS,
+        :ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_GODZILLA_VS._KONG,
+        :ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_LOS_NUEVOS_MUTANTES,
+        :ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_MORTAL_KOMBAT,
+        :ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_NOMADLAND,
+        :ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_PEQUEÑOS_SECRETOS,
+        :ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_TOM_Y_JERRY,
+        :ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_VIOLET_EVERGARDEN ;
     ns1:name "Cinépolis Mendoza" .
 
 :MovieTheater_Cinépolis_Neuquén a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:MovieTheater ;
-    ns1:event :ScreeningEvent_4D_2D_Cinépolis_Neuquén_MORTAL_KOMBAT,
-        <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_100%_LOBO>,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_ATAKAN:_RELIQUIA_DIABÓLICA,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_EL_SEÑOR_DE_LOS_ANILLOS:_EL_RETORNO_DEL_REY,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_EN_GUERRA_CON_MI_ABUELO,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_GODZILLA_VS._KONG,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_LOS_NUEVOS_MUTANTES,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_MORTAL_KOMBAT,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_NOMADLAND,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_PEQUEÑOS_SECRETOS,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_TOM_Y_JERRY,
-        :ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_VIOLET_EVERGARDEN,
-        :ScreeningEvent_MS_2D_Cinépolis_Neuquén_EL_SEÑOR_DE_LOS_ANILLOS:_EL_RETORNO_DEL_REY,
-        :ScreeningEvent_MS_2D_Cinépolis_Neuquén_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES,
-        :ScreeningEvent_MS_2D_Cinépolis_Neuquén_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO,
-        :ScreeningEvent_MS_2D_Cinépolis_Neuquén_MORTAL_KOMBAT ;
+    ns1:event :ScreeningEvent_Cinépolis_Neuquén_4D_2D_GODZILLA_VS._KONG,
+        :ScreeningEvent_Cinépolis_Neuquén_4D_2D_MORTAL_KOMBAT,
+        <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_100%_LOBO>,
+        :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_ATAKAN:_RELIQUIA_DIABÓLICA,
+        :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_DEMON_SLAYER_MUGEN_TRAIN,
+        :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_EL_RETORNO_DEL_REY,
+        :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES,
+        :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO,
+        :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_EN_GUERRA_CON_MI_ABUELO,
+        :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_GODZILLA_VS._KONG,
+        :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_LOS_NUEVOS_MUTANTES,
+        :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_MORTAL_KOMBAT,
+        :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_NOMADLAND,
+        :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_PEQUEÑOS_SECRETOS,
+        :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_TOM_Y_JERRY,
+        :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_VIOLET_EVERGARDEN,
+        :ScreeningEvent_Cinépolis_Neuquén_MS_2D_EL_SEÑOR_DE_LOS_ANILLOS:_EL_RETORNO_DEL_REY,
+        :ScreeningEvent_Cinépolis_Neuquén_MS_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES,
+        :ScreeningEvent_Cinépolis_Neuquén_MS_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO,
+        :ScreeningEvent_Cinépolis_Neuquén_MS_2D_GODZILLA_VS._KONG,
+        :ScreeningEvent_Cinépolis_Neuquén_MS_2D_MORTAL_KOMBAT ;
     ns1:name "Cinépolis Neuquén" .
 
 :Country_Argentina a <http://www.w3.org/2002/07/owl#NamedIndividual>,
@@ -94,55 +104,6 @@
     ns1:name "BIGLI",
         "Bigli" ;
     ns1:publisher :Organization_Cinetren .
-
-:Movie_DEMON_SLAYER_MUGEN_TRAIN a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Movie ;
-    ns1:actor :Person_Akari_Kito,
-        :Person_Hiro_Shimono,
-        :Person_Katsuyuki_Konishi,
-        :Person_Kenichi_Suzumura,
-        :Person_Natsuki_Hanae,
-        :Person_Saori_Hayami,
-        :Person_Satoshi_Hino,
-        :Person_Takahiro_Sakurai,
-        :Person_Tomokazu_Seki,
-        :Person_Yoshitsugu_Matsuoka ;
-    ns1:contentRating "P-13" ;
-    ns1:description "Demon Slayer: Mugen Train cuenta la historia de Tanjiro Kamado, Kyoujurou Rengoku y sus amigos de la Compañía de Cazadores de Demonios (Demon Slayer Corps). Juntos, se unen con uno de los mejores espadachines de la compañía, Kyojuro Rengoku, para investigar una misteriosa serie de desapariciones que han ocurrido dentro del “Tren Infinito”. Poco saben que Enmu, uno de los miembros de las Doce Lunas Demoníacas, también está a bordo y les ha preparado una trampa." ;
-    ns1:director :Person_Haruo_Sotozaki ;
-    ns1:duration 120 ;
-    ns1:genre "Acción",
-        "Animación",
-        "Aventura",
-        "Drama",
-        "Fantasía" ;
-    ns1:locationCreated :Country_Japón ;
-    ns1:name "DEMON SLAYER MUGEN TRAIN",
-        "Demon Slayer Mugen Train" ;
-    ns1:publisher :Organization_Cinépolis .
-
-:Movie_PEQUEÑOS_SECRETOS a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Movie ;
-    ns1:actor :Person_Chris_Bauer,
-        :Person_Denzel_Washington,
-        :Person_Glenn_Morshower,
-        :Person_Isabel_Arraiza,
-        :Person_Jared_Leto,
-        :Person_Joris_Jarsky,
-        :Person_Michael_Hyatt,
-        :Person_Natalie_Morales,
-        :Person_Rami_Malek,
-        :Person_Terry_Kinney ;
-    ns1:contentRating "P13R" ;
-    ns1:description "Deke, un ayudante del sheriff del condado de Kern quemado, CA se une a Baxter, un detective experto en LASD, para atrapar a un asesino en serie. El olfato de Deke para las \"pequeñas cosas\" resulta inquietantemente preciso, pero su voluntad de eludir las reglas envuelve a Baxter en un dilema desgarrador. Mientras tanto, Deke debe luchar con un oscuro secreto de su pasado." ;
-    ns1:director :Person_John_Lee_Hancock ;
-    ns1:duration 128 ;
-    ns1:genre "Crimen",
-        "Thriller" ;
-    ns1:locationCreated :Country_Estados_Unidos ;
-    ns1:name "PEQUEÑOS SECRETOS",
-        "The little things" ;
-    ns1:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Organization_Warner_Bros.> .
 
 :Organization_20th_Fox a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:Organization ;
@@ -720,14 +681,7 @@
         ns1:Person ;
     ns1:name "Yui Ishikawa" .
 
-:ScreeningEvent_4D_2D_Cinépolis_Neuquén_MORTAL_KOMBAT a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "ESPAÑOL" ;
-    ns1:startTime "22:15" ;
-    ns1:videoFormat "4D 2D" ;
-    ns1:workPresented :Movie_MORTAL_KOMBAT .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Maipú_EL_SEÑOR_DE_LOS_ANILLOS:_EL_RETORNO_DEL_REY a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+:ScreeningEvent_Cinépolis_Maipú_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_EL_RETORNO_DEL_REY a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:ScreeningEvent ;
     ns1:inLanguage "SUBTITULADO" ;
     ns1:startTime "16:00",
@@ -735,7 +689,7 @@
     ns1:videoFormat "CLASSIC 2D" ;
     ns1:workPresented :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_EL_RETORNO_DEL_REY .
 
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Maipú_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+:ScreeningEvent_Cinépolis_Maipú_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:ScreeningEvent ;
     ns1:inLanguage "SUBTITULADO" ;
     ns1:startTime "16:00",
@@ -743,7 +697,7 @@
     ns1:videoFormat "CLASSIC 2D" ;
     ns1:workPresented :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES .
 
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Maipú_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+:ScreeningEvent_Cinépolis_Maipú_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:ScreeningEvent ;
     ns1:inLanguage "SUBTITULADO" ;
     ns1:startTime "16:00",
@@ -751,224 +705,35 @@
     ns1:videoFormat "CLASSIC 2D" ;
     ns1:workPresented :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO .
 
-<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_100%_LOBO> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+:ScreeningEvent_Cinépolis_Maipú_CLASSIC_2D_GODZILLA_VS._KONG a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:ScreeningEvent ;
     ns1:inLanguage "ESPAÑOL" ;
-    ns1:startTime "15:30" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Movie_100%_LOBO> .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_AQUELLOS_QUE_DESEAN_MI_MUERTE a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "ESPAÑOL" ;
-    ns1:startTime "17:15",
+    ns1:startTime "15:00",
+        "17:45",
         "20:30" ;
     ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_AQUELLOS_QUE_DESEAN_MI_MUERTE .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_ATAKAN:_RELIQUIA_DIABÓLICA a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "ESPAÑOL" ;
-    ns1:startTime "20:50" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_ATAKAN:_RELIQUIA_DIABÓLICA .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_BIGLI a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "ESPAÑOL" ;
-    ns1:startTime "18:10" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_BIGLI .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_DEMON_SLAYER_MUGEN_TRAIN a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "SUBTITULADO" ;
-    ns1:startTime "20:20" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_DEMON_SLAYER_MUGEN_TRAIN .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_EL_SEÑOR_DE_LOS_ANILLOS:_EL_RETORNO_DEL_REY a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "SUBTITULADO" ;
-    ns1:startTime "15:00",
-        "19:10" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_EL_RETORNO_DEL_REY .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "SUBTITULADO" ;
-    ns1:startTime "15:45",
-        "19:30" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "SUBTITULADO" ;
-    ns1:startTime "15:40",
-        "19:30" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_EN_GUERRA_CON_MI_ABUELO a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "ESPAÑOL" ;
-    ns1:startTime "16:00",
-        "18:20" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_EN_GUERRA_CON_MI_ABUELO .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_ETERNOS_COMPAÑEROS a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "ESPAÑOL" ;
-    ns1:startTime "18:15" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_ETERNOS_COMPAÑEROS .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_GODZILLA_VS._KONG a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "ESPAÑOL" ;
-    ns1:startTime "20:30" ;
-    ns1:videoFormat "CLASSIC 2D" ;
     ns1:workPresented :Movie_GODZILLA_VS._KONG .
 
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_LOS_NUEVOS_MUTANTES a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+:ScreeningEvent_Cinépolis_Maipú_CLASSIC_2D_MORTAL_KOMBAT a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:ScreeningEvent ;
     ns1:inLanguage "ESPAÑOL" ;
-    ns1:startTime "20:45" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_LOS_NUEVOS_MUTANTES .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_MORTAL_KOMBAT a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "ESPAÑOL" ;
-    ns1:startTime "20:40" ;
+    ns1:startTime "15:30",
+        "16:00",
+        "17:45",
+        "18:15",
+        "20:15",
+        "20:45" ;
     ns1:videoFormat "CLASSIC 2D" ;
     ns1:workPresented :Movie_MORTAL_KOMBAT .
 
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_NOMADLAND a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "SUBTITULADO" ;
-    ns1:startTime "17:40" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_NOMADLAND .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_TOM_Y_JERRY a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "ESPAÑOL" ;
-    ns1:startTime "14:45",
-        "15:20" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_TOM_Y_JERRY .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Mendoza_VIOLET_EVERGARDEN a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "SUBTITULADO" ;
-    ns1:startTime "17:00" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_VIOLET_EVERGARDEN .
-
-<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_100%_LOBO> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "ESPAÑOL" ;
-    ns1:startTime "16:45" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Movie_100%_LOBO> .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_ATAKAN:_RELIQUIA_DIABÓLICA a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "ESPAÑOL" ;
-    ns1:startTime "22:40" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_ATAKAN:_RELIQUIA_DIABÓLICA .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_EL_SEÑOR_DE_LOS_ANILLOS:_EL_RETORNO_DEL_REY a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "SUBTITULADO" ;
-    ns1:startTime "18:15" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_EL_RETORNO_DEL_REY .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "SUBTITULADO" ;
-    ns1:startTime "18:15" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "SUBTITULADO" ;
-    ns1:startTime "18:15" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_EN_GUERRA_CON_MI_ABUELO a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "ESPAÑOL" ;
-    ns1:startTime "16:45" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_EN_GUERRA_CON_MI_ABUELO .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_GODZILLA_VS._KONG a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "ESPAÑOL" ;
-    ns1:startTime "21:45" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_GODZILLA_VS._KONG .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_LOS_NUEVOS_MUTANTES a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "ESPAÑOL" ;
-    ns1:startTime "22:30" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_LOS_NUEVOS_MUTANTES .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_MORTAL_KOMBAT a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "SUBTITULADO" ;
-    ns1:startTime "22:15" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_MORTAL_KOMBAT .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_NOMADLAND a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "SUBTITULADO" ;
-    ns1:startTime "19:30" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_NOMADLAND .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_PEQUEÑOS_SECRETOS a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "SUBTITULADO" ;
-    ns1:startTime "21:30" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_PEQUEÑOS_SECRETOS .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_TOM_Y_JERRY a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "ESPAÑOL" ;
-    ns1:startTime "16:00" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_TOM_Y_JERRY .
-
-:ScreeningEvent_CLASSIC_2D_Cinépolis_Neuquén_VIOLET_EVERGARDEN a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "SUBTITULADO" ;
-    ns1:startTime "18:00",
-        "21:30" ;
-    ns1:videoFormat "CLASSIC 2D" ;
-    ns1:workPresented :Movie_VIOLET_EVERGARDEN .
-
-<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ScreeningEvent_GC_2D_Cinépolis_Maipú_100%_LOBO> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ScreeningEvent_Cinépolis_Maipú_GC_2D_100%_LOBO> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:ScreeningEvent ;
     ns1:inLanguage "ESPAÑOL" ;
     ns1:startTime "16:00" ;
     ns1:videoFormat "GC 2D" ;
     ns1:workPresented <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Movie_100%_LOBO> .
 
-:ScreeningEvent_GC_2D_Cinépolis_Maipú_AQUELLOS_QUE_DESEAN_MI_MUERTE a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+:ScreeningEvent_Cinépolis_Maipú_GC_2D_AQUELLOS_QUE_DESEAN_MI_MUERTE a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:ScreeningEvent ;
     ns1:inLanguage "ESPAÑOL" ;
     ns1:startTime "16:10",
@@ -977,52 +742,345 @@
     ns1:videoFormat "GC 2D" ;
     ns1:workPresented :Movie_AQUELLOS_QUE_DESEAN_MI_MUERTE .
 
-:ScreeningEvent_GC_2D_Cinépolis_Maipú_EN_GUERRA_CON_MI_ABUELO a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+:ScreeningEvent_Cinépolis_Maipú_GC_2D_ATAKAN:_RELIQUIA_DIABÓLICA a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "ESPAÑOL" ;
+    ns1:startTime "21:00" ;
+    ns1:videoFormat "GC 2D" ;
+    ns1:workPresented :Movie_ATAKAN:_RELIQUIA_DIABÓLICA .
+
+:ScreeningEvent_Cinépolis_Maipú_GC_2D_DEMON_SLAYER_MUGEN_TRAIN a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "SUBTITULADO" ;
+    ns1:startTime "17:50",
+        "20:40" ;
+    ns1:videoFormat "GC 2D" ;
+    ns1:workPresented :Movie_DEMON_SLAYER_MUGEN_TRAIN .
+
+:ScreeningEvent_Cinépolis_Maipú_GC_2D_EN_GUERRA_CON_MI_ABUELO a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:ScreeningEvent ;
     ns1:inLanguage "ESPAÑOL" ;
     ns1:startTime "15:40" ;
     ns1:videoFormat "GC 2D" ;
     ns1:workPresented :Movie_EN_GUERRA_CON_MI_ABUELO .
 
-:ScreeningEvent_GC_2D_Cinépolis_Maipú_ETERNOS_COMPAÑEROS a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+:ScreeningEvent_Cinépolis_Maipú_GC_2D_ETERNOS_COMPAÑEROS a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:ScreeningEvent ;
     ns1:inLanguage "ESPAÑOL" ;
     ns1:startTime "17:30" ;
     ns1:videoFormat "GC 2D" ;
     ns1:workPresented :Movie_ETERNOS_COMPAÑEROS .
 
-:ScreeningEvent_GC_2D_Cinépolis_Maipú_VIOLET_EVERGARDEN a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+:ScreeningEvent_Cinépolis_Maipú_GC_2D_GODZILLA_VS._KONG a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "ESPAÑOL" ;
+    ns1:startTime "18:20" ;
+    ns1:videoFormat "GC 2D" ;
+    ns1:workPresented :Movie_GODZILLA_VS._KONG .
+
+:ScreeningEvent_Cinépolis_Maipú_GC_2D_VIOLET_EVERGARDEN a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:ScreeningEvent ;
     ns1:inLanguage "SUBTITULADO" ;
     ns1:startTime "20:00" ;
     ns1:videoFormat "GC 2D" ;
     ns1:workPresented :Movie_VIOLET_EVERGARDEN .
 
-:ScreeningEvent_MS_2D_Cinépolis_Neuquén_EL_SEÑOR_DE_LOS_ANILLOS:_EL_RETORNO_DEL_REY a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+:ScreeningEvent_Cinépolis_Mendoza_4D_2D_MORTAL_KOMBAT a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "ESPAÑOL" ;
+    ns1:startTime "14:50",
+        "17:30",
+        "20:10" ;
+    ns1:videoFormat "4D 2D" ;
+    ns1:workPresented :Movie_MORTAL_KOMBAT .
+
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_100%_LOBO> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "ESPAÑOL" ;
+    ns1:startTime "15:30" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Movie_100%_LOBO> .
+
+:ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_AQUELLOS_QUE_DESEAN_MI_MUERTE a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "ESPAÑOL" ;
+    ns1:startTime "17:15",
+        "20:30" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_AQUELLOS_QUE_DESEAN_MI_MUERTE .
+
+:ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_ATAKAN:_RELIQUIA_DIABÓLICA a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "ESPAÑOL" ;
+    ns1:startTime "20:50" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_ATAKAN:_RELIQUIA_DIABÓLICA .
+
+:ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_BIGLI a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "ESPAÑOL" ;
+    ns1:startTime "18:10" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_BIGLI .
+
+:ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_DEMON_SLAYER_MUGEN_TRAIN a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "SUBTITULADO" ;
+    ns1:startTime "17:00",
+        "20:20" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_DEMON_SLAYER_MUGEN_TRAIN .
+
+:ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_EL_RETORNO_DEL_REY a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "SUBTITULADO" ;
+    ns1:startTime "15:00",
+        "19:10" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_EL_RETORNO_DEL_REY .
+
+:ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "SUBTITULADO" ;
+    ns1:startTime "15:45",
+        "19:30" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES .
+
+:ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "SUBTITULADO" ;
+    ns1:startTime "15:40",
+        "19:30" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO .
+
+:ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_EN_GUERRA_CON_MI_ABUELO a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "ESPAÑOL" ;
+    ns1:startTime "16:00",
+        "18:20" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_EN_GUERRA_CON_MI_ABUELO .
+
+:ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_ETERNOS_COMPAÑEROS a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "ESPAÑOL" ;
+    ns1:startTime "18:15" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_ETERNOS_COMPAÑEROS .
+
+:ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_GODZILLA_VS._KONG a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "ESPAÑOL" ;
+    ns1:startTime "14:20",
+        "17:10",
+        "17:50",
+        "19:50",
+        "20:30" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_GODZILLA_VS._KONG .
+
+:ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_LOS_NUEVOS_MUTANTES a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "ESPAÑOL" ;
+    ns1:startTime "20:45" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_LOS_NUEVOS_MUTANTES .
+
+:ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_MORTAL_KOMBAT a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "ESPAÑOL" ;
+    ns1:startTime "14:15",
+        "15:15",
+        "18:00",
+        "19:40",
+        "20:40" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_MORTAL_KOMBAT .
+
+:ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_NOMADLAND a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "SUBTITULADO" ;
+    ns1:startTime "17:40" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_NOMADLAND .
+
+:ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_PEQUEÑOS_SECRETOS a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "SUBTITULADO" ;
+    ns1:startTime "17:50" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_PEQUEÑOS_SECRETOS .
+
+:ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_TOM_Y_JERRY a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "ESPAÑOL" ;
+    ns1:startTime "14:45",
+        "15:20" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_TOM_Y_JERRY .
+
+:ScreeningEvent_Cinépolis_Mendoza_CLASSIC_2D_VIOLET_EVERGARDEN a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "SUBTITULADO" ;
+    ns1:startTime "17:00" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_VIOLET_EVERGARDEN .
+
+:ScreeningEvent_Cinépolis_Neuquén_4D_2D_GODZILLA_VS._KONG a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "ESPAÑOL" ;
+    ns1:startTime "19:15" ;
+    ns1:videoFormat "4D 2D" ;
+    ns1:workPresented :Movie_GODZILLA_VS._KONG .
+
+:ScreeningEvent_Cinépolis_Neuquén_4D_2D_MORTAL_KOMBAT a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "ESPAÑOL" ;
+    ns1:startTime "16:15",
+        "22:15" ;
+    ns1:videoFormat "4D 2D" ;
+    ns1:workPresented :Movie_MORTAL_KOMBAT .
+
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_100%_LOBO> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "ESPAÑOL" ;
+    ns1:startTime "16:45" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Movie_100%_LOBO> .
+
+:ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_ATAKAN:_RELIQUIA_DIABÓLICA a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "ESPAÑOL" ;
+    ns1:startTime "22:40" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_ATAKAN:_RELIQUIA_DIABÓLICA .
+
+:ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_DEMON_SLAYER_MUGEN_TRAIN a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "SUBTITULADO" ;
+    ns1:startTime "16:00",
+        "19:15" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_DEMON_SLAYER_MUGEN_TRAIN .
+
+:ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_EL_RETORNO_DEL_REY a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "SUBTITULADO" ;
+    ns1:startTime "18:15" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_EL_RETORNO_DEL_REY .
+
+:ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "SUBTITULADO" ;
+    ns1:startTime "18:15" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES .
+
+:ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "SUBTITULADO" ;
+    ns1:startTime "18:15" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO .
+
+:ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_EN_GUERRA_CON_MI_ABUELO a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "ESPAÑOL" ;
+    ns1:startTime "16:45" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_EN_GUERRA_CON_MI_ABUELO .
+
+:ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_GODZILLA_VS._KONG a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "ESPAÑOL" ;
+    ns1:startTime "18:45",
+        "21:45" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_GODZILLA_VS._KONG .
+
+:ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_LOS_NUEVOS_MUTANTES a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "ESPAÑOL" ;
+    ns1:startTime "22:30" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_LOS_NUEVOS_MUTANTES .
+
+:ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_MORTAL_KOMBAT a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "ESPAÑOL",
+        "SUBTITULADO" ;
+    ns1:startTime "16:30",
+        "18:30",
+        "22:15" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_MORTAL_KOMBAT .
+
+:ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_NOMADLAND a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "SUBTITULADO" ;
+    ns1:startTime "19:30" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_NOMADLAND .
+
+:ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_PEQUEÑOS_SECRETOS a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "SUBTITULADO" ;
+    ns1:startTime "19:30",
+        "21:30" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_PEQUEÑOS_SECRETOS .
+
+:ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_TOM_Y_JERRY a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "ESPAÑOL" ;
+    ns1:startTime "16:00" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_TOM_Y_JERRY .
+
+:ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_VIOLET_EVERGARDEN a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "SUBTITULADO" ;
+    ns1:startTime "18:00",
+        "21:30" ;
+    ns1:videoFormat "CLASSIC 2D" ;
+    ns1:workPresented :Movie_VIOLET_EVERGARDEN .
+
+:ScreeningEvent_Cinépolis_Neuquén_MS_2D_EL_SEÑOR_DE_LOS_ANILLOS:_EL_RETORNO_DEL_REY a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:ScreeningEvent ;
     ns1:inLanguage "SUBTITULADO" ;
     ns1:startTime "21:00" ;
     ns1:videoFormat "MS 2D" ;
     ns1:workPresented :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_EL_RETORNO_DEL_REY .
 
-:ScreeningEvent_MS_2D_Cinépolis_Neuquén_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+:ScreeningEvent_Cinépolis_Neuquén_MS_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:ScreeningEvent ;
     ns1:inLanguage "SUBTITULADO" ;
     ns1:startTime "21:00" ;
     ns1:videoFormat "MS 2D" ;
     ns1:workPresented :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES .
 
-:ScreeningEvent_MS_2D_Cinépolis_Neuquén_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+:ScreeningEvent_Cinépolis_Neuquén_MS_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:ScreeningEvent ;
     ns1:inLanguage "SUBTITULADO" ;
     ns1:startTime "21:00" ;
     ns1:videoFormat "MS 2D" ;
     ns1:workPresented :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO .
 
-:ScreeningEvent_MS_2D_Cinépolis_Neuquén_MORTAL_KOMBAT a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+:ScreeningEvent_Cinépolis_Neuquén_MS_2D_GODZILLA_VS._KONG a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:ScreeningEvent ;
     ns1:inLanguage "ESPAÑOL" ;
-    ns1:startTime "22:00" ;
+    ns1:startTime "15:45" ;
+    ns1:videoFormat "MS 2D" ;
+    ns1:workPresented :Movie_GODZILLA_VS._KONG .
+
+:ScreeningEvent_Cinépolis_Neuquén_MS_2D_MORTAL_KOMBAT a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:ScreeningEvent ;
+    ns1:inLanguage "ESPAÑOL" ;
+    ns1:startTime "19:00",
+        "22:00" ;
     ns1:videoFormat "MS 2D" ;
     ns1:workPresented :Movie_MORTAL_KOMBAT .
 
@@ -1059,23 +1117,6 @@
         "Those who wish me dead" ;
     ns1:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Organization_Warner_Bros.> .
 
-:Movie_ATAKAN:_RELIQUIA_DIABÓLICA a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Movie ;
-    ns1:actor :Person_Anna_Serpeneva,
-        :Person_Denis_Lukichev,
-        :Person_Kseniya_Plyusnina,
-        :Person_Polina_Strogaya,
-        :Person_Vladimir_Kuznetsov ;
-    ns1:contentRating "P-13" ;
-    ns1:description "Atakan es una roca sangrienta, un enorme bloque de granito en el que los paganos han sacrificado humanos durante siglos. Un día, un grupo de estudiantes de Historia liderados por un profesor descienden a las catacumbas de San Petersburgo para hallar este monolito. Sin embargo, con cada paso que dan hacia las profundidades, la situación se descontrola un poco más. La muerte les aguarda. ¿Podrán sobrevivir?" ;
-    ns1:director :Person_Alexandr_Grishin ;
-    ns1:duration 80 ;
-    ns1:genre "Terror" ;
-    ns1:locationCreated :Country_Rusia ;
-    ns1:name "ATAKAN: RELIQUIA DIABÓLICA",
-        "Atakan" ;
-    ns1:publisher :Organization_Digicine .
-
 :Movie_ETERNOS_COMPAÑEROS a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:Movie ;
     ns1:actor :Person_Gigi_Leung,
@@ -1089,31 +1130,6 @@
     ns1:name "ETERNOS COMPAÑEROS",
         "Xiao Q" ;
     ns1:publisher :Organization_Digicine .
-
-:Movie_GODZILLA_VS._KONG a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Movie ;
-    ns1:actor :Person_Alexander_Skarsgård,
-        :Person_Brian_Tyree_Henry,
-        :Person_Demián_Bichir,
-        :Person_Eiza_González,
-        :Person_Jessica_Henwick,
-        :Person_Julian_Dennison,
-        :Person_Kyle_Chandler,
-        :Person_Millie_Bobby_Brown,
-        :Person_Rebecca_Hall,
-        :Person_Shun_Oguri ;
-    ns1:contentRating "P-13" ;
-    ns1:description "Godzilla y Kong, dos de las fuerzas más poderosas de un planeta habitado por todo tipo de aterradoras criaturas, se enfrentan en un espectacular combate que sacude los cimientos de la humanidad. Monarch (Kyle Chandler) se embarca en una misión de alto riesgo y pone rumbo hacia territorios inexplorados para descubrir los orígenes de estos dos titanes, en un último esfuerzo por tratar de salvar a dos bestias que parecen tener las horas contadas sobre la faz de la Tierra." ;
-    ns1:director :Person_Adam_Wingard ;
-    ns1:duration 113 ;
-    ns1:genre "Acción",
-        "Aventura",
-        "Ciencia Ficción",
-        "Thriller" ;
-    ns1:locationCreated :Country_Estados_Unidos ;
-    ns1:name "GODZILLA VS. KONG",
-        "Godzilla vs. Kong" ;
-    ns1:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Organization_Warner_Bros.> .
 
 :Movie_LOS_NUEVOS_MUTANTES a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:Movie ;
@@ -1162,6 +1178,29 @@
     ns1:name "NOMADLAND",
         "Nomadland" ;
     ns1:publisher :Organization_Disney_Fox .
+
+:Movie_PEQUEÑOS_SECRETOS a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:Movie ;
+    ns1:actor :Person_Chris_Bauer,
+        :Person_Denzel_Washington,
+        :Person_Glenn_Morshower,
+        :Person_Isabel_Arraiza,
+        :Person_Jared_Leto,
+        :Person_Joris_Jarsky,
+        :Person_Michael_Hyatt,
+        :Person_Natalie_Morales,
+        :Person_Rami_Malek,
+        :Person_Terry_Kinney ;
+    ns1:contentRating "P13R" ;
+    ns1:description "Deke, un ayudante del sheriff del condado de Kern quemado, CA se une a Baxter, un detective experto en LASD, para atrapar a un asesino en serie. El olfato de Deke para las \"pequeñas cosas\" resulta inquietantemente preciso, pero su voluntad de eludir las reglas envuelve a Baxter en un dilema desgarrador. Mientras tanto, Deke debe luchar con un oscuro secreto de su pasado." ;
+    ns1:director :Person_John_Lee_Hancock ;
+    ns1:duration 128 ;
+    ns1:genre "Crimen",
+        "Thriller" ;
+    ns1:locationCreated :Country_Estados_Unidos ;
+    ns1:name "PEQUEÑOS SECRETOS",
+        "The little things" ;
+    ns1:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Organization_Warner_Bros.> .
 
 :Movie_TOM_Y_JERRY a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:Movie ;
@@ -1229,6 +1268,49 @@
     ns1:name "100% LOBO",
         "100% Wolf" ;
     ns1:publisher :Organization_BF_Paris .
+
+:Movie_ATAKAN:_RELIQUIA_DIABÓLICA a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:Movie ;
+    ns1:actor :Person_Anna_Serpeneva,
+        :Person_Denis_Lukichev,
+        :Person_Kseniya_Plyusnina,
+        :Person_Polina_Strogaya,
+        :Person_Vladimir_Kuznetsov ;
+    ns1:contentRating "P-13" ;
+    ns1:description "Atakan es una roca sangrienta, un enorme bloque de granito en el que los paganos han sacrificado humanos durante siglos. Un día, un grupo de estudiantes de Historia liderados por un profesor descienden a las catacumbas de San Petersburgo para hallar este monolito. Sin embargo, con cada paso que dan hacia las profundidades, la situación se descontrola un poco más. La muerte les aguarda. ¿Podrán sobrevivir?" ;
+    ns1:director :Person_Alexandr_Grishin ;
+    ns1:duration 80 ;
+    ns1:genre "Terror" ;
+    ns1:locationCreated :Country_Rusia ;
+    ns1:name "ATAKAN: RELIQUIA DIABÓLICA",
+        "Atakan" ;
+    ns1:publisher :Organization_Digicine .
+
+:Movie_DEMON_SLAYER_MUGEN_TRAIN a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:Movie ;
+    ns1:actor :Person_Akari_Kito,
+        :Person_Hiro_Shimono,
+        :Person_Katsuyuki_Konishi,
+        :Person_Kenichi_Suzumura,
+        :Person_Natsuki_Hanae,
+        :Person_Saori_Hayami,
+        :Person_Satoshi_Hino,
+        :Person_Takahiro_Sakurai,
+        :Person_Tomokazu_Seki,
+        :Person_Yoshitsugu_Matsuoka ;
+    ns1:contentRating "P-13" ;
+    ns1:description "Demon Slayer: Mugen Train cuenta la historia de Tanjiro Kamado, Kyoujurou Rengoku y sus amigos de la Compañía de Cazadores de Demonios (Demon Slayer Corps). Juntos, se unen con uno de los mejores espadachines de la compañía, Kyojuro Rengoku, para investigar una misteriosa serie de desapariciones que han ocurrido dentro del “Tren Infinito”. Poco saben que Enmu, uno de los miembros de las Doce Lunas Demoníacas, también está a bordo y les ha preparado una trampa." ;
+    ns1:director :Person_Haruo_Sotozaki ;
+    ns1:duration 120 ;
+    ns1:genre "Acción",
+        "Animación",
+        "Aventura",
+        "Drama",
+        "Fantasía" ;
+    ns1:locationCreated :Country_Japón ;
+    ns1:name "DEMON SLAYER MUGEN TRAIN",
+        "Demon Slayer Mugen Train" ;
+    ns1:publisher :Organization_Cinépolis .
 
 :Movie_EN_GUERRA_CON_MI_ABUELO a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         ns1:Movie ;
@@ -1387,6 +1469,31 @@
         :Country_Nueva_Zelanda ;
     ns1:name "EL SEÑOR DE LOS ANILLOS: LA COMUNIDAD DEL ANILLO",
         "The Lord of the Rings" ;
+    ns1:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Organization_Warner_Bros.> .
+
+:Movie_GODZILLA_VS._KONG a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        ns1:Movie ;
+    ns1:actor :Person_Alexander_Skarsgård,
+        :Person_Brian_Tyree_Henry,
+        :Person_Demián_Bichir,
+        :Person_Eiza_González,
+        :Person_Jessica_Henwick,
+        :Person_Julian_Dennison,
+        :Person_Kyle_Chandler,
+        :Person_Millie_Bobby_Brown,
+        :Person_Rebecca_Hall,
+        :Person_Shun_Oguri ;
+    ns1:contentRating "P-13" ;
+    ns1:description "Godzilla y Kong, dos de las fuerzas más poderosas de un planeta habitado por todo tipo de aterradoras criaturas, se enfrentan en un espectacular combate que sacude los cimientos de la humanidad. Monarch (Kyle Chandler) se embarca en una misión de alto riesgo y pone rumbo hacia territorios inexplorados para descubrir los orígenes de estos dos titanes, en un último esfuerzo por tratar de salvar a dos bestias que parecen tener las horas contadas sobre la faz de la Tierra." ;
+    ns1:director :Person_Adam_Wingard ;
+    ns1:duration 113 ;
+    ns1:genre "Acción",
+        "Aventura",
+        "Ciencia Ficción",
+        "Thriller" ;
+    ns1:locationCreated :Country_Estados_Unidos ;
+    ns1:name "GODZILLA VS. KONG",
+        "Godzilla vs. Kong" ;
     ns1:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Organization_Warner_Bros.> .
 
 :Movie_MORTAL_KOMBAT a <http://www.w3.org/2002/07/owl#NamedIndividual>,
