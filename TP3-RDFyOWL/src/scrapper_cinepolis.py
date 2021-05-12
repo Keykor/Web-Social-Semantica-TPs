@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.expected_conditions import visibility_of, element_to_be_clickable
 from selenium.webdriver.common.by import By
-from rdflib import Namespace, Graph, BNode, Literal, URIRef
+from rdflib import Namespace, Graph, Literal
 from rdflib.namespace import OWL, RDF
 
 SCHEMA = Namespace("https://schema.org/")
@@ -34,8 +34,6 @@ def main():
     driver.get(url)
     movies = driver.find_elements_by_css_selector('.movie-thumb.d-flex.flex-column.lg')
     links = []
-    movie_list = []
-    cines_list = []
 
     #guarda los links de las películas en una lista
     for movie in movies:
@@ -57,7 +55,6 @@ def main():
 
         description_literal = Literal(driver.find_element_by_xpath("//*[@id='sinopsis']").text)
         GRAPH.add((MOVIE_URI, SCHEMA['description'], description_literal))
-        
 
         #clickea y espera para que aparezca la info técnica
         movie_info = driver.find_element_by_xpath("//*[@id='tecnicos']")
