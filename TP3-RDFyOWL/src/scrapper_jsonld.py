@@ -1,23 +1,56 @@
+import rdflib
 import requests
 import bs4
 import json
 import os
 import json
-from rdflib import Namespace, Graph, BNode, Literal, URIRef
-from rdflib.namespace import OWL, RDF
+from rdflib import Namespace, Graph, Literal
+from rdflib.namespace import OWL, RDF, XSD, RDFS
+from datetime import datetime
 
 SCHEMA = Namespace("https://schema.org/")
 MY_ONTOLOGY = Namespace("https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#")
 GRAPH = Graph()
 GRAPH.namespace_manager.bind('', MY_ONTOLOGY)
+GRAPH.namespace_manager.bind('sch', SCHEMA)
 COUNTER = {}
 MOVIE_NAME = ""
 ACTUAL_PAGE = ""
 
-def transform_to_triplets(objeto):
-    if type(objeto) is not dict:
-        return Literal(objeto)
+def datatype(tipo):
+    if tipo in ['worstRating', 'ratingValue', 'bestRating']:
+        return XSD.float
+    elif tipo in ['videoFormat', 'timeRequired', 'reviewBody', 'name', 'keywords', 'inLanguage', 'genre', 'description', 'countryOfOrigin', 'contentUrl', 'contentRating', 'character', 'category', 'datePublished', 'uploadDate']:
+        return XSD.string
+    elif tipo in ['urlTemplate', 'url', 'thumbnailUrl', 'sameAs', 'mainEntityOfPage', 'image', 'embedUrl', 'actionPlatform']:
+        return XSD.anyURL
+    elif tipo in ['startTime', 'startDate', 'dateModified', 'dateCreated', 'availabilityStarts']:
+        return XSD.dateTime
+    elif tipo in ['reviewCount', 'ratingCount', 'duration']:
+        return XSD.integer
+    else:
+        return RDFS.Literal
 
+def make_literal(value, tipo):
+    value_type = datatype(tipo)
+    if (tipo == 'duration') and ("PT" in value):
+        newValue = value.replace("PT", "")
+        newValue = newValue.replace("M", "")
+        if "H" in newValue:
+            newValue = newValue.split("H")
+            value = 60 * int(newValue[0]) + int(newValue[1])
+        else:
+            value = int(newValue)
+    elif (value_type == XSD.dateTime) and not ("T" in value):
+        if (" " in value):
+            value = datetime.strptime(value, '%Y-%m-%d %H:%M:%S')
+        else:
+            value = datetime.strptime(value, '%Y-%m-%d')
+    elif (tipo == 'ratingValue') and (type(value) is str):
+        value = value.replace(",",".")
+    return Literal(value, datatype=value_type)
+
+def transform_to_triplets(objeto):
     objeto.pop('@context', None)
     objeto.pop('@id', None)
     tipo = objeto.pop('@type', None)
@@ -43,12 +76,18 @@ def transform_to_triplets(objeto):
     GRAPH.add((nodo, RDF.type, SCHEMA[tipo]))
 
     for clave, valor in objeto.items():
-        relation = SCHEMA[clave]
-        if type(valor) is list:
-            for each in valor:
-                GRAPH.add((nodo, relation, transform_to_triplets(each)))
-        else:
-            GRAPH.add((nodo, relation, transform_to_triplets(valor)))
+        if valor:
+            if type(valor) is list:
+                for each in valor:
+                    if type(each) is dict:
+                        GRAPH.add((nodo, SCHEMA[clave], transform_to_triplets(each)))
+                    else:
+                        GRAPH.add((nodo, MY_ONTOLOGY[clave], make_literal(each, clave)))
+            else:
+                if type(valor) is dict:
+                    GRAPH.add((nodo, SCHEMA[clave], transform_to_triplets(valor)))
+                else:
+                    GRAPH.add((nodo, MY_ONTOLOGY[clave], make_literal(valor,clave)))
 
     return nodo
 
