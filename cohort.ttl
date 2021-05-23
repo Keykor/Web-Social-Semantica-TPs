@@ -6,10 +6,10 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix terms: <http://purl.org/dc/terms/> .
-@base <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl> .
+@base <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl> .
 
-<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl> rdf:type owl:Ontology ;
-                                                                                                 owl:imports sch: .
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl> rdf:type owl:Ontology ;
+                                                                                     owl:imports sch: .
 
 #################################################################
 #    Object Properties
