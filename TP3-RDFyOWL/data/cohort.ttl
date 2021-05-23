@@ -1,599 +1,299 @@
 @prefix : <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#> .
-@prefix ns1: <https://schema.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sch: <https://schema.org/> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix terms: <http://purl.org/dc/terms/> .
 @base <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl> .
 
-<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl> rdf:type owl:Ontology .
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl> rdf:type owl:Ontology ;
+                                                                                                 owl:imports sch: .
 
 #################################################################
 #    Object Properties
 #################################################################
 
 ###  https://schema.org/actor
-ns1:actor rdf:type owl:ObjectProperty ;
-          owl:equivalentProperty ns1:actors ;
-          rdfs:domain [ rdf:type owl:Class ;
-                        owl:unionOf ( ns1:Clip
-                                      ns1:Event
-                                      ns1:Movie
-                                      ns1:VideoObject
-                                    )
-                      ] ;
-          rdfs:range ns1:Person .
+sch:actor rdf:type owl:ObjectProperty ;
+          owl:equivalentProperty sch:actors .
 
 
 ###  https://schema.org/actors
-ns1:actors rdf:type owl:ObjectProperty ;
-           rdfs:domain [ rdf:type owl:Class ;
-                         owl:unionOf ( ns1:Clip
-                                       ns1:Movie
-                                       ns1:VideoObject
-                                     )
-                       ] ;
-           rdfs:range ns1:Person .
-
-
-###  https://schema.org/aggregateRating
-ns1:aggregateRating rdf:type owl:ObjectProperty ;
-                    rdfs:domain [ rdf:type owl:Class ;
-                                  owl:unionOf ( ns1:CreativeWork
-                                                ns1:Event
-                                                ns1:Offer
-                                                ns1:Organization
-                                                ns1:Place
-                                              )
-                                ] ;
-                    rdfs:range ns1:AggregateRating .
-
-
-###  https://schema.org/author
-ns1:author rdf:type owl:ObjectProperty ;
-           rdfs:domain [ rdf:type owl:Class ;
-                         owl:unionOf ( ns1:CreativeWork
-                                       ns1:Rating
-                                     )
-                       ] ;
-           rdfs:range [ rdf:type owl:Class ;
-                        owl:unionOf ( ns1:Organization
-                                      ns1:Person
-                                    )
-                      ] .
-
-
-###  https://schema.org/creator
-ns1:creator rdf:type owl:ObjectProperty ;
-            rdfs:domain ns1:CreativeWork ;
-            rdfs:range [ rdf:type owl:Class ;
-                         owl:unionOf ( ns1:Organization
-                                       ns1:Person
-                                     )
-                       ] .
-
-
-###  https://schema.org/director
-ns1:director rdf:type owl:ObjectProperty ;
-             rdfs:domain [ rdf:type owl:Class ;
-                           owl:unionOf ( ns1:Clip
-                                         ns1:Event
-                                         ns1:Movie
-                                         ns1:VideoObject
-                                       )
-                         ] ;
-             rdfs:range ns1:Person .
-
-
-###  https://schema.org/eligibleRegion
-ns1:eligibleRegion rdf:type owl:ObjectProperty ;
-                   rdfs:domain ns1:Offer ;
-                   rdfs:range ns1:Place .
-
-
-###  https://schema.org/event
-ns1:event rdf:type owl:ObjectProperty ;
-          rdfs:domain ns1:Place ;
-          rdfs:range ns1:Event .
-
-
-###  https://schema.org/expectsAcceptanceOf
-ns1:expectsAcceptanceOf rdf:type owl:ObjectProperty ;
-                        rdfs:domain ns1:ConsumeAction ;
-                        rdfs:range ns1:Offer .
-
-
-###  https://schema.org/hasPart
-ns1:hasPart rdf:type owl:ObjectProperty ;
-            rdfs:domain ns1:CreativeWork ;
-            rdfs:range ns1:CreativeWork .
-
-
-###  https://schema.org/image
-ns1:image rdf:type owl:ObjectProperty ;
-          rdfs:domain ns1:Thing ;
-          rdfs:range ns1:ImageObject .
-
-
-###  https://schema.org/inLanguage
-ns1:inLanguage rdf:type owl:ObjectProperty ;
-               rdfs:domain ns1:ScreeningEvent ,
-                           [ rdf:type owl:Class ;
-                             owl:unionOf ( ns1:CreativeWork
-                                           ns1:Event
-                                         )
-                           ] ;
-               rdfs:range ns1:Language .
-
-
-###  https://schema.org/itemReviewed
-ns1:itemReviewed rdf:type owl:ObjectProperty ;
-                 rdfs:domain [ rdf:type owl:Class ;
-                               owl:unionOf ( ns1:AggregateRating
-                                             ns1:Review
-                                           )
-                             ] ;
-                 rdfs:range ns1:Thing .
-
-
-###  https://schema.org/location
-ns1:location rdf:type owl:ObjectProperty ;
-             rdfs:domain [ rdf:type owl:Class ;
-                           owl:unionOf ( ns1:Action
-                                         ns1:Event
-                                         ns1:Organization
-                                       )
-                         ] ;
-             rdfs:range ns1:Place .
-
-
-###  https://schema.org/locationCreated
-ns1:locationCreated rdf:type owl:ObjectProperty ;
-                    rdfs:domain ns1:CreativeWork ;
-                    rdfs:range ns1:Place .
-
-
-###  https://schema.org/potentialAction
-ns1:potentialAction rdf:type owl:ObjectProperty ;
-                    rdfs:domain ns1:Thing ;
-                    rdfs:range ns1:Action .
-
-
-###  https://schema.org/productionCompany
-ns1:productionCompany rdf:type owl:ObjectProperty ;
-                      rdfs:domain [ rdf:type owl:Class ;
-                                    owl:unionOf ( ns1:MediaObject
-                                                  ns1:Movie
-                                                )
-                                  ] ;
-                      rdfs:range ns1:Organization .
-
-
-###  https://schema.org/publisher
-ns1:publisher rdf:type owl:ObjectProperty ;
-              rdfs:domain ns1:CreativeWork ;
-              rdfs:range [ rdf:type owl:Class ;
-                           owl:unionOf ( ns1:Organization
-                                         ns1:Person
-                                       )
-                         ] .
-
-
-###  https://schema.org/releasedEvent
-ns1:releasedEvent rdf:type owl:ObjectProperty ;
-                  rdfs:domain ns1:CreativeWork ;
-                  rdfs:range ns1:PublicationEvent .
-
-
-###  https://schema.org/review
-ns1:review rdf:type owl:ObjectProperty ;
-           rdfs:domain [ rdf:type owl:Class ;
-                         owl:unionOf ( ns1:CreativeWork
-                                       ns1:Event
-                                       ns1:Offer
-                                       ns1:Organization
-                                       ns1:Place
-                                     )
-                       ] ;
-           rdfs:range ns1:Review .
-
-
-###  https://schema.org/reviewRating
-ns1:reviewRating rdf:type owl:ObjectProperty ;
-                 rdfs:domain ns1:Review ;
-                 rdfs:range ns1:Rating .
-
-
-###  https://schema.org/target
-ns1:target rdf:type owl:ObjectProperty ;
-           rdfs:domain ns1:Action ;
-           rdfs:range ns1:EntryPoint .
-
-
-###  https://schema.org/thumbnail
-ns1:thumbnail rdf:type owl:ObjectProperty ;
-              rdfs:domain [ rdf:type owl:Class ;
-                            owl:unionOf ( ns1:ImageObject
-                                          ns1:VideoObject
-                                        )
-                          ] ;
-              rdfs:range ns1:ImageObject .
-
-
-###  https://schema.org/trailer
-ns1:trailer rdf:type owl:ObjectProperty ;
-            rdfs:domain ns1:Movie ;
-            rdfs:range ns1:VideoObject .
-
-
-###  https://schema.org/workPresented
-ns1:workPresented rdf:type owl:ObjectProperty ;
-                  rdfs:domain ns1:MovieTheater ;
-                  rdfs:range ns1:ScreeningEvent .
+sch:actors rdf:type owl:ObjectProperty .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  https://schema.org/actionPlatform
-ns1:actionPlatform rdf:type owl:DatatypeProperty ;
-                   rdfs:domain ns1:EntryPoint ;
-                   rdfs:range xsd:anyURI .
-
-
-###  https://schema.org/availabilityStarts
-ns1:availabilityStarts rdf:type owl:DatatypeProperty ;
-                       rdfs:domain ns1:Offer ;
-                       rdfs:range xsd:dateTime .
-
-
-###  https://schema.org/bestRating
-ns1:bestRating rdf:type owl:DatatypeProperty ;
-               rdfs:domain ns1:Rating ;
-               rdfs:range xsd:float .
-
-
-###  https://schema.org/category
-ns1:category rdf:type owl:DatatypeProperty ;
-             rdfs:domain ns1:Offer ;
-             rdfs:range xsd:string .
-
-
-###  https://schema.org/character
-ns1:character rdf:type owl:DatatypeProperty ;
-              rdfs:domain ns1:CreativeWork ;
-              rdfs:range xsd:string .
-
-
-###  https://schema.org/contentRating
-ns1:contentRating rdf:type owl:DatatypeProperty ;
-                  rdfs:domain ns1:CreativeWork ;
-                  rdfs:range xsd:string .
-
-
-###  https://schema.org/contentUrl
-ns1:contentUrl rdf:type owl:DatatypeProperty ;
-               rdfs:domain ns1:MediaObject ;
-               rdfs:range xsd:string .
-
-
-###  https://schema.org/countryOfOrigin
-ns1:countryOfOrigin rdf:type owl:DatatypeProperty ;
-                    rdfs:domain ns1:Movie ;
-                    rdfs:range xsd:string .
-
-
-###  https://schema.org/dateCreated
-ns1:dateCreated rdf:type owl:DatatypeProperty ;
-                rdfs:domain ns1:CreativeWork ;
-                rdfs:range xsd:dateTime .
-
-
-###  https://schema.org/dateModified
-ns1:dateModified rdf:type owl:DatatypeProperty ;
-                 rdfs:domain ns1:CreativeWork ;
-                 rdfs:range xsd:dateTime .
-
-
-###  https://schema.org/datePublished
-ns1:datePublished rdf:type owl:DatatypeProperty ;
-                  rdfs:domain ns1:CreativeWork ;
-                  rdfs:range xsd:dateTime .
-
-
-###  https://schema.org/description
-ns1:description rdf:type owl:DatatypeProperty ;
-                rdfs:domain ns1:Thing ;
-                rdfs:range xsd:string .
-
-
-###  https://schema.org/duration
-ns1:duration rdf:type owl:DatatypeProperty ;
-             rdfs:domain [ rdf:type owl:Class ;
-                           owl:unionOf ( ns1:Event
-                                         ns1:MediaObject
-                                         ns1:Movie
-                                         ns1:Schedule
-                                       )
-                         ] ;
-             rdfs:range xsd:dateTime .
-
-
-###  https://schema.org/embedUrl
-ns1:embedUrl rdf:type owl:DatatypeProperty ;
-             rdfs:domain ns1:MediaObject ;
-             rdfs:range xsd:anyURI .
-
-
-###  https://schema.org/genre
-ns1:genre rdf:type owl:DatatypeProperty ;
-          rdfs:domain ns1:CreativeWork ;
-          rdfs:range xsd:string .
-
-
-###  https://schema.org/image
-ns1:image rdf:type owl:DatatypeProperty ;
-          rdfs:range xsd:anyURI .
-
-
-###  https://schema.org/inLanguage
-ns1:inLanguage rdf:type owl:DatatypeProperty ;
-               rdfs:range xsd:string .
-
-
-###  https://schema.org/keywords
-ns1:keywords rdf:type owl:DatatypeProperty ;
-             rdfs:domain ns1:CreativeWork ;
-             rdfs:range xsd:string .
-
-
-###  https://schema.org/mainEntityOfPage
-ns1:mainEntityOfPage rdf:type owl:DatatypeProperty ;
-                     rdfs:domain ns1:Thing ;
-                     rdfs:range xsd:anyURI .
-
-
-###  https://schema.org/name
-ns1:name rdf:type owl:DatatypeProperty ;
-         rdfs:domain ns1:Thing ;
-         rdfs:range xsd:string .
-
-
-###  https://schema.org/ratingCount
-ns1:ratingCount rdf:type owl:DatatypeProperty ;
-                rdfs:domain ns1:AggregateRating ;
-                rdfs:range xsd:integer .
-
-
-###  https://schema.org/ratingValue
-ns1:ratingValue rdf:type owl:DatatypeProperty ;
-                rdfs:domain ns1:Rating ;
-                rdfs:range xsd:float .
-
-
-###  https://schema.org/reviewBody
-ns1:reviewBody rdf:type owl:DatatypeProperty ;
-               rdfs:domain ns1:Review ;
-               rdfs:range xsd:string .
-
-
-###  https://schema.org/reviewCount
-ns1:reviewCount rdf:type owl:DatatypeProperty ;
-                rdfs:domain ns1:AggregateRating ;
-                rdfs:range xsd:int .
-
-
-###  https://schema.org/sameAs
-ns1:sameAs rdf:type owl:DatatypeProperty ;
-           rdfs:domain ns1:Thing ;
-           rdfs:range xsd:anyURI .
-
-
-###  https://schema.org/startDate
-ns1:startDate rdf:type owl:DatatypeProperty ;
-              rdfs:domain [ rdf:type owl:Class ;
-                            owl:unionOf ( ns1:Event
-                                          ns1:Schedule
-                                        )
-                          ] ;
-              rdfs:range xsd:dateTime .
-
-
-###  https://schema.org/startTime
-ns1:startTime rdf:type owl:DatatypeProperty ;
-              rdfs:domain [ rdf:type owl:Class ;
-                            owl:unionOf ( ns1:Schedule
-                                          ns1:ScreeningEvent
-                                        )
-                          ] ;
-              rdfs:range xsd:dateTime .
-
-
-###  https://schema.org/thumbnailUrl
-ns1:thumbnailUrl rdf:type owl:DatatypeProperty ;
-                 rdfs:domain ns1:CreativeWork ;
-                 rdfs:range xsd:anyURI .
-
-
-###  https://schema.org/timeRequired
-ns1:timeRequired rdf:type owl:DatatypeProperty ;
-                 rdfs:domain ns1:CreativeWork ;
-                 rdfs:range xsd:string .
-
-
-###  https://schema.org/uploadDate
-ns1:uploadDate rdf:type owl:DatatypeProperty ;
-               rdfs:domain ns1:MediaObject ;
-               rdfs:range xsd:dateTime .
-
-
-###  https://schema.org/url
-ns1:url rdf:type owl:DatatypeProperty ;
-        rdfs:domain ns1:Thing ;
-        rdfs:range xsd:anyURI .
-
-
-###  https://schema.org/urlTemplate
-ns1:urlTemplate rdf:type owl:DatatypeProperty ;
-                rdfs:domain ns1:EntryPoint ;
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#actionPlatform
+:actionPlatform rdf:type owl:DatatypeProperty ;
+                rdfs:domain sch:EntryPoint ;
                 rdfs:range xsd:anyURI .
 
 
-###  https://schema.org/videoFormat
-ns1:videoFormat rdf:type owl:DatatypeProperty ;
-                rdfs:domain ns1:ScreeningEvent ;
-                rdfs:range xsd:string .
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#availabilityStarts
+:availabilityStarts rdf:type owl:DatatypeProperty ;
+                    rdfs:domain sch:Offer ;
+                    rdfs:range xsd:dateTime .
 
 
-###  https://schema.org/worstRating
-ns1:worstRating rdf:type owl:DatatypeProperty ;
-                rdfs:domain ns1:Rating ;
-                rdfs:range xsd:float .
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#bestRating
+:bestRating rdf:type owl:DatatypeProperty ;
+            rdfs:domain sch:Rating ;
+            rdfs:range xsd:float .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#category
+:category rdf:type owl:DatatypeProperty ;
+          rdfs:domain sch:Offer ;
+          rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#character
+:character rdf:type owl:DatatypeProperty ;
+           rdfs:domain sch:CreativeWork ;
+           rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#contentRating
+:contentRating rdf:type owl:DatatypeProperty ;
+               rdfs:domain sch:CreativeWork ;
+               rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#contentUrl
+:contentUrl rdf:type owl:DatatypeProperty ;
+            rdfs:domain sch:MediaObject ;
+            rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#countryOfOrigin
+:countryOfOrigin rdf:type owl:DatatypeProperty ;
+                 rdfs:domain sch:Movie ;
+                 rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#dateCreated
+:dateCreated rdf:type owl:DatatypeProperty ;
+             rdfs:domain sch:CreativeWork ;
+             rdfs:range xsd:dateTime .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#dateModified
+:dateModified rdf:type owl:DatatypeProperty ;
+              rdfs:domain sch:CreativeWork ;
+              rdfs:range xsd:dateTime .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#datePublished
+:datePublished rdf:type owl:DatatypeProperty ;
+               rdfs:domain sch:CreativeWork ;
+               rdfs:range xsd:dateTime .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:domain sch:Thing ;
+             rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#duration
+:duration rdf:type owl:DatatypeProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( sch:Event
+                                      sch:MediaObject
+                                      sch:Movie
+                                      sch:Schedule
+                                    )
+                      ] ;
+          rdfs:range xsd:integer .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#embedUrl
+:embedUrl rdf:type owl:DatatypeProperty ;
+          rdfs:domain sch:MediaObject ;
+          rdfs:range xsd:anyURI .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#genre
+:genre rdf:type owl:DatatypeProperty ;
+       rdfs:domain sch:CreativeWork ;
+       rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#image
+:image rdf:type owl:DatatypeProperty ;
+       rdfs:range xsd:anyURI .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#inLanguage
+:inLanguage rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#keywords
+:keywords rdf:type owl:DatatypeProperty ;
+          rdfs:domain sch:CreativeWork ;
+          rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#mainEntityOfPage
+:mainEntityOfPage rdf:type owl:DatatypeProperty ;
+                  rdfs:domain sch:Thing ;
+                  rdfs:range xsd:anyURI .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain sch:Thing ;
+      rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ratingCount
+:ratingCount rdf:type owl:DatatypeProperty ;
+             rdfs:domain sch:AggregateRating ;
+             rdfs:range xsd:integer .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ratingValue
+:ratingValue rdf:type owl:DatatypeProperty ;
+             rdfs:domain sch:Rating ;
+             rdfs:range xsd:float .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#reviewBody
+:reviewBody rdf:type owl:DatatypeProperty ;
+            rdfs:domain sch:Review ;
+            rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#reviewCount
+:reviewCount rdf:type owl:DatatypeProperty ;
+             rdfs:domain sch:AggregateRating ;
+             rdfs:range xsd:int .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#sameAs
+:sameAs rdf:type owl:DatatypeProperty ;
+        rdfs:domain sch:Thing ;
+        rdfs:range xsd:anyURI .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#startDate
+:startDate rdf:type owl:DatatypeProperty ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( sch:Event
+                                       sch:Schedule
+                                     )
+                       ] ;
+           rdfs:range xsd:dateTime .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#startTime
+:startTime rdf:type owl:DatatypeProperty ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( sch:Schedule
+                                       sch:ScreeningEvent
+                                     )
+                       ] ;
+           rdfs:range xsd:dateTime .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#thumbnailUrl
+:thumbnailUrl rdf:type owl:DatatypeProperty ;
+              rdfs:domain sch:CreativeWork ;
+              rdfs:range xsd:anyURI .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#timeRequired
+:timeRequired rdf:type owl:DatatypeProperty ;
+              rdfs:domain sch:CreativeWork ;
+              rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#uploadDate
+:uploadDate rdf:type owl:DatatypeProperty ;
+            rdfs:domain sch:MediaObject ;
+            rdfs:range xsd:dateTime .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#url
+:url rdf:type owl:DatatypeProperty ;
+     rdfs:domain sch:Thing ;
+     rdfs:range xsd:anyURI .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#urlTemplate
+:urlTemplate rdf:type owl:DatatypeProperty ;
+             rdfs:domain sch:EntryPoint ;
+             rdfs:range xsd:anyURI .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#videoFormat
+:videoFormat rdf:type owl:DatatypeProperty ;
+             rdfs:domain sch:ScreeningEvent ;
+             rdfs:range xsd:string .
+
+
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#worstRating
+:worstRating rdf:type owl:DatatypeProperty ;
+             rdfs:domain sch:Rating ;
+             rdfs:range xsd:float .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  https://schema.org/Action
-ns1:Action rdf:type owl:Class ;
-           rdfs:subClassOf ns1:Thing .
-
-
-###  https://schema.org/AdministrativeArea
-ns1:AdministrativeArea rdf:type owl:Class ;
-                       rdfs:subClassOf ns1:Place .
-
-
 ###  https://schema.org/AggregateRating
-ns1:AggregateRating rdf:type owl:Class ;
-                    rdfs:subClassOf ns1:MediaObject .
-
-
-###  https://schema.org/CivicStructure
-ns1:CivicStructure rdf:type owl:Class ;
-                   rdfs:subClassOf ns1:Place .
-
-
-###  https://schema.org/Clip
-ns1:Clip rdf:type owl:Class ;
-         rdfs:subClassOf ns1:CreativeWork .
-
-
-###  https://schema.org/ConsumeAction
-ns1:ConsumeAction rdf:type owl:Class ;
-                  rdfs:subClassOf ns1:Action .
-
-
-###  https://schema.org/Country
-ns1:Country rdf:type owl:Class ;
-            rdfs:subClassOf ns1:AdministrativeArea .
+sch:AggregateRating rdf:type owl:Class .
 
 
 ###  https://schema.org/CreativeWork
-ns1:CreativeWork rdf:type owl:Class ;
-                 rdfs:subClassOf ns1:Thing .
+sch:CreativeWork rdf:type owl:Class .
 
 
 ###  https://schema.org/EntryPoint
-ns1:EntryPoint rdf:type owl:Class ;
-               rdfs:subClassOf ns1:Intangible .
+sch:EntryPoint rdf:type owl:Class .
 
 
 ###  https://schema.org/Event
-ns1:Event rdf:type owl:Class ;
-          rdfs:subClassOf ns1:Thing .
-
-
-###  https://schema.org/ImageObject
-ns1:ImageObject rdf:type owl:Class ;
-                rdfs:subClassOf ns1:MediaObject .
-
-
-###  https://schema.org/Intangible
-ns1:Intangible rdf:type owl:Class ;
-               rdfs:subClassOf ns1:Thing .
-
-
-###  https://schema.org/Language
-ns1:Language rdf:type owl:Class ;
-             rdfs:subClassOf ns1:Intangible .
+sch:Event rdf:type owl:Class .
 
 
 ###  https://schema.org/MediaObject
-ns1:MediaObject rdf:type owl:Class ;
-                rdfs:subClassOf ns1:CreativeWork .
+sch:MediaObject rdf:type owl:Class .
 
 
 ###  https://schema.org/Movie
-ns1:Movie rdf:type owl:Class ;
-          rdfs:subClassOf ns1:CreativeWork .
-
-
-###  https://schema.org/MovieTheater
-ns1:MovieTheater rdf:type owl:Class ;
-                 rdfs:subClassOf ns1:CivicStructure .
+sch:Movie rdf:type owl:Class .
 
 
 ###  https://schema.org/Offer
-ns1:Offer rdf:type owl:Class ;
-          rdfs:subClassOf ns1:Intangible .
-
-
-###  https://schema.org/Organization
-ns1:Organization rdf:type owl:Class ;
-                 rdfs:subClassOf ns1:Thing .
-
-
-###  https://schema.org/Person
-ns1:Person rdf:type owl:Class ;
-           rdfs:subClassOf ns1:Thing .
-
-
-###  https://schema.org/Place
-ns1:Place rdf:type owl:Class ;
-          rdfs:subClassOf ns1:Thing .
-
-
-###  https://schema.org/PublicationEvent
-ns1:PublicationEvent rdf:type owl:Class ;
-                     rdfs:subClassOf ns1:Event .
+sch:Offer rdf:type owl:Class .
 
 
 ###  https://schema.org/Rating
-ns1:Rating rdf:type owl:Class ;
-           rdfs:subClassOf ns1:Intangible .
+sch:Rating rdf:type owl:Class .
 
 
 ###  https://schema.org/Review
-ns1:Review rdf:type owl:Class ;
-           rdfs:subClassOf ns1:CreativeWork .
+sch:Review rdf:type owl:Class .
 
 
 ###  https://schema.org/Schedule
-ns1:Schedule rdf:type owl:Class ;
-             rdfs:subClassOf ns1:Intangible .
+sch:Schedule rdf:type owl:Class .
 
 
 ###  https://schema.org/ScreeningEvent
-ns1:ScreeningEvent rdf:type owl:Class ;
-                   rdfs:subClassOf ns1:Event .
+sch:ScreeningEvent rdf:type owl:Class .
 
 
 ###  https://schema.org/Thing
-ns1:Thing rdf:type owl:Class .
-
-
-###  https://schema.org/VideoObject
-ns1:VideoObject rdf:type owl:Class ;
-                rdfs:subClassOf ns1:MediaObject .
-
-
-###  https://schema.org/WatchAction
-ns1:WatchAction rdf:type owl:Class ;
-                rdfs:subClassOf ns1:ConsumeAction .
+sch:Thing rdf:type owl:Class .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
