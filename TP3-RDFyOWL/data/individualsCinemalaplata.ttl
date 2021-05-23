@@ -1,4 +1,4 @@
-@prefix : <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#> .
+@prefix : <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#> .
 @prefix sch: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -25,7 +25,7 @@
         :ScreeningEvent_CINEMA_PARADISO_HD_La_Fabrica_De_Sueños,
         :ScreeningEvent_CINEMA_PARADISO_HD_La_Noche_Magica,
         :ScreeningEvent_CINEMA_PARADISO_HD_Raya_Y_El_Ultimo_Dragon,
-        <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ScreeningEvent_CINEMA_PARADISO_HD_Scooby!>,
+        <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#ScreeningEvent_CINEMA_PARADISO_HD_Scooby!>,
         :ScreeningEvent_CINEMA_PARADISO_HD_Tenet,
         :ScreeningEvent_CINEMA_PARADISO_HD_Tom_Y_Jerry .
 
@@ -203,7 +203,7 @@ Lo que no sabe, es que la pequeña de la casa al verlo lo confundirá con Papá 
     sch:director :Person_Patty_Jenkins ;
     sch:locationCreated :Country_EEUU .
 
-<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Movie_Scooby!> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Movie_Scooby!> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:Movie ;
     :contentRating "Apta todo público"^^xsd:string ;
     :description """Película animada sobre el dibujito Scooby-Doo que sigue a un perro Gran Danés y sus 4 amigos: Fred, Daphne, Vilma y Shaggy quienes juntos viajan por el mundo resolviendo misterios relacionados con fantasmas y otras fuerzas sobrenaturales.-\r
@@ -710,11 +710,11 @@ Scooby! revela cómo se conocieron los amigos de toda la vida Scooby y Shaggy, y
         "1900-01-01T17:30:00"^^xsd:dateTime ;
     sch:workPresented :Movie_Raya_Y_El_Ultimo_Dragon .
 
-<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ScreeningEvent_CINEMA_PARADISO_HD_Scooby!> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#ScreeningEvent_CINEMA_PARADISO_HD_Scooby!> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:ScreeningEvent ;
     :inLanguage "CASTELLANO"^^xsd:string ;
     :startTime "1900-01-01T16:00:00"^^xsd:dateTime ;
-    sch:workPresented <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Movie_Scooby!> .
+    sch:workPresented <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Movie_Scooby!> .
 
 :ScreeningEvent_CINEMA_PARADISO_HD_Tenet a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:ScreeningEvent ;

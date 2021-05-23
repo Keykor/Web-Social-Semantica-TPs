@@ -5,7 +5,7 @@ from rdflib.namespace import OWL, RDF, XSD
 from datetime import datetime
 
 SCHEMA = Namespace("https://schema.org/")
-MY_ONTOLOGY = Namespace("https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#")
+MY_ONTOLOGY = Namespace("https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#")
 GRAPH = Graph()
 GRAPH.namespace_manager.bind('', MY_ONTOLOGY)
 GRAPH.namespace_manager.bind('sch', SCHEMA)

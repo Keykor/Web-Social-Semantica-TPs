@@ -1,4 +1,4 @@
-@prefix : <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#> .
+@prefix : <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix sch: <https://schema.org/> .
@@ -6,10 +6,10 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix terms: <http://purl.org/dc/terms/> .
-@base <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl> .
+@base <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl> .
 
-<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl> rdf:type owl:Ontology ;
-                                                                                                 owl:imports sch: .
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl> rdf:type owl:Ontology ;
+                                                                                     owl:imports sch: .
 
 #################################################################
 #    Object Properties
@@ -28,79 +28,79 @@ sch:actors rdf:type owl:ObjectProperty .
 #    Data properties
 #################################################################
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#actionPlatform
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#actionPlatform
 :actionPlatform rdf:type owl:DatatypeProperty ;
                 rdfs:domain sch:EntryPoint ;
                 rdfs:range xsd:anyURI .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#availabilityStarts
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#availabilityStarts
 :availabilityStarts rdf:type owl:DatatypeProperty ;
                     rdfs:domain sch:Offer ;
                     rdfs:range xsd:dateTime .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#bestRating
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#bestRating
 :bestRating rdf:type owl:DatatypeProperty ;
             rdfs:domain sch:Rating ;
             rdfs:range xsd:float .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#category
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#category
 :category rdf:type owl:DatatypeProperty ;
           rdfs:domain sch:Offer ;
           rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#character
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#character
 :character rdf:type owl:DatatypeProperty ;
            rdfs:domain sch:CreativeWork ;
            rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#contentRating
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#contentRating
 :contentRating rdf:type owl:DatatypeProperty ;
                rdfs:domain sch:CreativeWork ;
                rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#contentUrl
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#contentUrl
 :contentUrl rdf:type owl:DatatypeProperty ;
             rdfs:domain sch:MediaObject ;
             rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#countryOfOrigin
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#countryOfOrigin
 :countryOfOrigin rdf:type owl:DatatypeProperty ;
                  rdfs:domain sch:Movie ;
                  rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#dateCreated
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#dateCreated
 :dateCreated rdf:type owl:DatatypeProperty ;
              rdfs:domain sch:CreativeWork ;
              rdfs:range xsd:dateTime .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#dateModified
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#dateModified
 :dateModified rdf:type owl:DatatypeProperty ;
               rdfs:domain sch:CreativeWork ;
               rdfs:range xsd:dateTime .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#datePublished
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#datePublished
 :datePublished rdf:type owl:DatatypeProperty ;
                rdfs:domain sch:CreativeWork ;
                rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#description
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#description
 :description rdf:type owl:DatatypeProperty ;
              rdfs:domain sch:Thing ;
              rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#duration
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#duration
 :duration rdf:type owl:DatatypeProperty ;
           rdfs:domain [ rdf:type owl:Class ;
                         owl:unionOf ( sch:Event
@@ -112,77 +112,77 @@ sch:actors rdf:type owl:ObjectProperty .
           rdfs:range xsd:integer .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#embedUrl
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#embedUrl
 :embedUrl rdf:type owl:DatatypeProperty ;
           rdfs:domain sch:MediaObject ;
           rdfs:range xsd:anyURI .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#genre
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#genre
 :genre rdf:type owl:DatatypeProperty ;
        rdfs:domain sch:CreativeWork ;
        rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#image
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#image
 :image rdf:type owl:DatatypeProperty ;
        rdfs:range xsd:anyURI .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#inLanguage
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#inLanguage
 :inLanguage rdf:type owl:DatatypeProperty ;
             rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#keywords
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#keywords
 :keywords rdf:type owl:DatatypeProperty ;
           rdfs:domain sch:CreativeWork ;
           rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#mainEntityOfPage
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#mainEntityOfPage
 :mainEntityOfPage rdf:type owl:DatatypeProperty ;
                   rdfs:domain sch:Thing ;
                   rdfs:range xsd:anyURI .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#name
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#name
 :name rdf:type owl:DatatypeProperty ;
       rdfs:domain sch:Thing ;
       rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ratingCount
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#ratingCount
 :ratingCount rdf:type owl:DatatypeProperty ;
              rdfs:domain sch:AggregateRating ;
              rdfs:range xsd:integer .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ratingValue
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#ratingValue
 :ratingValue rdf:type owl:DatatypeProperty ;
              rdfs:domain sch:Rating ;
              rdfs:range xsd:float .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#reviewBody
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#reviewBody
 :reviewBody rdf:type owl:DatatypeProperty ;
             rdfs:domain sch:Review ;
             rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#reviewCount
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#reviewCount
 :reviewCount rdf:type owl:DatatypeProperty ;
              rdfs:domain sch:AggregateRating ;
              rdfs:range xsd:int .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#sameAs
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#sameAs
 :sameAs rdf:type owl:DatatypeProperty ;
         rdfs:domain sch:Thing ;
         rdfs:range xsd:anyURI .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#startDate
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#startDate
 :startDate rdf:type owl:DatatypeProperty ;
            rdfs:domain [ rdf:type owl:Class ;
                          owl:unionOf ( sch:Event
@@ -192,7 +192,7 @@ sch:actors rdf:type owl:ObjectProperty .
            rdfs:range xsd:dateTime .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#startTime
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#startTime
 :startTime rdf:type owl:DatatypeProperty ;
            rdfs:domain [ rdf:type owl:Class ;
                          owl:unionOf ( sch:Schedule
@@ -202,43 +202,43 @@ sch:actors rdf:type owl:ObjectProperty .
            rdfs:range xsd:dateTime .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#thumbnailUrl
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#thumbnailUrl
 :thumbnailUrl rdf:type owl:DatatypeProperty ;
               rdfs:domain sch:CreativeWork ;
               rdfs:range xsd:anyURI .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#timeRequired
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#timeRequired
 :timeRequired rdf:type owl:DatatypeProperty ;
               rdfs:domain sch:CreativeWork ;
               rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#uploadDate
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#uploadDate
 :uploadDate rdf:type owl:DatatypeProperty ;
             rdfs:domain sch:MediaObject ;
             rdfs:range xsd:dateTime .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#url
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#url
 :url rdf:type owl:DatatypeProperty ;
      rdfs:domain sch:Thing ;
      rdfs:range xsd:anyURI .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#urlTemplate
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#urlTemplate
 :urlTemplate rdf:type owl:DatatypeProperty ;
              rdfs:domain sch:EntryPoint ;
              rdfs:range xsd:anyURI .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#videoFormat
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#videoFormat
 :videoFormat rdf:type owl:DatatypeProperty ;
              rdfs:domain sch:ScreeningEvent ;
              rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#worstRating
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#worstRating
 :worstRating rdf:type owl:DatatypeProperty ;
              rdfs:domain sch:Rating ;
              rdfs:range xsd:float .

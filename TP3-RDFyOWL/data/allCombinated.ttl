@@ -1,4 +1,4 @@
-@prefix : <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#> .
+@prefix : <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix sch: <https://schema.org/> .
@@ -6,10 +6,10 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix terms: <http://purl.org/dc/terms/> .
-@base <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl> .
+@base <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl> .
 
-<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl> rdf:type owl:Ontology ;
-                                                                                                 owl:imports sch: .
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl> rdf:type owl:Ontology ;
+                                                                                     owl:imports sch: .
 
 #################################################################
 #    Object Properties
@@ -28,79 +28,79 @@ sch:actors rdf:type owl:ObjectProperty .
 #    Data properties
 #################################################################
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#actionPlatform
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#actionPlatform
 :actionPlatform rdf:type owl:DatatypeProperty ;
                 rdfs:domain sch:EntryPoint ;
                 rdfs:range xsd:anyURI .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#availabilityStarts
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#availabilityStarts
 :availabilityStarts rdf:type owl:DatatypeProperty ;
                     rdfs:domain sch:Offer ;
                     rdfs:range xsd:dateTime .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#bestRating
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#bestRating
 :bestRating rdf:type owl:DatatypeProperty ;
             rdfs:domain sch:Rating ;
             rdfs:range xsd:float .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#category
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#category
 :category rdf:type owl:DatatypeProperty ;
           rdfs:domain sch:Offer ;
           rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#character
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#character
 :character rdf:type owl:DatatypeProperty ;
            rdfs:domain sch:CreativeWork ;
            rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#contentRating
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#contentRating
 :contentRating rdf:type owl:DatatypeProperty ;
                rdfs:domain sch:CreativeWork ;
                rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#contentUrl
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#contentUrl
 :contentUrl rdf:type owl:DatatypeProperty ;
             rdfs:domain sch:MediaObject ;
             rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#countryOfOrigin
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#countryOfOrigin
 :countryOfOrigin rdf:type owl:DatatypeProperty ;
                  rdfs:domain sch:Movie ;
                  rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#dateCreated
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#dateCreated
 :dateCreated rdf:type owl:DatatypeProperty ;
              rdfs:domain sch:CreativeWork ;
              rdfs:range xsd:dateTime .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#dateModified
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#dateModified
 :dateModified rdf:type owl:DatatypeProperty ;
               rdfs:domain sch:CreativeWork ;
               rdfs:range xsd:dateTime .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#datePublished
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#datePublished
 :datePublished rdf:type owl:DatatypeProperty ;
                rdfs:domain sch:CreativeWork ;
                rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#description
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#description
 :description rdf:type owl:DatatypeProperty ;
              rdfs:domain sch:Thing ;
              rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#duration
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#duration
 :duration rdf:type owl:DatatypeProperty ;
           rdfs:domain [ rdf:type owl:Class ;
                         owl:unionOf ( sch:Event
@@ -112,77 +112,77 @@ sch:actors rdf:type owl:ObjectProperty .
           rdfs:range xsd:integer .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#embedUrl
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#embedUrl
 :embedUrl rdf:type owl:DatatypeProperty ;
           rdfs:domain sch:MediaObject ;
           rdfs:range xsd:anyURI .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#genre
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#genre
 :genre rdf:type owl:DatatypeProperty ;
        rdfs:domain sch:CreativeWork ;
        rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#image
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#image
 :image rdf:type owl:DatatypeProperty ;
        rdfs:range xsd:anyURI .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#inLanguage
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#inLanguage
 :inLanguage rdf:type owl:DatatypeProperty ;
             rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#keywords
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#keywords
 :keywords rdf:type owl:DatatypeProperty ;
           rdfs:domain sch:CreativeWork ;
           rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#mainEntityOfPage
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#mainEntityOfPage
 :mainEntityOfPage rdf:type owl:DatatypeProperty ;
                   rdfs:domain sch:Thing ;
                   rdfs:range xsd:anyURI .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#name
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#name
 :name rdf:type owl:DatatypeProperty ;
       rdfs:domain sch:Thing ;
       rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ratingCount
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#ratingCount
 :ratingCount rdf:type owl:DatatypeProperty ;
              rdfs:domain sch:AggregateRating ;
              rdfs:range xsd:integer .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ratingValue
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#ratingValue
 :ratingValue rdf:type owl:DatatypeProperty ;
              rdfs:domain sch:Rating ;
              rdfs:range xsd:float .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#reviewBody
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#reviewBody
 :reviewBody rdf:type owl:DatatypeProperty ;
             rdfs:domain sch:Review ;
             rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#reviewCount
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#reviewCount
 :reviewCount rdf:type owl:DatatypeProperty ;
              rdfs:domain sch:AggregateRating ;
              rdfs:range xsd:int .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#sameAs
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#sameAs
 :sameAs rdf:type owl:DatatypeProperty ;
         rdfs:domain sch:Thing ;
         rdfs:range xsd:anyURI .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#startDate
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#startDate
 :startDate rdf:type owl:DatatypeProperty ;
            rdfs:domain [ rdf:type owl:Class ;
                          owl:unionOf ( sch:Event
@@ -192,7 +192,7 @@ sch:actors rdf:type owl:ObjectProperty .
            rdfs:range xsd:dateTime .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#startTime
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#startTime
 :startTime rdf:type owl:DatatypeProperty ;
            rdfs:domain [ rdf:type owl:Class ;
                          owl:unionOf ( sch:Schedule
@@ -202,43 +202,43 @@ sch:actors rdf:type owl:ObjectProperty .
            rdfs:range xsd:dateTime .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#thumbnailUrl
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#thumbnailUrl
 :thumbnailUrl rdf:type owl:DatatypeProperty ;
               rdfs:domain sch:CreativeWork ;
               rdfs:range xsd:anyURI .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#timeRequired
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#timeRequired
 :timeRequired rdf:type owl:DatatypeProperty ;
               rdfs:domain sch:CreativeWork ;
               rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#uploadDate
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#uploadDate
 :uploadDate rdf:type owl:DatatypeProperty ;
             rdfs:domain sch:MediaObject ;
             rdfs:range xsd:dateTime .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#url
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#url
 :url rdf:type owl:DatatypeProperty ;
      rdfs:domain sch:Thing ;
      rdfs:range xsd:anyURI .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#urlTemplate
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#urlTemplate
 :urlTemplate rdf:type owl:DatatypeProperty ;
              rdfs:domain sch:EntryPoint ;
              rdfs:range xsd:anyURI .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#videoFormat
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#videoFormat
 :videoFormat rdf:type owl:DatatypeProperty ;
              rdfs:domain sch:ScreeningEvent ;
              rdfs:range xsd:string .
 
 
-###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#worstRating
+###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#worstRating
 :worstRating rdf:type owl:DatatypeProperty ;
              rdfs:domain sch:Rating ;
              rdfs:range xsd:float .
@@ -427,11 +427,11 @@ sch:Thing rdf:type owl:Class .
         :Wonder_Woman_1984_Review_Stephen_Romei,
         :Wonder_Woman_1984_Review_Tony_Medley,
         :Wonder_Woman_1984_Review_Valerie_Kalfrin,
-        :Wonder_Woman_1984_Review_hoarei-56760 ;
+        :Wonder_Woman_1984_Review_jayg_58 ;
     sch:trailer :Wonder_Woman_1984_VideoObject_Stream_on_HBO_Max_for_a_Limited_Time,
-        <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Wonder_Woman_1984_VideoObject_Wonder_Woman_1984_(Trailer_2)> .
+        <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Wonder_Woman_1984_VideoObject_Wonder_Woman_1984_(Trailer_2)> .
 
-<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Organization_ABC_Radio_(Australia)> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_ABC_Radio_(Australia)> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:Organization ;
     :name "ABC Radio (Australia)"^^xsd:string ;
     :url "https://www.rottentomatoes.com/source-2397"^^xsd:anyURL .
@@ -471,7 +471,7 @@ sch:Thing rdf:type owl:Class .
     :name "Fat Guys at the Movies"^^xsd:string ;
     :url "https://www.rottentomatoes.com/source-2722"^^xsd:anyURL .
 
-<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Organization_FilmWeek_(KPCC_-_NPR_Los_Angeles)> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_FilmWeek_(KPCC_-_NPR_Los_Angeles)> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:Organization ;
     :name "FilmWeek (KPCC - NPR Los Angeles)"^^xsd:string ;
     :url "https://www.rottentomatoes.com/source-3509"^^xsd:anyURL .
@@ -501,7 +501,7 @@ sch:Thing rdf:type owl:Class .
     :name "San Diego Union-Tribune"^^xsd:string ;
     :url "https://www.rottentomatoes.com/source-503"^^xsd:anyURL .
 
-<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Organization_The_Age_(Australia)> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_The_Age_(Australia)> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:Organization ;
     :name "The Age (Australia)"^^xsd:string ;
     :url "https://www.rottentomatoes.com/source-2041"^^xsd:anyURL .
@@ -521,7 +521,7 @@ sch:Thing rdf:type owl:Class .
     :name "The Larchmont Chronicle"^^xsd:string ;
     :url "https://www.rottentomatoes.com/source-2992"^^xsd:anyURL .
 
-<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Organization_The_News-Herald_(Willoughby,_OH)> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_The_News-Herald_(Willoughby,_OH)> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:Organization ;
     :name "The News-Herald (Willoughby, OH)"^^xsd:string ;
     :url "https://www.rottentomatoes.com/source-3916"^^xsd:anyURL .
@@ -861,9 +861,9 @@ sch:Thing rdf:type owl:Class .
     :name "William Moulton Marston"^^xsd:string ;
     :url "/name/nm0551376/"^^xsd:anyURL .
 
-:Person_hoarei-56760 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+:Person_jayg_58 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:Person ;
-    :name "hoarei-56760"^^xsd:string .
+    :name "jayg_58"^^xsd:string .
 
 :Wonder_Woman_1984_AggregateRating_ecartelera a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:AggregateRating ;
@@ -875,7 +875,7 @@ sch:Thing rdf:type owl:Class .
 :Wonder_Woman_1984_AggregateRating_imdb a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:AggregateRating ;
     :bestRating "10.0"^^xsd:float ;
-    :ratingCount 203449 ;
+    :ratingCount 203495 ;
     :ratingValue "5.4"^^xsd:float ;
     :worstRating "1.0"^^xsd:float .
 
@@ -957,7 +957,7 @@ sch:Thing rdf:type owl:Class .
 :Wonder_Woman_1984_Rating_0 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:Rating ;
     :bestRating "10.0"^^xsd:float ;
-    :ratingValue "3.0"^^xsd:float ;
+    :ratingValue "5.0"^^xsd:float ;
     :worstRating "1.0"^^xsd:float .
 
 :Wonder_Woman_1984_Rating_1 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
@@ -1110,7 +1110,7 @@ sch:Thing rdf:type owl:Class .
     :reviewBody "Very sweet and very fun. I think some of the stunts are a little bit dumb, but I had a lot of watching this."^^xsd:string ;
     :url "https://www.scpr.org/programs/filmweek/2020/12/23/66369/filmweek-wonder-woman-1984-soul-promising-young-wo/"^^xsd:anyURL ;
     sch:author :Person_Amy_Nicholson ;
-    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Organization_FilmWeek_(KPCC_-_NPR_Los_Angeles)> ;
+    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_FilmWeek_(KPCC_-_NPR_Los_Angeles)> ;
     sch:reviewRating :Wonder_Woman_1984_Rating_3 .
 
 :Wonder_Woman_1984_Review_Andrew_Galdi a <http://www.w3.org/2002/07/owl#NamedIndividual>,
@@ -1200,7 +1200,7 @@ sch:Thing rdf:type owl:Class .
     :reviewBody "Gadot as Wonder Woman -- or Diana Prince, as she's more commonly known -- may be the single best piece of casting in a superhero role since Christopher Reeve first donned the cape and spandex of the Man of Steel."^^xsd:string ;
     :url "https://www.theage.com.au/culture/movies/wonder-woman-1984-gal-gadot-soars-in-a-plot-that-doesn-t-aim-high-20201216-p56o4z.html"^^xsd:anyURL ;
     sch:author :Person_Jake_Wilson ;
-    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Organization_The_Age_(Australia)> ;
+    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_The_Age_(Australia)> ;
     sch:reviewRating :Wonder_Woman_1984_Rating_5 .
 
 :Wonder_Woman_1984_Review_Jennifer_Ouellette a <http://www.w3.org/2002/07/owl#NamedIndividual>,
@@ -1245,7 +1245,7 @@ sch:Thing rdf:type owl:Class .
     :reviewBody "There are plenty of good times to be had as we pick back up with Gal Gadot's Wonder Woman/Diana Prince six-plus decades after the World War I-set first tale."^^xsd:string ;
     :url "https://www.news-herald.com/entertainment/movie-reviews/wonder-woman-1984-overdoes-it-but-what-made-first-movie-successful-alive-and-well-in/article_a0eed67e-453e-11eb-9aae-8774f60e37ce.html"^^xsd:anyURL ;
     sch:author :Person_Mark_Meszoros ;
-    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Organization_The_News-Herald_(Willoughby,_OH)> ;
+    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_The_News-Herald_(Willoughby,_OH)> ;
     sch:reviewRating :Wonder_Woman_1984_Rating_16 .
 
 :Wonder_Woman_1984_Review_Matt_Neal a <http://www.w3.org/2002/07/owl#NamedIndividual>,
@@ -1254,7 +1254,7 @@ sch:Thing rdf:type owl:Class .
     :reviewBody " After such a stirring debut, it's pains me to say that Wonder Woman 1984 isn't that wonderful."^^xsd:string ;
     :url "https://movies8mylife.blogspot.com/2021/02/wonder-woman-1984.html"^^xsd:anyURL ;
     sch:author :Person_Matt_Neal ;
-    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Organization_ABC_Radio_(Australia)> ;
+    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_ABC_Radio_(Australia)> ;
     sch:reviewRating :Wonder_Woman_1984_Rating_24 .
 
 :Wonder_Woman_1984_Review_Nina_Garin a <http://www.w3.org/2002/07/owl#NamedIndividual>,
@@ -1320,29 +1320,13 @@ sch:Thing rdf:type owl:Class .
     sch:publisher :Organization_Their_Own_League ;
     sch:reviewRating :Wonder_Woman_1984_Rating_9 .
 
-:Wonder_Woman_1984_Review_hoarei-56760 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+:Wonder_Woman_1984_Review_jayg_58 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:Review ;
-    :dateCreated "2021-03-18T00:00:00"^^xsd:dateTime ;
+    :dateCreated "2021-01-01T00:00:00"^^xsd:dateTime ;
     :inLanguage "English"^^xsd:string ;
-    :name "Who should watch and who should not watch this"^^xsd:string ;
-    :reviewBody """Should:
-
-Men who hate their wives and want to sit on the couch for 3 hours pretending they are doing something (watching this) and therefore cannot talk right now
-
-Fans of Mexican and Brazilian daytime soap operas
-
-Fans of Italian daytime soap
-
-Fans of Gal Gadot's legs (i.e. were never here for the movie or the 'story')
-
-Adult movie scouts
-
-People with guns to their heads
-
- Should Not:
-
-Everybody else"""^^xsd:string ;
-    sch:author :Person_hoarei-56760 ;
+    :name "In quarantine, you'll buy anything."^^xsd:string ;
+    :reviewBody "Very colorful, lots of money spent. Kristin Wiig was a masterpiece of miscasting. She wasn't funny; she wasn't scary, but great costume. The whole plot was a vehicle to resurrect Chris Pine, but there was no real chemistry between them. It made the lines of endearment quite awkward and the embraces seemed forced. All the usual tropes: WW loses some of her powers, so there can be suspense; she plays Spiderman and holds two vehicles apart. Just nothing new and Gad Gadot proves again that she's a glamour model and poses well. She can't act. Still - entertainment in a vacuum of good movies, so watch it and be distracted for TWO AND A HALF hours."^^xsd:string ;
+    sch:author :Person_jayg_58 ;
     sch:itemReviewed :Wonder_Woman_1984_CreativeWork_0 ;
     sch:reviewRating :Wonder_Woman_1984_Rating_0 .
 
@@ -1355,7 +1339,7 @@ Everybody else"""^^xsd:string ;
     :uploadDate "2020-12-07T01:51:07+00:00"^^xsd:dateTime ;
     sch:thumbnail :Wonder_Woman_1984_ImageObject_0 .
 
-<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Wonder_Woman_1984_VideoObject_Wonder_Woman_1984_(Trailer_2)> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Wonder_Woman_1984_VideoObject_Wonder_Woman_1984_(Trailer_2)> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:VideoObject ;
     :description "Video Clip of Wonder Woman 1984"^^xsd:string ;
     :name "Wonder Woman 1984 (Trailer 2)"^^xsd:string ;
@@ -1467,7 +1451,7 @@ Everybody else"""^^xsd:string ;
         :ScreeningEvent_CINEMA_PARADISO_HD_La_Fabrica_De_Sueños,
         :ScreeningEvent_CINEMA_PARADISO_HD_La_Noche_Magica,
         :ScreeningEvent_CINEMA_PARADISO_HD_Raya_Y_El_Ultimo_Dragon,
-        <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ScreeningEvent_CINEMA_PARADISO_HD_Scooby!>,
+        <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#ScreeningEvent_CINEMA_PARADISO_HD_Scooby!>,
         :ScreeningEvent_CINEMA_PARADISO_HD_Tenet,
         :ScreeningEvent_CINEMA_PARADISO_HD_Tom_Y_Jerry .
 
@@ -1645,7 +1629,7 @@ Lo que no sabe, es que la pequeña de la casa al verlo lo confundirá con Papá 
     sch:director :Person_Patty_Jenkins ;
     sch:locationCreated :Country_EEUU .
 
-<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Movie_Scooby!> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Movie_Scooby!> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:Movie ;
     :contentRating "Apta todo público"^^xsd:string ;
     :description """Película animada sobre el dibujito Scooby-Doo que sigue a un perro Gran Danés y sus 4 amigos: Fred, Daphne, Vilma y Shaggy quienes juntos viajan por el mundo resolviendo misterios relacionados con fantasmas y otras fuerzas sobrenaturales.-\r
@@ -2152,11 +2136,11 @@ Scooby! revela cómo se conocieron los amigos de toda la vida Scooby y Shaggy, y
         "1900-01-01T17:30:00"^^xsd:dateTime ;
     sch:workPresented :Movie_Raya_Y_El_Ultimo_Dragon .
 
-<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ScreeningEvent_CINEMA_PARADISO_HD_Scooby!> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#ScreeningEvent_CINEMA_PARADISO_HD_Scooby!> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:ScreeningEvent ;
     :inLanguage "CASTELLANO"^^xsd:string ;
     :startTime "1900-01-01T16:00:00"^^xsd:dateTime ;
-    sch:workPresented <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Movie_Scooby!> .
+    sch:workPresented <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Movie_Scooby!> .
 
 :ScreeningEvent_CINEMA_PARADISO_HD_Tenet a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:ScreeningEvent ;
@@ -2354,6 +2338,7 @@ Wolfsbane, Cannonball, Magik, Mirage y Sunspot deberán enfrentar sus miedos, po
         sch:MovieTheater ;
     :name "Cinépolis Neuquén"^^xsd:string ;
     sch:event :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_CRUELLA,
+        :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES,
         :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_MORTAL_KOMBAT,
         :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_PÁNICO_EN_LAS_ALTURAS,
         :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_RUEGA_POR_NOSOTROS,
@@ -2369,31 +2354,6 @@ Wolfsbane, Cannonball, Magik, Mirage y Sunspot deberán enfrentar sus miedos, po
 :Country_Rusia a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:Country ;
     :name "Rusia"^^xsd:string .
-
-:Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        sch:Movie ;
-    :contentRating "P-13"^^xsd:string ;
-    :description "La Compañía del Anillo se ha disuelto. El portador del anillo Frodo y su fiel amigo Sam se dirigen hacia Mordor para destruir el Anillo Único y acabar con el poder de Sauron. Mientras, y tras la dura batalla contra los orcos donde cayó Boromir, el hombre Aragorn, el elfo Legolas y el enano Gimli intentan rescatar a los medianos Merry y Pipin, secuestrados por los ogros de Mordor. Por su parte, Saurón y el traidor Sarumán continúan con sus planes en Mordor, en espera de la guerra contra las razas libres de la Tierra Media."^^xsd:string ;
-    :duration 176 ;
-    :genre "Acción"^^xsd:string,
-        "Aventura"^^xsd:string,
-        "Fantasía"^^xsd:string ;
-    :name "EL SEÑOR DE LOS ANILLOS: LAS DOS TORRES"^^xsd:string,
-        "The Lord of the Rings"^^xsd:string ;
-    sch:actor :Person_Bernard_Hill,
-        :Person_Billy_Boyd,
-        :Person_Cate_Blanchett,
-        :Person_Christopher_Lee,
-        :Person_Elijah_Wood,
-        :Person_Ian_McKellen,
-        :Person_John_Rhys-Davies,
-        :Person_Liv_Tyler,
-        :Person_Sean_Astin,
-        :Person_Viggo_Mortensen ;
-    sch:director :Person_Peter_Jackson ;
-    sch:locationCreated :Country_Estados_Unidos,
-        :Country_Nueva_Zelanda ;
-    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Organization_Warner_Bros.> .
 
 :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:Movie ;
@@ -2418,7 +2378,7 @@ Wolfsbane, Cannonball, Magik, Mirage y Sunspot deberán enfrentar sus miedos, po
     sch:director :Person_Peter_Jackson ;
     sch:locationCreated :Country_Estados_Unidos,
         :Country_Nueva_Zelanda ;
-    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Organization_Warner_Bros.> .
+    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_Warner_Bros.> .
 
 :Movie_MORTAL_KOMBAT a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:Movie ;
@@ -2443,7 +2403,7 @@ Wolfsbane, Cannonball, Magik, Mirage y Sunspot deberán enfrentar sus miedos, po
     sch:director :Person_Simon_McQuoid ;
     sch:locationCreated :Country_Australia,
         :Country_Estados_Unidos ;
-    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Organization_Warner_Bros.> .
+    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_Warner_Bros.> .
 
 :Movie_PÁNICO_EN_LAS_ALTURAS a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:Movie ;
@@ -2766,6 +2726,13 @@ Wolfsbane, Cannonball, Magik, Mirage y Sunspot deberán enfrentar sus miedos, po
     :videoFormat "CLASSIC 2D"^^xsd:string ;
     sch:workPresented :Movie_CRUELLA .
 
+:ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "SUBTITULADO"^^xsd:string ;
+    :startTime "1900-01-01T14:45:00"^^xsd:dateTime ;
+    :videoFormat "CLASSIC 2D"^^xsd:string ;
+    sch:workPresented :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES .
+
 :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_MORTAL_KOMBAT a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:ScreeningEvent ;
     :inLanguage "ESPAÑOL"^^xsd:string ;
@@ -2842,6 +2809,31 @@ Wolfsbane, Cannonball, Magik, Mirage y Sunspot deberán enfrentar sus miedos, po
     sch:locationCreated :Country_Estados_Unidos ;
     sch:publisher :Organization_Walt_Disney_Pictures .
 
+:Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "P-13"^^xsd:string ;
+    :description "La Compañía del Anillo se ha disuelto. El portador del anillo Frodo y su fiel amigo Sam se dirigen hacia Mordor para destruir el Anillo Único y acabar con el poder de Sauron. Mientras, y tras la dura batalla contra los orcos donde cayó Boromir, el hombre Aragorn, el elfo Legolas y el enano Gimli intentan rescatar a los medianos Merry y Pipin, secuestrados por los ogros de Mordor. Por su parte, Saurón y el traidor Sarumán continúan con sus planes en Mordor, en espera de la guerra contra las razas libres de la Tierra Media."^^xsd:string ;
+    :duration 176 ;
+    :genre "Acción"^^xsd:string,
+        "Aventura"^^xsd:string,
+        "Fantasía"^^xsd:string ;
+    :name "EL SEÑOR DE LOS ANILLOS: LAS DOS TORRES"^^xsd:string,
+        "The Lord of the Rings"^^xsd:string ;
+    sch:actor :Person_Bernard_Hill,
+        :Person_Billy_Boyd,
+        :Person_Cate_Blanchett,
+        :Person_Christopher_Lee,
+        :Person_Elijah_Wood,
+        :Person_Ian_McKellen,
+        :Person_John_Rhys-Davies,
+        :Person_Liv_Tyler,
+        :Person_Sean_Astin,
+        :Person_Viggo_Mortensen ;
+    sch:director :Person_Peter_Jackson ;
+    sch:locationCreated :Country_Estados_Unidos,
+        :Country_Nueva_Zelanda ;
+    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_Warner_Bros.> .
+
 :Person_Billy_Boyd a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:Person ;
     :name "Billy Boyd"^^xsd:string .
@@ -2878,7 +2870,7 @@ Wolfsbane, Cannonball, Magik, Mirage y Sunspot deberán enfrentar sus miedos, po
         sch:Person ;
     :name "Viggo Mortensen"^^xsd:string .
 
-<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Organization_Warner_Bros.> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_Warner_Bros.> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:Organization ;
     :name "Warner Bros."^^xsd:string .
 

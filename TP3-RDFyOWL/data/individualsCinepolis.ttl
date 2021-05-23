@@ -1,4 +1,4 @@
-@prefix : <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#> .
+@prefix : <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#> .
 @prefix sch: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -6,6 +6,7 @@
         sch:MovieTheater ;
     :name "Cinépolis Neuquén"^^xsd:string ;
     sch:event :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_CRUELLA,
+        :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES,
         :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_MORTAL_KOMBAT,
         :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_PÁNICO_EN_LAS_ALTURAS,
         :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_RUEGA_POR_NOSOTROS,
@@ -21,31 +22,6 @@
 :Country_Rusia a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:Country ;
     :name "Rusia"^^xsd:string .
-
-:Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        sch:Movie ;
-    :contentRating "P-13"^^xsd:string ;
-    :description "La Compañía del Anillo se ha disuelto. El portador del anillo Frodo y su fiel amigo Sam se dirigen hacia Mordor para destruir el Anillo Único y acabar con el poder de Sauron. Mientras, y tras la dura batalla contra los orcos donde cayó Boromir, el hombre Aragorn, el elfo Legolas y el enano Gimli intentan rescatar a los medianos Merry y Pipin, secuestrados por los ogros de Mordor. Por su parte, Saurón y el traidor Sarumán continúan con sus planes en Mordor, en espera de la guerra contra las razas libres de la Tierra Media."^^xsd:string ;
-    :duration 176 ;
-    :genre "Acción"^^xsd:string,
-        "Aventura"^^xsd:string,
-        "Fantasía"^^xsd:string ;
-    :name "EL SEÑOR DE LOS ANILLOS: LAS DOS TORRES"^^xsd:string,
-        "The Lord of the Rings"^^xsd:string ;
-    sch:actor :Person_Bernard_Hill,
-        :Person_Billy_Boyd,
-        :Person_Cate_Blanchett,
-        :Person_Christopher_Lee,
-        :Person_Elijah_Wood,
-        :Person_Ian_McKellen,
-        :Person_John_Rhys-Davies,
-        :Person_Liv_Tyler,
-        :Person_Sean_Astin,
-        :Person_Viggo_Mortensen ;
-    sch:director :Person_Peter_Jackson ;
-    sch:locationCreated :Country_Estados_Unidos,
-        :Country_Nueva_Zelanda ;
-    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Organization_Warner_Bros.> .
 
 :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LA_COMUNIDAD_DEL_ANILLO a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:Movie ;
@@ -70,7 +46,7 @@
     sch:director :Person_Peter_Jackson ;
     sch:locationCreated :Country_Estados_Unidos,
         :Country_Nueva_Zelanda ;
-    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Organization_Warner_Bros.> .
+    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_Warner_Bros.> .
 
 :Movie_MORTAL_KOMBAT a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:Movie ;
@@ -95,7 +71,7 @@
     sch:director :Person_Simon_McQuoid ;
     sch:locationCreated :Country_Australia,
         :Country_Estados_Unidos ;
-    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Organization_Warner_Bros.> .
+    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_Warner_Bros.> .
 
 :Movie_PÁNICO_EN_LAS_ALTURAS a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:Movie ;
@@ -418,6 +394,13 @@
     :videoFormat "CLASSIC 2D"^^xsd:string ;
     sch:workPresented :Movie_CRUELLA .
 
+:ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:ScreeningEvent ;
+    :inLanguage "SUBTITULADO"^^xsd:string ;
+    :startTime "1900-01-01T14:45:00"^^xsd:dateTime ;
+    :videoFormat "CLASSIC 2D"^^xsd:string ;
+    sch:workPresented :Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES .
+
 :ScreeningEvent_Cinépolis_Neuquén_CLASSIC_2D_MORTAL_KOMBAT a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:ScreeningEvent ;
     :inLanguage "ESPAÑOL"^^xsd:string ;
@@ -494,6 +477,31 @@
     sch:locationCreated :Country_Estados_Unidos ;
     sch:publisher :Organization_Walt_Disney_Pictures .
 
+:Movie_EL_SEÑOR_DE_LOS_ANILLOS:_LAS_DOS_TORRES a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+        sch:Movie ;
+    :contentRating "P-13"^^xsd:string ;
+    :description "La Compañía del Anillo se ha disuelto. El portador del anillo Frodo y su fiel amigo Sam se dirigen hacia Mordor para destruir el Anillo Único y acabar con el poder de Sauron. Mientras, y tras la dura batalla contra los orcos donde cayó Boromir, el hombre Aragorn, el elfo Legolas y el enano Gimli intentan rescatar a los medianos Merry y Pipin, secuestrados por los ogros de Mordor. Por su parte, Saurón y el traidor Sarumán continúan con sus planes en Mordor, en espera de la guerra contra las razas libres de la Tierra Media."^^xsd:string ;
+    :duration 176 ;
+    :genre "Acción"^^xsd:string,
+        "Aventura"^^xsd:string,
+        "Fantasía"^^xsd:string ;
+    :name "EL SEÑOR DE LOS ANILLOS: LAS DOS TORRES"^^xsd:string,
+        "The Lord of the Rings"^^xsd:string ;
+    sch:actor :Person_Bernard_Hill,
+        :Person_Billy_Boyd,
+        :Person_Cate_Blanchett,
+        :Person_Christopher_Lee,
+        :Person_Elijah_Wood,
+        :Person_Ian_McKellen,
+        :Person_John_Rhys-Davies,
+        :Person_Liv_Tyler,
+        :Person_Sean_Astin,
+        :Person_Viggo_Mortensen ;
+    sch:director :Person_Peter_Jackson ;
+    sch:locationCreated :Country_Estados_Unidos,
+        :Country_Nueva_Zelanda ;
+    sch:publisher <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_Warner_Bros.> .
+
 :Person_Billy_Boyd a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:Person ;
     :name "Billy Boyd"^^xsd:string .
@@ -530,7 +538,7 @@
         sch:Person ;
     :name "Viggo Mortensen"^^xsd:string .
 
-<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Organization_Warner_Bros.> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+<https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#Organization_Warner_Bros.> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:Organization ;
     :name "Warner Bros."^^xsd:string .
 
