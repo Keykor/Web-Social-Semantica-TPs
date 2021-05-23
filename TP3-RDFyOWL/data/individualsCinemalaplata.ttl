@@ -70,6 +70,7 @@
     :contentRating "Apta mayores de 13 años"^^xsd:string ;
     :description "En Prentisstown, Todd ha crecido creyendo que la \"Masilla\" fue la responsable de liberar un germen que asesinó a todas las mujeres y contagió con el \"ruido\" al resto de los hombres. Tras descubrir un remanso de silencio en un pantano, sus padres adoptivos le obligan a huir lo más rápido que pueda, dejando todo atrás salvo un mapa del Nuevo Mundo y un mensaje, así como un sinfín de preguntas sin responder. Pronto descubre la fuente del silencio: una chica llamada Viola. Los dos deben avisar lo antes posible sobre la inminente llegada de una nave para que el intendente Prentiss pueda preparar un ejército para la guerra."^^xsd:string ;
     :duration 109 ;
+    :genre "Ciencia Ficción"^^xsd:string ;
     :inLanguage "Inglés subtitulada"^^xsd:string ;
     :name "Caos: El Inicio"^^xsd:string ;
     sch:actor :Person_Daisy_Ridley,
@@ -86,6 +87,7 @@
     :contentRating "Apta mayores de 13 años"^^xsd:string ;
     :description "Mientras disfrutan de una escapada romántica en la India salvaje, una pareja de Los Angeles accidentalmente es testigo del exorcismo de una niña de 11 años a la cual intentarán rescatar."^^xsd:string ;
     :duration 87 ;
+    :genre "Terror"^^xsd:string ;
     :inLanguage "Inglés subtitulada"^^xsd:string ;
     :name "El Secreto Del Bosque"^^xsd:string ;
     sch:actor :Person_Sahil_Shroff,
@@ -99,6 +101,7 @@
     :contentRating "Apta mayores de 13 años"^^xsd:string ;
     :description "Tras 20 años de matrimonio, Maria decide dejarlo todo atrás y empezar una nueva vida. El primer paso es hospedarse en la habitación 212 de un hotel próximo a la casa en la que vivía junto a su familia. Con el paso del tiempo, comienza a preguntarse si ha tomado la decisión correcta."^^xsd:string ;
     :duration 87 ;
+    :genre "Comedia dramática"^^xsd:string ;
     :inLanguage "Francés subtitulado"^^xsd:string ;
     :name "Habitacion 212"^^xsd:string ;
     sch:actor :Person_Benjamin_Biolay,
@@ -115,6 +118,7 @@
     :contentRating "Apta mayores de 16 años"^^xsd:string ;
     :description "Una joven mujer traumatizada por un evento trágico ocurrido en su pasado, busca venganza contra los hombres que se cruzaron por su camino."^^xsd:string ;
     :duration 117 ;
+    :genre "Thriller"^^xsd:string ;
     :inLanguage "Inglés subtitulada"^^xsd:string ;
     :name "Hermosa Venganza"^^xsd:string ;
     sch:actor :Person_Adam_Brody,
@@ -132,6 +136,7 @@
     :contentRating "Apta todo público"^^xsd:string ;
     :description "Durante el verano de 1961, Emil comienza a trabajar como extra en los famosos estudios de cine Babelsberg. Durante el rodaje de una superproducción, se enamora de la bailarina francesa llamada Milou. Cuando por fin conquista a Milou, el rodaje se cancela repentinamente y son obligados a separarse ya que El Muro de Berlín es levantado en agosto de ese año. Años más tarde, Emil trazará un atrevido y arriesgado plan para lograr que el rodaje continúe y reencontrarse con Milou."^^xsd:string ;
     :duration 127 ;
+    :genre "Drama romantico"^^xsd:string ;
     :inLanguage "Aleman subtitulada"^^xsd:string ;
     :name "La Fabrica De Sueños"^^xsd:string ;
     sch:actor :Person_Dennis_Mojen,
@@ -150,6 +155,7 @@
     :description """Es 24 de diciembre, víspera de Navidad. En una casa tranquila en San Isidro donde vive un matrimonio con su pequeña hija, un ladrón  espera su momento para entrar a robar. Para su sorpresa, se encontrará primero con el amante de la señora de la casa al cual obligará a participar en el robo.\r
 Lo que no sabe, es que la pequeña de la casa al verlo lo confundirá con Papá Noel y le pedirá cumplir su lista de deseos navideños"""^^xsd:string ;
     :duration 98 ;
+    :genre "Comedia"^^xsd:string ;
     :inLanguage "Castellano"^^xsd:string ;
     :name "La Noche Magica"^^xsd:string ;
     sch:actor :Person_Diego_Peretti,
@@ -164,6 +170,7 @@ Lo que no sabe, es que la pequeña de la casa al verlo lo confundirá con Papá 
     :contentRating "Apta mayores de 16 años"^^xsd:string ;
     :description "Inglaterra rural, principios de los noventa: los amigos de la infancia Nathan y Terry son inducidos por el sociópata local para robar a los Huggins, un médico anciano y su esposa. La novia de Nathan, Mary, está totalmente en contra del plan, pero al cabo de unas horas se encuentra en el caserón, al lado de la caja fuerte del sótano y de una panda de individuos, a cual más sospechoso."^^xsd:string ;
     :duration 92 ;
+    :genre "Terror"^^xsd:string ;
     :inLanguage "Inglés subtitulada"^^xsd:string ;
     :name "Los Intrusos"^^xsd:string ;
     sch:actor :Person_Andrew_Ellis,
@@ -181,6 +188,7 @@ Lo que no sabe, es que la pequeña de la casa al verlo lo confundirá con Papá 
     :contentRating "Apta mayores de 13 años"^^xsd:string ;
     :description "Ambientada en los años 80s. El mayor deseo de Diana Prince parece ser tener devuelta a Steve Trevor. Esto inexplicablemente parece haberse convertido en realidad, pero la enfrentará a dos nuevos villanos: Max Lord y Cheetah"^^xsd:string ;
     :duration 151 ;
+    :genre "Acción"^^xsd:string ;
     :inLanguage "Inglés subtitulada"^^xsd:string ;
     :name "Mujer Maravilla 1984"^^xsd:string ;
     sch:actor :Person_Chris_Pine,
@@ -201,6 +209,8 @@ Lo que no sabe, es que la pequeña de la casa al verlo lo confundirá con Papá 
     :description """Película animada sobre el dibujito Scooby-Doo que sigue a un perro Gran Danés y sus 4 amigos: Fred, Daphne, Vilma y Shaggy quienes juntos viajan por el mundo resolviendo misterios relacionados con fantasmas y otras fuerzas sobrenaturales.-\r
 Scooby! revela cómo se conocieron los amigos de toda la vida Scooby y Shaggy, y cómo se unieron con los jóvenes detectives Fred, Velma y Daphne para formar Mystery Inc. Ahora, con cientos de casos resueltos y aventuras compartidas, Scooby y la pandilla se enfrentan al misterio más desafiante de todos los tiempos: una trama para liberar Cerberus, el perro fantasma, sobre el mundo. Mientras compiten para detener este "perrocalipsis" global, la pandilla descubre que Scooby tiene un legado secreto y un gran y épico destino que nadie imaginaba."""^^xsd:string ;
     :duration 94 ;
+    :genre "Acción"^^xsd:string,
+        "Aventuras"^^xsd:string ;
     :inLanguage "Castellano"^^xsd:string ;
     :name "Scooby!"^^xsd:string ;
     sch:actor :Person_animación ;
@@ -212,6 +222,7 @@ Scooby! revela cómo se conocieron los amigos de toda la vida Scooby y Shaggy, y
     :contentRating "Apta mayores de 13 años"^^xsd:string ;
     :description "Armado con tan solo una palabra -Tenet- el protagonista de esta historia deberá pelear por la supervivencia del mundo entero en una misión que le lleva a viajar a través del oscuro mundo del espionaje internacional, y cuya experiencia se desdoblará más allá del tiempo lineal."^^xsd:string ;
     :duration 150 ;
+    :genre "Ciencia Ficción"^^xsd:string ;
     :inLanguage "Inglés subtitulada"^^xsd:string ;
     :name "Tenet"^^xsd:string ;
     sch:actor :Person_Aaron_Taylor-Johnson,
@@ -228,6 +239,7 @@ Scooby! revela cómo se conocieron los amigos de toda la vida Scooby y Shaggy, y
     :contentRating "Apta todo público"^^xsd:string ;
     :description "En una aventura que les llevará más allá de todo lo que habían conocido, Poppy y Branch descubren que su tribu de Trolls es solo una de las seis que existen, que el resto están repartidas en seis reinos y consagradas a seis tipos distintos de música: funk, country, tecno, clásica, pop y rock. La reina Bárbara, miembro de la realeza del hard rock, y su padre, el Rey Metal, quieren acabar con el resto de géneros musicales e imponer el reinado del rock. Con el destino del mundo en juego, Poppy y Branch, junto con el resto de la pandilla - Grandullón, Chanelle, Satén, Cooper y Guy Diamante-, visitarán los demás reinos para unir a los Trolls contra los planes de Barb de eclipsarlos a todos."^^xsd:string ;
     :duration 91 ;
+    :genre "Animación"^^xsd:string ;
     :inLanguage "Castellano"^^xsd:string ;
     :name "Trolls 2: World Tour"^^xsd:string ;
     sch:actor :Person_animación ;
@@ -824,6 +836,7 @@ Scooby! revela cómo se conocieron los amigos de toda la vida Scooby y Shaggy, y
 Jerry se muda al hotel más lujoso de Nueva York justo antes del "casamiento del siglo"; la coordinadora de la ceremonia, desesperada, no tiene más opción que contratar a Tom para eliminar a Jerry. Esto desata una batalla entre gato y ratón que amenaza con destruir la carrera de la coordinadora, la ceremonia e incluso quizás el hotel mismo.\r
 Pero pronto surge un problema más grave: un empleado ambicioso y diabólico que conspira contra los tres."""^^xsd:string ;
     :duration 101 ;
+    :genre "Animación"^^xsd:string ;
     :inLanguage "Inglés subtitulada"^^xsd:string ;
     :name "Tom Y Jerry"^^xsd:string ;
     sch:actor :Person_animación ;
@@ -840,6 +853,8 @@ Pero pronto surge un problema más grave: un empleado ambicioso y diabólico que
     :description """Encerrados contra su voluntad en una institución secreta, 5 jóvenes mutantes descubren sus poderosas habilidades. Están bajo el estudio y análisis de la Doctora Cecilia Reyes quién tiene como objetivo curarlos.\r
 Wolfsbane, Cannonball, Magik, Mirage y Sunspot deberán enfrentar sus miedos, poderes y peligros que los rodean para intentar escapar a su pasado y salvarse a si mismos."""^^xsd:string ;
     :duration 98 ;
+    :genre "Comedia"^^xsd:string,
+        "Terror"^^xsd:string ;
     :inLanguage "Inglés subtitulada"^^xsd:string ;
     :name "Los Nuevos Mutantes"^^xsd:string ;
     sch:actor :Person_Antonio_Banderas,
@@ -858,6 +873,7 @@ Wolfsbane, Cannonball, Magik, Mirage y Sunspot deberán enfrentar sus miedos, po
     :contentRating "Apta todo público C/L"^^xsd:string ;
     :description "Ambientada en el sudeste asiático, la cinta sigue la historia de Raya, una niña de un gran espíritu aventurero que vive en un reino llamado Kumandra. Este lejano y recóndito territorio está habitado por una civilización milenaria. Cinco son los clanes que forman esta tierra conocida como la del dragón y Raya, con el objetivo de devolver el equilibrio a su tierra, será la encargada de encontrar al último de los dragones en la mayor aventura de su vida."^^xsd:string ;
     :duration 114 ;
+    :genre "Animación"^^xsd:string ;
     :inLanguage "Castellano"^^xsd:string ;
     :name "Raya Y El Ultimo Dragon"^^xsd:string ;
     sch:actor :Person_Awkwafina,
@@ -873,6 +889,7 @@ Wolfsbane, Cannonball, Magik, Mirage y Sunspot deberán enfrentar sus miedos, po
     :contentRating "Apta mayores de 13 años"^^xsd:string ;
     :description "Godzilla y Kong, dos de las fuerzas más poderosas de un planeta habitado por todo tipo de aterradoras criaturas, se enfrentan en un espectacular combate que sacude los cimientos de la humanidad. Monarch se embarca en una misión de alto riesgo y pone rumbo hacia territorios inexplorados para descubrir los orígenes de estos dos titanes, en un último esfuerzo por tratar de salvar a dos bestias que parecen tener las horas contadas sobre la faz de la Tierra."^^xsd:string ;
     :duration 117 ;
+    :genre "Ciencia Ficción"^^xsd:string ;
     :inLanguage "Inglés subtitulada"^^xsd:string ;
     :name "Godzilla Vs. Kong"^^xsd:string ;
     sch:actor :Person_Alexander_Skarsgård,

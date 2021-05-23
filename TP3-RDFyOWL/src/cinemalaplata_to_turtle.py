@@ -47,6 +47,9 @@ def main():
         for director in movie["Director"]:
             create_individual_and_connect("Person", director, 'director', MOVIE_URI)
 
+        for genero in movie["Género"]:
+            GRAPH.add((MOVIE_URI, MY_ONTOLOGY['genre'], Literal(genero, datatype=XSD.string)))
+
         for cine in movie["Cines"]:
             CINE_NAME = cine["Nombre"]
             string_name = 'MovieTheater' + '_' + CINE_NAME
