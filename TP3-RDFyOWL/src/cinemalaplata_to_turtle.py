@@ -1,12 +1,14 @@
 import json
 import os
-from rdflib import Namespace, Graph, BNode, Literal, URIRef
-from rdflib.namespace import OWL, RDF
+from rdflib import Namespace, Graph, Literal
+from rdflib.namespace import OWL, RDF, XSD
+from datetime import datetime
 
 SCHEMA = Namespace("https://schema.org/")
 MY_ONTOLOGY = Namespace("https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#")
 GRAPH = Graph()
 GRAPH.namespace_manager.bind('', MY_ONTOLOGY)
+GRAPH.namespace_manager.bind('sch', SCHEMA)
 
 def create_data_directory_path(file_name):
     return os.path.abspath(os.path.join(*[os.path.dirname(__file__), os.pardir, "data", file_name]))
@@ -16,7 +18,7 @@ def create_individual_and_connect(tipo, data, relation, URI_to_connect):
     each_URI = MY_ONTOLOGY[string_name.replace(" ", "_")]
     GRAPH.add((each_URI, RDF.type, OWL.NamedIndividual))
     GRAPH.add((each_URI, RDF.type, SCHEMA[tipo]))
-    GRAPH.add((each_URI, SCHEMA['name'], Literal(data)))
+    GRAPH.add((each_URI, MY_ONTOLOGY['name'], Literal(data, datatype=XSD.string)))
     GRAPH.add((URI_to_connect, SCHEMA[relation], each_URI))
     return each_URI
 
@@ -31,12 +33,13 @@ def main():
         GRAPH.add((MOVIE_URI, RDF.type, OWL.NamedIndividual))
         GRAPH.add((MOVIE_URI, RDF.type, SCHEMA['Movie']))
 
-        GRAPH.add((MOVIE_URI, SCHEMA['name'], Literal(movie["Titulo"])))
-        GRAPH.add((MOVIE_URI, SCHEMA['description'], Literal(movie["Sinopsis"])))
-        GRAPH.add((MOVIE_URI, SCHEMA['inLanguage'], Literal(movie["Idioma"])))
-        GRAPH.add((MOVIE_URI, SCHEMA['url'], Literal(movie["Web Oficial"])))
-        GRAPH.add((MOVIE_URI, SCHEMA['duration'], Literal(movie["Duracion"])))
-        GRAPH.add((MOVIE_URI, SCHEMA['contentRating'], Literal(movie["Calificacion"])))
+        GRAPH.add((MOVIE_URI, MY_ONTOLOGY['name'], Literal(movie["Titulo"], datatype=XSD.string)))
+        GRAPH.add((MOVIE_URI, MY_ONTOLOGY['description'], Literal(movie["Sinopsis"], datatype=XSD.string)))
+        GRAPH.add((MOVIE_URI, MY_ONTOLOGY['inLanguage'], Literal(movie["Idioma"], datatype=XSD.string)))
+        if (movie["Web Oficial"] != 'No disponible'):
+            GRAPH.add((MOVIE_URI, MY_ONTOLOGY['url'], Literal(movie["Web Oficial"], datatype=XSD.anyURI)))
+        GRAPH.add((MOVIE_URI, MY_ONTOLOGY['duration'], Literal(movie["Duracion"], datatype=XSD.integer)))
+        GRAPH.add((MOVIE_URI, MY_ONTOLOGY['contentRating'], Literal(movie["Calificacion"], datatype=XSD.string)))
 
         create_individual_and_connect("Country", movie["Origen"], 'locationCreated', MOVIE_URI)
         for actor in movie["Actores"]:
@@ -50,7 +53,7 @@ def main():
             CINE_URI = MY_ONTOLOGY[string_name.replace(" ", "_")]
             GRAPH.add((CINE_URI, RDF.type, OWL.NamedIndividual))
             GRAPH.add((CINE_URI, RDF.type, SCHEMA['MovieTheater']))
-            GRAPH.add((CINE_URI, SCHEMA['name'], Literal(CINE_NAME)))
+            GRAPH.add((CINE_URI, MY_ONTOLOGY['name'], Literal(CINE_NAME, datatype=XSD.string)))
 
             for funcion in cine["Funciones"]:
                 SALA = funcion["Sala"]
@@ -59,9 +62,9 @@ def main():
                 GRAPH.add((event_URI, RDF.type, OWL.NamedIndividual))
                 GRAPH.add((event_URI, RDF.type, SCHEMA['ScreeningEvent']))
                 GRAPH.add((event_URI, SCHEMA['workPresented'], MOVIE_URI))
-                GRAPH.add((event_URI, SCHEMA['inLanguage'], Literal(funcion["Idioma"]))) 
+                GRAPH.add((event_URI, MY_ONTOLOGY['inLanguage'], Literal(funcion["Idioma"], datatype=XSD.string))) 
                 for time in funcion["Hora"]:
-                    GRAPH.add((event_URI, SCHEMA['startTime'], Literal(time)))
+                    GRAPH.add((event_URI, MY_ONTOLOGY['startTime'], Literal(datetime.strptime(time, '%H:%M'), datatype=XSD.dateTime)))
                 GRAPH.add((CINE_URI, SCHEMA['event'], event_URI))
 
     with open(create_data_directory_path("individualsCinemalaplata" + ".ttl"),"w",encoding="utf-8") as file:

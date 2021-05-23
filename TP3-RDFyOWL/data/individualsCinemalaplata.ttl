@@ -1,191 +1,189 @@
 @prefix : <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#> .
-@prefix ns1: <https://schema.org/> .
+@prefix sch: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :MovieTheater_CINEMA_CITY a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:MovieTheater ;
-    ns1:event :ScreeningEvent_CINEMA_CITY_4D_Godzilla_Vs._Kong,
+        sch:MovieTheater ;
+    :name "CINEMA CITY"^^xsd:string ;
+    sch:event :ScreeningEvent_CINEMA_CITY_4D_Godzilla_Vs._Kong,
         :ScreeningEvent_CINEMA_CITY_HD_Hermosa_Venganza,
         :ScreeningEvent_CINEMA_CITY_HD_Los_Nuevos_Mutantes,
-        :ScreeningEvent_CINEMA_CITY_HD_Raya_Y_El_Ultimo_Dragon ;
-    ns1:name "CINEMA CITY" .
+        :ScreeningEvent_CINEMA_CITY_HD_Raya_Y_El_Ultimo_Dragon .
 
 :MovieTheater_CINEMA_OCHO a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:MovieTheater ;
-    ns1:event :ScreeningEvent_CINEMA_OCHO_HD_Godzilla_Vs._Kong,
+        sch:MovieTheater ;
+    :name "CINEMA OCHO"^^xsd:string ;
+    sch:event :ScreeningEvent_CINEMA_OCHO_HD_Godzilla_Vs._Kong,
         :ScreeningEvent_CINEMA_OCHO_HD_Los_Nuevos_Mutantes,
-        :ScreeningEvent_CINEMA_OCHO_HD_Raya_Y_El_Ultimo_Dragon ;
-    ns1:name "CINEMA OCHO" .
+        :ScreeningEvent_CINEMA_OCHO_HD_Raya_Y_El_Ultimo_Dragon .
 
 :MovieTheater_CINEMA_PARADISO a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:MovieTheater ;
-    ns1:event :ScreeningEvent_CINEMA_PARADISO_HD_Godzilla_Vs._Kong,
+        sch:MovieTheater ;
+    :name "CINEMA PARADISO"^^xsd:string ;
+    sch:event :ScreeningEvent_CINEMA_PARADISO_HD_Godzilla_Vs._Kong,
         :ScreeningEvent_CINEMA_PARADISO_HD_Habitacion_212,
         :ScreeningEvent_CINEMA_PARADISO_HD_La_Fabrica_De_Sueños,
         :ScreeningEvent_CINEMA_PARADISO_HD_La_Noche_Magica,
         :ScreeningEvent_CINEMA_PARADISO_HD_Raya_Y_El_Ultimo_Dragon,
         <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ScreeningEvent_CINEMA_PARADISO_HD_Scooby!>,
         :ScreeningEvent_CINEMA_PARADISO_HD_Tenet,
-        :ScreeningEvent_CINEMA_PARADISO_HD_Tom_Y_Jerry ;
-    ns1:name "CINEMA PARADISO" .
+        :ScreeningEvent_CINEMA_PARADISO_HD_Tom_Y_Jerry .
 
 :MovieTheater_CINEMA_ROCHA a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:MovieTheater ;
-    ns1:event :ScreeningEvent_CINEMA_ROCHA_HD_Godzilla_Vs._Kong,
+        sch:MovieTheater ;
+    :name "CINEMA ROCHA"^^xsd:string ;
+    sch:event :ScreeningEvent_CINEMA_ROCHA_HD_Godzilla_Vs._Kong,
         :ScreeningEvent_CINEMA_ROCHA_HD_Los_Nuevos_Mutantes,
         :ScreeningEvent_CINEMA_ROCHA_HD_Mujer_Maravilla_1984,
         :ScreeningEvent_CINEMA_ROCHA_HD_Raya_Y_El_Ultimo_Dragon,
-        :ScreeningEvent_CINEMA_ROCHA_HD_Tom_Y_Jerry ;
-    ns1:name "CINEMA ROCHA" .
+        :ScreeningEvent_CINEMA_ROCHA_HD_Tom_Y_Jerry .
 
 :MovieTheater_CINEMA_SAN_MARTIN a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:MovieTheater ;
-    ns1:event :ScreeningEvent_CINEMA_SAN_MARTIN_HD_Caos:_El_Inicio,
+        sch:MovieTheater ;
+    :name "CINEMA SAN MARTIN"^^xsd:string ;
+    sch:event :ScreeningEvent_CINEMA_SAN_MARTIN_HD_Caos:_El_Inicio,
         :ScreeningEvent_CINEMA_SAN_MARTIN_HD_El_Secreto_Del_Bosque,
         :ScreeningEvent_CINEMA_SAN_MARTIN_HD_Godzilla_Vs._Kong,
         :ScreeningEvent_CINEMA_SAN_MARTIN_HD_Los_Intrusos,
         :ScreeningEvent_CINEMA_SAN_MARTIN_HD_Los_Nuevos_Mutantes,
         :ScreeningEvent_CINEMA_SAN_MARTIN_HD_Tom_Y_Jerry,
-        :ScreeningEvent_CINEMA_SAN_MARTIN_HD_Trolls_2:_World_Tour ;
-    ns1:name "CINEMA SAN MARTIN" .
+        :ScreeningEvent_CINEMA_SAN_MARTIN_HD_Trolls_2:_World_Tour .
 
 :Country_Alemania a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Country ;
-    ns1:name "Alemania" .
+        sch:Country ;
+    :name "Alemania"^^xsd:string .
 
 :Country_Argentina a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Country ;
-    ns1:name "Argentina" .
+        sch:Country ;
+    :name "Argentina"^^xsd:string .
 
 :Country_Francia a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Country ;
-    ns1:name "Francia" .
+        sch:Country ;
+    :name "Francia"^^xsd:string .
 
 :Country_Reino_Unido_-_Francia a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Country ;
-    ns1:name "Reino Unido - Francia" .
+        sch:Country ;
+    :name "Reino Unido - Francia"^^xsd:string .
 
 :Movie_Caos:_El_Inicio a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Movie ;
-    ns1:actor :Person_Daisy_Ridley,
+        sch:Movie ;
+    :contentRating "Apta mayores de 13 años"^^xsd:string ;
+    :description "En Prentisstown, Todd ha crecido creyendo que la \"Masilla\" fue la responsable de liberar un germen que asesinó a todas las mujeres y contagió con el \"ruido\" al resto de los hombres. Tras descubrir un remanso de silencio en un pantano, sus padres adoptivos le obligan a huir lo más rápido que pueda, dejando todo atrás salvo un mapa del Nuevo Mundo y un mensaje, así como un sinfín de preguntas sin responder. Pronto descubre la fuente del silencio: una chica llamada Viola. Los dos deben avisar lo antes posible sobre la inminente llegada de una nave para que el intendente Prentiss pueda preparar un ejército para la guerra."^^xsd:string ;
+    :duration 109 ;
+    :inLanguage "Inglés subtitulada"^^xsd:string ;
+    :name "Caos: El Inicio"^^xsd:string ;
+    sch:actor :Person_Daisy_Ridley,
         :Person_David_Oyelowo,
         :Person_Demián_Bichir,
         :Person_Mads_Mikkelsen,
         :Person_Nick_Jonas,
         :Person_Tom_Holland ;
-    ns1:contentRating "Apta mayores de 13 años" ;
-    ns1:description "En Prentisstown, Todd ha crecido creyendo que la \"Masilla\" fue la responsable de liberar un germen que asesinó a todas las mujeres y contagió con el \"ruido\" al resto de los hombres. Tras descubrir un remanso de silencio en un pantano, sus padres adoptivos le obligan a huir lo más rápido que pueda, dejando todo atrás salvo un mapa del Nuevo Mundo y un mensaje, así como un sinfín de preguntas sin responder. Pronto descubre la fuente del silencio: una chica llamada Viola. Los dos deben avisar lo antes posible sobre la inminente llegada de una nave para que el intendente Prentiss pueda preparar un ejército para la guerra." ;
-    ns1:director :Person_Doug_Liman ;
-    ns1:duration 109 ;
-    ns1:inLanguage "Inglés subtitulada" ;
-    ns1:locationCreated :Country_EEUU ;
-    ns1:name "Caos: El Inicio" ;
-    ns1:url "No disponible" .
+    sch:director :Person_Doug_Liman ;
+    sch:locationCreated :Country_EEUU .
 
 :Movie_El_Secreto_Del_Bosque a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Movie ;
-    ns1:actor :Person_Sahil_Shroff,
+        sch:Movie ;
+    :contentRating "Apta mayores de 13 años"^^xsd:string ;
+    :description "Mientras disfrutan de una escapada romántica en la India salvaje, una pareja de Los Angeles accidentalmente es testigo del exorcismo de una niña de 11 años a la cual intentarán rescatar."^^xsd:string ;
+    :duration 87 ;
+    :inLanguage "Inglés subtitulada"^^xsd:string ;
+    :name "El Secreto Del Bosque"^^xsd:string ;
+    sch:actor :Person_Sahil_Shroff,
         :Person_Subrat_Dutta,
         :Person_Vanessa_Curry ;
-    ns1:contentRating "Apta mayores de 13 años" ;
-    ns1:description "Mientras disfrutan de una escapada romántica en la India salvaje, una pareja de Los Angeles accidentalmente es testigo del exorcismo de una niña de 11 años a la cual intentarán rescatar." ;
-    ns1:director :Person_Vikram_Jayakumar ;
-    ns1:duration 87 ;
-    ns1:inLanguage "Inglés subtitulada" ;
-    ns1:locationCreated :Country_EEUU ;
-    ns1:name "El Secreto Del Bosque" ;
-    ns1:url "No disponible" .
+    sch:director :Person_Vikram_Jayakumar ;
+    sch:locationCreated :Country_EEUU .
 
 :Movie_Habitacion_212 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Movie ;
-    ns1:actor :Person_Benjamin_Biolay,
+        sch:Movie ;
+    :contentRating "Apta mayores de 13 años"^^xsd:string ;
+    :description "Tras 20 años de matrimonio, Maria decide dejarlo todo atrás y empezar una nueva vida. El primer paso es hospedarse en la habitación 212 de un hotel próximo a la casa en la que vivía junto a su familia. Con el paso del tiempo, comienza a preguntarse si ha tomado la decisión correcta."^^xsd:string ;
+    :duration 87 ;
+    :inLanguage "Francés subtitulado"^^xsd:string ;
+    :name "Habitacion 212"^^xsd:string ;
+    sch:actor :Person_Benjamin_Biolay,
         :Person_Camille_Cottin,
         :Person_Carole_Bouquet,
         :Person_Chiara_Mastroianni,
         :Person_Marie-Christine_Adam,
         :Person_Vincent_Lacoste ;
-    ns1:contentRating "Apta mayores de 13 años" ;
-    ns1:description "Tras 20 años de matrimonio, Maria decide dejarlo todo atrás y empezar una nueva vida. El primer paso es hospedarse en la habitación 212 de un hotel próximo a la casa en la que vivía junto a su familia. Con el paso del tiempo, comienza a preguntarse si ha tomado la decisión correcta." ;
-    ns1:director :Person_Christophe_Honoré ;
-    ns1:duration 87 ;
-    ns1:inLanguage "Francés subtitulado" ;
-    ns1:locationCreated :Country_Francia ;
-    ns1:name "Habitacion 212" ;
-    ns1:url "No disponible" .
+    sch:director :Person_Christophe_Honoré ;
+    sch:locationCreated :Country_Francia .
 
 :Movie_Hermosa_Venganza a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Movie ;
-    ns1:actor :Person_Adam_Brody,
+        sch:Movie ;
+    :contentRating "Apta mayores de 16 años"^^xsd:string ;
+    :description "Una joven mujer traumatizada por un evento trágico ocurrido en su pasado, busca venganza contra los hombres que se cruzaron por su camino."^^xsd:string ;
+    :duration 117 ;
+    :inLanguage "Inglés subtitulada"^^xsd:string ;
+    :name "Hermosa Venganza"^^xsd:string ;
+    sch:actor :Person_Adam_Brody,
         :Person_Bo_Burnham,
         :Person_Carey_Mulligan,
         :Person_Christopher_Mintz-Plasse,
         :Person_Clancy_Brown,
         :Person_Jennifer_Coolidge,
         :Person_Molly_Shannon ;
-    ns1:contentRating "Apta mayores de 16 años" ;
-    ns1:description "Una joven mujer traumatizada por un evento trágico ocurrido en su pasado, busca venganza contra los hombres que se cruzaron por su camino." ;
-    ns1:director :Person_Emerald_Fennell ;
-    ns1:duration 117 ;
-    ns1:inLanguage "Inglés subtitulada" ;
-    ns1:locationCreated :Country_EEUU ;
-    ns1:name "Hermosa Venganza" ;
-    ns1:url "No disponible" .
+    sch:director :Person_Emerald_Fennell ;
+    sch:locationCreated :Country_EEUU .
 
 :Movie_La_Fabrica_De_Sueños a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Movie ;
-    ns1:actor :Person_Dennis_Mojen,
+        sch:Movie ;
+    :contentRating "Apta todo público"^^xsd:string ;
+    :description "Durante el verano de 1961, Emil comienza a trabajar como extra en los famosos estudios de cine Babelsberg. Durante el rodaje de una superproducción, se enamora de la bailarina francesa llamada Milou. Cuando por fin conquista a Milou, el rodaje se cancela repentinamente y son obligados a separarse ya que El Muro de Berlín es levantado en agosto de ese año. Años más tarde, Emil trazará un atrevido y arriesgado plan para lograr que el rodaje continúe y reencontrarse con Milou."^^xsd:string ;
+    :duration 127 ;
+    :inLanguage "Aleman subtitulada"^^xsd:string ;
+    :name "La Fabrica De Sueños"^^xsd:string ;
+    sch:actor :Person_Dennis_Mojen,
         :Person_Emilia_Schüle,
         :Person_Heiner_Lauterbach,
         :Person_Ken_Duken,
         :Person_Michael_Gwisdek,
         :Person_Nikolai_Kinski,
         :Person_Wilfried_Hochholdinger ;
-    ns1:contentRating "Apta todo público" ;
-    ns1:description "Durante el verano de 1961, Emil comienza a trabajar como extra en los famosos estudios de cine Babelsberg. Durante el rodaje de una superproducción, se enamora de la bailarina francesa llamada Milou. Cuando por fin conquista a Milou, el rodaje se cancela repentinamente y son obligados a separarse ya que El Muro de Berlín es levantado en agosto de ese año. Años más tarde, Emil trazará un atrevido y arriesgado plan para lograr que el rodaje continúe y reencontrarse con Milou." ;
-    ns1:director :Person_Martin_Schreier ;
-    ns1:duration 127 ;
-    ns1:inLanguage "Aleman subtitulada" ;
-    ns1:locationCreated :Country_Alemania ;
-    ns1:name "La Fabrica De Sueños" ;
-    ns1:url "No disponible" .
+    sch:director :Person_Martin_Schreier ;
+    sch:locationCreated :Country_Alemania .
 
 :Movie_La_Noche_Magica a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Movie ;
-    ns1:actor :Person_Diego_Peretti,
+        sch:Movie ;
+    :contentRating "Apta mayores de 16 años"^^xsd:string ;
+    :description """Es 24 de diciembre, víspera de Navidad. En una casa tranquila en San Isidro donde vive un matrimonio con su pequeña hija, un ladrón  espera su momento para entrar a robar. Para su sorpresa, se encontrará primero con el amante de la señora de la casa al cual obligará a participar en el robo.\r
+Lo que no sabe, es que la pequeña de la casa al verlo lo confundirá con Papá Noel y le pedirá cumplir su lista de deseos navideños"""^^xsd:string ;
+    :duration 98 ;
+    :inLanguage "Castellano"^^xsd:string ;
+    :name "La Noche Magica"^^xsd:string ;
+    sch:actor :Person_Diego_Peretti,
         :Person_Esteban_Bigliardi,
         :Person_Natalia_Oreiro,
         :Person_Pablo_Rago ;
-    ns1:contentRating "Apta mayores de 16 años" ;
-    ns1:description """Es 24 de diciembre, víspera de Navidad. En una casa tranquila en San Isidro donde vive un matrimonio con su pequeña hija, un ladrón  espera su momento para entrar a robar. Para su sorpresa, se encontrará primero con el amante de la señora de la casa al cual obligará a participar en el robo.\r
-Lo que no sabe, es que la pequeña de la casa al verlo lo confundirá con Papá Noel y le pedirá cumplir su lista de deseos navideños""" ;
-    ns1:director :Person_Gastón_Portal ;
-    ns1:duration 98 ;
-    ns1:inLanguage "Castellano" ;
-    ns1:locationCreated :Country_Argentina ;
-    ns1:name "La Noche Magica" ;
-    ns1:url "No disponible" .
+    sch:director :Person_Gastón_Portal ;
+    sch:locationCreated :Country_Argentina .
 
 :Movie_Los_Intrusos a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Movie ;
-    ns1:actor :Person_Andrew_Ellis,
+        sch:Movie ;
+    :contentRating "Apta mayores de 16 años"^^xsd:string ;
+    :description "Inglaterra rural, principios de los noventa: los amigos de la infancia Nathan y Terry son inducidos por el sociópata local para robar a los Huggins, un médico anciano y su esposa. La novia de Nathan, Mary, está totalmente en contra del plan, pero al cabo de unas horas se encuentra en el caserón, al lado de la caja fuerte del sótano y de una panda de individuos, a cual más sospechoso."^^xsd:string ;
+    :duration 92 ;
+    :inLanguage "Inglés subtitulada"^^xsd:string ;
+    :name "Los Intrusos"^^xsd:string ;
+    sch:actor :Person_Andrew_Ellis,
         :Person_Ian_Kenny,
         :Person_Jake_Curran,
         :Person_Maisie_Williams,
         :Person_Rita_Tushingham,
         :Person_Stacha_Hicks,
         :Person_Sylvester_McCoy ;
-    ns1:contentRating "Apta mayores de 16 años" ;
-    ns1:description "Inglaterra rural, principios de los noventa: los amigos de la infancia Nathan y Terry son inducidos por el sociópata local para robar a los Huggins, un médico anciano y su esposa. La novia de Nathan, Mary, está totalmente en contra del plan, pero al cabo de unas horas se encuentra en el caserón, al lado de la caja fuerte del sótano y de una panda de individuos, a cual más sospechoso." ;
-    ns1:director :Person_Julius_Berg ;
-    ns1:duration 92 ;
-    ns1:inLanguage "Inglés subtitulada" ;
-    ns1:locationCreated :Country_Reino_Unido_-_Francia ;
-    ns1:name "Los Intrusos" ;
-    ns1:url "No disponible" .
+    sch:director :Person_Julius_Berg ;
+    sch:locationCreated :Country_Reino_Unido_-_Francia .
 
 :Movie_Mujer_Maravilla_1984 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Movie ;
-    ns1:actor :Person_Chris_Pine,
+        sch:Movie ;
+    :contentRating "Apta mayores de 13 años"^^xsd:string ;
+    :description "Ambientada en los años 80s. El mayor deseo de Diana Prince parece ser tener devuelta a Steve Trevor. Esto inexplicablemente parece haberse convertido en realidad, pero la enfrentará a dos nuevos villanos: Max Lord y Cheetah"^^xsd:string ;
+    :duration 151 ;
+    :inLanguage "Inglés subtitulada"^^xsd:string ;
+    :name "Mujer Maravilla 1984"^^xsd:string ;
+    sch:actor :Person_Chris_Pine,
         :Person_Connie_Nielsen,
         :Person_Gabriella_Wilde,
         :Person_Gal_Gadot,
@@ -194,661 +192,657 @@ Lo que no sabe, es que la pequeña de la casa al verlo lo confundirá con Papá 
         :Person_Pedro_Pascal,
         :Person_Ravi_Patel,
         :Person_Robin_Wright ;
-    ns1:contentRating "Apta mayores de 13 años" ;
-    ns1:description "Ambientada en los años 80s. El mayor deseo de Diana Prince parece ser tener devuelta a Steve Trevor. Esto inexplicablemente parece haberse convertido en realidad, pero la enfrentará a dos nuevos villanos: Max Lord y Cheetah" ;
-    ns1:director :Person_Patty_Jenkins ;
-    ns1:duration 151 ;
-    ns1:inLanguage "Inglés subtitulada" ;
-    ns1:locationCreated :Country_EEUU ;
-    ns1:name "Mujer Maravilla 1984" ;
-    ns1:url "No disponible" .
+    sch:director :Person_Patty_Jenkins ;
+    sch:locationCreated :Country_EEUU .
 
 <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Movie_Scooby!> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Movie ;
-    ns1:actor :Person_animación ;
-    ns1:contentRating "Apta todo público" ;
-    ns1:description """Película animada sobre el dibujito Scooby-Doo que sigue a un perro Gran Danés y sus 4 amigos: Fred, Daphne, Vilma y Shaggy quienes juntos viajan por el mundo resolviendo misterios relacionados con fantasmas y otras fuerzas sobrenaturales.-\r
-Scooby! revela cómo se conocieron los amigos de toda la vida Scooby y Shaggy, y cómo se unieron con los jóvenes detectives Fred, Velma y Daphne para formar Mystery Inc. Ahora, con cientos de casos resueltos y aventuras compartidas, Scooby y la pandilla se enfrentan al misterio más desafiante de todos los tiempos: una trama para liberar Cerberus, el perro fantasma, sobre el mundo. Mientras compiten para detener este "perrocalipsis" global, la pandilla descubre que Scooby tiene un legado secreto y un gran y épico destino que nadie imaginaba.""" ;
-    ns1:director :Person_Tony_Cervone ;
-    ns1:duration 94 ;
-    ns1:inLanguage "Castellano" ;
-    ns1:locationCreated :Country_EEUU ;
-    ns1:name "Scooby!" ;
-    ns1:url "No disponible" .
+        sch:Movie ;
+    :contentRating "Apta todo público"^^xsd:string ;
+    :description """Película animada sobre el dibujito Scooby-Doo que sigue a un perro Gran Danés y sus 4 amigos: Fred, Daphne, Vilma y Shaggy quienes juntos viajan por el mundo resolviendo misterios relacionados con fantasmas y otras fuerzas sobrenaturales.-\r
+Scooby! revela cómo se conocieron los amigos de toda la vida Scooby y Shaggy, y cómo se unieron con los jóvenes detectives Fred, Velma y Daphne para formar Mystery Inc. Ahora, con cientos de casos resueltos y aventuras compartidas, Scooby y la pandilla se enfrentan al misterio más desafiante de todos los tiempos: una trama para liberar Cerberus, el perro fantasma, sobre el mundo. Mientras compiten para detener este "perrocalipsis" global, la pandilla descubre que Scooby tiene un legado secreto y un gran y épico destino que nadie imaginaba."""^^xsd:string ;
+    :duration 94 ;
+    :inLanguage "Castellano"^^xsd:string ;
+    :name "Scooby!"^^xsd:string ;
+    sch:actor :Person_animación ;
+    sch:director :Person_Tony_Cervone ;
+    sch:locationCreated :Country_EEUU .
 
 :Movie_Tenet a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Movie ;
-    ns1:actor :Person_Aaron_Taylor-Johnson,
+        sch:Movie ;
+    :contentRating "Apta mayores de 13 años"^^xsd:string ;
+    :description "Armado con tan solo una palabra -Tenet- el protagonista de esta historia deberá pelear por la supervivencia del mundo entero en una misión que le lleva a viajar a través del oscuro mundo del espionaje internacional, y cuya experiencia se desdoblará más allá del tiempo lineal."^^xsd:string ;
+    :duration 150 ;
+    :inLanguage "Inglés subtitulada"^^xsd:string ;
+    :name "Tenet"^^xsd:string ;
+    sch:actor :Person_Aaron_Taylor-Johnson,
         :Person_Clemence_Poésy,
         :Person_Elizabeth_Debicki,
         :Person_John_David_Washington._Kenneth_Branagh,
         :Person_Michael_Caine,
         :Person_Robert_Pattinson ;
-    ns1:contentRating "Apta mayores de 13 años" ;
-    ns1:description "Armado con tan solo una palabra -Tenet- el protagonista de esta historia deberá pelear por la supervivencia del mundo entero en una misión que le lleva a viajar a través del oscuro mundo del espionaje internacional, y cuya experiencia se desdoblará más allá del tiempo lineal." ;
-    ns1:director :Person_Christopher_Nolan ;
-    ns1:duration 150 ;
-    ns1:inLanguage "Inglés subtitulada" ;
-    ns1:locationCreated :Country_EEUU ;
-    ns1:name "Tenet" ;
-    ns1:url "No disponible" .
+    sch:director :Person_Christopher_Nolan ;
+    sch:locationCreated :Country_EEUU .
 
 :Movie_Trolls_2:_World_Tour a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Movie ;
-    ns1:actor :Person_animación ;
-    ns1:contentRating "Apta todo público" ;
-    ns1:description "En una aventura que les llevará más allá de todo lo que habían conocido, Poppy y Branch descubren que su tribu de Trolls es solo una de las seis que existen, que el resto están repartidas en seis reinos y consagradas a seis tipos distintos de música: funk, country, tecno, clásica, pop y rock. La reina Bárbara, miembro de la realeza del hard rock, y su padre, el Rey Metal, quieren acabar con el resto de géneros musicales e imponer el reinado del rock. Con el destino del mundo en juego, Poppy y Branch, junto con el resto de la pandilla - Grandullón, Chanelle, Satén, Cooper y Guy Diamante-, visitarán los demás reinos para unir a los Trolls contra los planes de Barb de eclipsarlos a todos." ;
-    ns1:director :Person_David_P_Smith,
+        sch:Movie ;
+    :contentRating "Apta todo público"^^xsd:string ;
+    :description "En una aventura que les llevará más allá de todo lo que habían conocido, Poppy y Branch descubren que su tribu de Trolls es solo una de las seis que existen, que el resto están repartidas en seis reinos y consagradas a seis tipos distintos de música: funk, country, tecno, clásica, pop y rock. La reina Bárbara, miembro de la realeza del hard rock, y su padre, el Rey Metal, quieren acabar con el resto de géneros musicales e imponer el reinado del rock. Con el destino del mundo en juego, Poppy y Branch, junto con el resto de la pandilla - Grandullón, Chanelle, Satén, Cooper y Guy Diamante-, visitarán los demás reinos para unir a los Trolls contra los planes de Barb de eclipsarlos a todos."^^xsd:string ;
+    :duration 91 ;
+    :inLanguage "Castellano"^^xsd:string ;
+    :name "Trolls 2: World Tour"^^xsd:string ;
+    sch:actor :Person_animación ;
+    sch:director :Person_David_P_Smith,
         :Person_Walt_Dohrn ;
-    ns1:duration 91 ;
-    ns1:inLanguage "Castellano" ;
-    ns1:locationCreated :Country_EEUU ;
-    ns1:name "Trolls 2: World Tour" ;
-    ns1:url "No disponible" .
+    sch:locationCreated :Country_EEUU .
 
 :Person_Aaron_Taylor-Johnson a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Aaron Taylor-Johnson" .
+        sch:Person ;
+    :name "Aaron Taylor-Johnson"^^xsd:string .
 
 :Person_Adam_Brody a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Adam Brody" .
+        sch:Person ;
+    :name "Adam Brody"^^xsd:string .
 
 :Person_Adam_Wingard a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Adam Wingard" .
+        sch:Person ;
+    :name "Adam Wingard"^^xsd:string .
 
 :Person_Alexander_Skarsgård a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Alexander Skarsgård" .
+        sch:Person ;
+    :name "Alexander Skarsgård"^^xsd:string .
 
 :Person_Andrew_Ellis a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Andrew Ellis" .
+        sch:Person ;
+    :name "Andrew Ellis"^^xsd:string .
 
 :Person_Antonio_Banderas a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Antonio Banderas" .
+        sch:Person ;
+    :name "Antonio Banderas"^^xsd:string .
 
 :Person_Anya_Taylor-Joy a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Anya Taylor-Joy" .
+        sch:Person ;
+    :name "Anya Taylor-Joy"^^xsd:string .
 
 :Person_Awkwafina a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Awkwafina" .
+        sch:Person ;
+    :name "Awkwafina"^^xsd:string .
 
 :Person_Benjamin_Biolay a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Benjamin Biolay" .
+        sch:Person ;
+    :name "Benjamin Biolay"^^xsd:string .
 
 :Person_Blu_Hunt a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Blu Hunt" .
+        sch:Person ;
+    :name "Blu Hunt"^^xsd:string .
 
 :Person_Bo_Burnham a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Bo Burnham" .
+        sch:Person ;
+    :name "Bo Burnham"^^xsd:string .
 
 :Person_Camille_Cottin a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Camille Cottin" .
+        sch:Person ;
+    :name "Camille Cottin"^^xsd:string .
 
 :Person_Carey_Mulligan a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Carey Mulligan" .
+        sch:Person ;
+    :name "Carey Mulligan"^^xsd:string .
 
 :Person_Carlos_Lopez_Estrada a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Carlos Lopez Estrada" .
+        sch:Person ;
+    :name "Carlos Lopez Estrada"^^xsd:string .
 
 :Person_Carole_Bouquet a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Carole Bouquet" .
+        sch:Person ;
+    :name "Carole Bouquet"^^xsd:string .
 
 :Person_Charlie_Heaton a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Charlie Heaton" .
+        sch:Person ;
+    :name "Charlie Heaton"^^xsd:string .
 
 :Person_Chiara_Mastroianni a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Chiara Mastroianni" .
+        sch:Person ;
+    :name "Chiara Mastroianni"^^xsd:string .
 
 :Person_Chris_Pine a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Chris Pine" .
+        sch:Person ;
+    :name "Chris Pine"^^xsd:string .
 
 :Person_Christophe_Honoré a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Christophe Honoré" .
+        sch:Person ;
+    :name "Christophe Honoré"^^xsd:string .
 
 :Person_Christopher_Mintz-Plasse a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Christopher Mintz-Plasse" .
+        sch:Person ;
+    :name "Christopher Mintz-Plasse"^^xsd:string .
 
 :Person_Christopher_Nolan a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Christopher Nolan" .
+        sch:Person ;
+    :name "Christopher Nolan"^^xsd:string .
 
 :Person_Clancy_Brown a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Clancy Brown" .
+        sch:Person ;
+    :name "Clancy Brown"^^xsd:string .
 
 :Person_Clemence_Poésy a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Clemence Poésy" .
+        sch:Person ;
+    :name "Clemence Poésy"^^xsd:string .
 
 :Person_Connie_Nielsen a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Connie Nielsen" .
+        sch:Person ;
+    :name "Connie Nielsen"^^xsd:string .
 
 :Person_Daisy_Ridley a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Daisy Ridley" .
+        sch:Person ;
+    :name "Daisy Ridley"^^xsd:string .
 
 :Person_Daniel_Dae_Kim a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Daniel Dae Kim" .
+        sch:Person ;
+    :name "Daniel Dae Kim"^^xsd:string .
 
 :Person_David_Oyelowo a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "David Oyelowo" .
+        sch:Person ;
+    :name "David Oyelowo"^^xsd:string .
 
 :Person_David_P_Smith a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "David P Smith" .
+        sch:Person ;
+    :name "David P Smith"^^xsd:string .
 
 :Person_Demian_Bichir a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Demian Bichir" .
+        sch:Person ;
+    :name "Demian Bichir"^^xsd:string .
 
 :Person_Demián_Bichir a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Demián Bichir" .
+        sch:Person ;
+    :name "Demián Bichir"^^xsd:string .
 
 :Person_Dennis_Mojen a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Dennis Mojen" .
+        sch:Person ;
+    :name "Dennis Mojen"^^xsd:string .
 
 :Person_Diego_Peretti a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Diego Peretti" .
+        sch:Person ;
+    :name "Diego Peretti"^^xsd:string .
 
 :Person_Don_Hall a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Don Hall" .
+        sch:Person ;
+    :name "Don Hall"^^xsd:string .
 
 :Person_Doug_Liman a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Doug Liman" .
+        sch:Person ;
+    :name "Doug Liman"^^xsd:string .
 
 :Person_Eiza_González a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Eiza González" .
+        sch:Person ;
+    :name "Eiza González"^^xsd:string .
 
 :Person_Elizabeth_Debicki a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Elizabeth Debicki" .
+        sch:Person ;
+    :name "Elizabeth Debicki"^^xsd:string .
 
 :Person_Emerald_Fennell a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Emerald Fennell" .
+        sch:Person ;
+    :name "Emerald Fennell"^^xsd:string .
 
 :Person_Emilia_Schüle a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Emilia Schüle" .
+        sch:Person ;
+    :name "Emilia Schüle"^^xsd:string .
 
 :Person_Esteban_Bigliardi a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Esteban Bigliardi" .
+        sch:Person ;
+    :name "Esteban Bigliardi"^^xsd:string .
 
 :Person_Gabriella_Wilde a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Gabriella Wilde" .
+        sch:Person ;
+    :name "Gabriella Wilde"^^xsd:string .
 
 :Person_Gal_Gadot a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Gal Gadot" .
+        sch:Person ;
+    :name "Gal Gadot"^^xsd:string .
 
 :Person_Gastón_Portal a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Gastón Portal" .
+        sch:Person ;
+    :name "Gastón Portal"^^xsd:string .
 
 :Person_Happy_Anderson a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Happy Anderson" .
+        sch:Person ;
+    :name "Happy Anderson"^^xsd:string .
 
 :Person_Heiner_Lauterbach a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Heiner Lauterbach" .
+        sch:Person ;
+    :name "Heiner Lauterbach"^^xsd:string .
 
 :Person_Henry_Zaga a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Henry Zaga" .
+        sch:Person ;
+    :name "Henry Zaga"^^xsd:string .
 
 :Person_Ian_Kenny a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Ian Kenny" .
+        sch:Person ;
+    :name "Ian Kenny"^^xsd:string .
 
 :Person_Jake_Curran a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Jake Curran" .
+        sch:Person ;
+    :name "Jake Curran"^^xsd:string .
 
 :Person_Jennifer_Coolidge a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Jennifer Coolidge" .
+        sch:Person ;
+    :name "Jennifer Coolidge"^^xsd:string .
 
 :Person_John_David_Washington._Kenneth_Branagh a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "John David Washington. Kenneth Branagh" .
+        sch:Person ;
+    :name "John David Washington. Kenneth Branagh"^^xsd:string .
 
 :Person_Josh_Boone a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Josh Boone" .
+        sch:Person ;
+    :name "Josh Boone"^^xsd:string .
 
 :Person_Julius_Berg a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Julius Berg" .
+        sch:Person ;
+    :name "Julius Berg"^^xsd:string .
 
 :Person_Kelly_Marie_Tran a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Kelly Marie Tran" .
+        sch:Person ;
+    :name "Kelly Marie Tran"^^xsd:string .
 
 :Person_Ken_Duken a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Ken Duken" .
+        sch:Person ;
+    :name "Ken Duken"^^xsd:string .
 
 :Person_Kristen_Wiig a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Kristen Wiig" .
+        sch:Person ;
+    :name "Kristen Wiig"^^xsd:string .
 
 :Person_Kyle_Chandler a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Kyle Chandler" .
+        sch:Person ;
+    :name "Kyle Chandler"^^xsd:string .
 
 :Person_Mads_Mikkelsen a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Mads Mikkelsen" .
+        sch:Person ;
+    :name "Mads Mikkelsen"^^xsd:string .
 
 :Person_Marie-Christine_Adam a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Marie-Christine Adam" .
+        sch:Person ;
+    :name "Marie-Christine Adam"^^xsd:string .
 
 :Person_Martin_Schreier a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Martin Schreier" .
+        sch:Person ;
+    :name "Martin Schreier"^^xsd:string .
 
 :Person_Michael_Caine a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Michael Caine" .
+        sch:Person ;
+    :name "Michael Caine"^^xsd:string .
 
 :Person_Michael_Gwisdek a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Michael Gwisdek" .
+        sch:Person ;
+    :name "Michael Gwisdek"^^xsd:string .
 
 :Person_Millie_Bobby_Brown a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Millie Bobby Brown" .
+        sch:Person ;
+    :name "Millie Bobby Brown"^^xsd:string .
 
 :Person_Molly_Shannon a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Molly Shannon" .
+        sch:Person ;
+    :name "Molly Shannon"^^xsd:string .
 
 :Person_Natalia_Oreiro a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Natalia Oreiro" .
+        sch:Person ;
+    :name "Natalia Oreiro"^^xsd:string .
 
 :Person_Natasha_Rothwell a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Natasha Rothwell" .
+        sch:Person ;
+    :name "Natasha Rothwell"^^xsd:string .
 
 :Person_Nick_Jonas a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Nick Jonas" .
+        sch:Person ;
+    :name "Nick Jonas"^^xsd:string .
 
 :Person_Nikolai_Kinski a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Nikolai Kinski" .
+        sch:Person ;
+    :name "Nikolai Kinski"^^xsd:string .
 
 :Person_Pablo_Rago a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Pablo Rago" .
+        sch:Person ;
+    :name "Pablo Rago"^^xsd:string .
 
 :Person_Patty_Jenkins a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Patty Jenkins" .
+        sch:Person ;
+    :name "Patty Jenkins"^^xsd:string .
 
 :Person_Paul_Briggs a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Paul Briggs" .
+        sch:Person ;
+    :name "Paul Briggs"^^xsd:string .
 
 :Person_Pedro_Pascal a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Pedro Pascal" .
+        sch:Person ;
+    :name "Pedro Pascal"^^xsd:string .
 
 :Person_Ravi_Patel a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Ravi Patel" .
+        sch:Person ;
+    :name "Ravi Patel"^^xsd:string .
 
 :Person_Rebecca_Hall a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Rebecca Hall" .
+        sch:Person ;
+    :name "Rebecca Hall"^^xsd:string .
 
 :Person_Rita_Tushingham a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Rita Tushingham" .
+        sch:Person ;
+    :name "Rita Tushingham"^^xsd:string .
 
 :Person_Robert_Pattinson a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Robert Pattinson" .
+        sch:Person ;
+    :name "Robert Pattinson"^^xsd:string .
 
 :Person_Robin_Wright a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Robin Wright" .
+        sch:Person ;
+    :name "Robin Wright"^^xsd:string .
 
 :Person_Rosario_Dawson a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Rosario Dawson" .
+        sch:Person ;
+    :name "Rosario Dawson"^^xsd:string .
 
 :Person_Sahil_Shroff a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Sahil Shroff" .
+        sch:Person ;
+    :name "Sahil Shroff"^^xsd:string .
 
 :Person_Shun_Oguri a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Shun Oguri" .
+        sch:Person ;
+    :name "Shun Oguri"^^xsd:string .
 
 :Person_Stacha_Hicks a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Stacha Hicks" .
+        sch:Person ;
+    :name "Stacha Hicks"^^xsd:string .
 
 :Person_Subrat_Dutta a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Subrat Dutta" .
+        sch:Person ;
+    :name "Subrat Dutta"^^xsd:string .
 
 :Person_Sylvester_McCoy a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Sylvester McCoy" .
+        sch:Person ;
+    :name "Sylvester McCoy"^^xsd:string .
 
 :Person_Tim_Story a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Tim Story" .
+        sch:Person ;
+    :name "Tim Story"^^xsd:string .
 
 :Person_Tom_Holland a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Tom Holland" .
+        sch:Person ;
+    :name "Tom Holland"^^xsd:string .
 
 :Person_Tony_Cervone a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Tony Cervone" .
+        sch:Person ;
+    :name "Tony Cervone"^^xsd:string .
 
 :Person_Vanessa_Curry a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Vanessa Curry" .
+        sch:Person ;
+    :name "Vanessa Curry"^^xsd:string .
 
 :Person_Vikram_Jayakumar a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Vikram Jayakumar" .
+        sch:Person ;
+    :name "Vikram Jayakumar"^^xsd:string .
 
 :Person_Vincent_Lacoste a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Vincent Lacoste" .
+        sch:Person ;
+    :name "Vincent Lacoste"^^xsd:string .
 
 :Person_Walt_Dohrn a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Walt Dohrn" .
+        sch:Person ;
+    :name "Walt Dohrn"^^xsd:string .
 
 :Person_Wilfried_Hochholdinger a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Wilfried Hochholdinger" .
+        sch:Person ;
+    :name "Wilfried Hochholdinger"^^xsd:string .
 
 :ScreeningEvent_CINEMA_CITY_4D_Godzilla_Vs._Kong a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "CASTELLANO",
-        "SUBTITULADA" ;
-    ns1:startTime "13:00",
-        "15:30",
-        "18:05",
-        "20:40",
-        "23:10" ;
-    ns1:workPresented :Movie_Godzilla_Vs._Kong .
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string,
+        "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T13:00:00"^^xsd:dateTime,
+        "1900-01-01T15:30:00"^^xsd:dateTime,
+        "1900-01-01T18:05:00"^^xsd:dateTime,
+        "1900-01-01T20:40:00"^^xsd:dateTime,
+        "1900-01-01T23:10:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Godzilla_Vs._Kong .
 
 :ScreeningEvent_CINEMA_CITY_HD_Hermosa_Venganza a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "SUBTITULADA" ;
-    ns1:startTime "13:15",
-        "15:40",
-        "18:10",
-        "20:30",
-        "23:00" ;
-    ns1:workPresented :Movie_Hermosa_Venganza .
+        sch:ScreeningEvent ;
+    :inLanguage "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T13:15:00"^^xsd:dateTime,
+        "1900-01-01T15:40:00"^^xsd:dateTime,
+        "1900-01-01T18:10:00"^^xsd:dateTime,
+        "1900-01-01T20:30:00"^^xsd:dateTime,
+        "1900-01-01T23:00:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Hermosa_Venganza .
 
 :ScreeningEvent_CINEMA_CITY_HD_Los_Nuevos_Mutantes a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "SUBTITULADA" ;
-    ns1:startTime "22:15" ;
-    ns1:workPresented :Movie_Los_Nuevos_Mutantes .
+        sch:ScreeningEvent ;
+    :inLanguage "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T22:15:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Los_Nuevos_Mutantes .
 
 :ScreeningEvent_CINEMA_CITY_HD_Raya_Y_El_Ultimo_Dragon a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "CASTELLANO" ;
-    ns1:startTime "13:10",
-        "15:25",
-        "17:45",
-        "20:00" ;
-    ns1:workPresented :Movie_Raya_Y_El_Ultimo_Dragon .
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T13:10:00"^^xsd:dateTime,
+        "1900-01-01T15:25:00"^^xsd:dateTime,
+        "1900-01-01T17:45:00"^^xsd:dateTime,
+        "1900-01-01T20:00:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Raya_Y_El_Ultimo_Dragon .
 
 :ScreeningEvent_CINEMA_OCHO_HD_Godzilla_Vs._Kong a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "CASTELLANO",
-        "SUBTITULADA" ;
-    ns1:startTime "13:45",
-        "16:45",
-        "19:45",
-        "22:45" ;
-    ns1:workPresented :Movie_Godzilla_Vs._Kong .
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string,
+        "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T13:45:00"^^xsd:dateTime,
+        "1900-01-01T16:45:00"^^xsd:dateTime,
+        "1900-01-01T19:45:00"^^xsd:dateTime,
+        "1900-01-01T22:45:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Godzilla_Vs._Kong .
 
 :ScreeningEvent_CINEMA_OCHO_HD_Los_Nuevos_Mutantes a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "CASTELLANO",
-        "SUBTITULADA" ;
-    ns1:startTime "13:15",
-        "15:40",
-        "18:05",
-        "20:20",
-        "22:50" ;
-    ns1:workPresented :Movie_Los_Nuevos_Mutantes .
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string,
+        "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T13:15:00"^^xsd:dateTime,
+        "1900-01-01T15:40:00"^^xsd:dateTime,
+        "1900-01-01T18:05:00"^^xsd:dateTime,
+        "1900-01-01T20:20:00"^^xsd:dateTime,
+        "1900-01-01T22:50:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Los_Nuevos_Mutantes .
 
 :ScreeningEvent_CINEMA_OCHO_HD_Raya_Y_El_Ultimo_Dragon a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "CASTELLANO" ;
-    ns1:startTime "13:00",
-        "15:20",
-        "17:50",
-        "20:15",
-        "22:30" ;
-    ns1:workPresented :Movie_Raya_Y_El_Ultimo_Dragon .
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T13:00:00"^^xsd:dateTime,
+        "1900-01-01T15:20:00"^^xsd:dateTime,
+        "1900-01-01T17:50:00"^^xsd:dateTime,
+        "1900-01-01T20:15:00"^^xsd:dateTime,
+        "1900-01-01T22:30:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Raya_Y_El_Ultimo_Dragon .
 
 :ScreeningEvent_CINEMA_PARADISO_HD_Godzilla_Vs._Kong a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "CASTELLANO" ;
-    ns1:startTime "13:00",
-        "15:30",
-        "18:00",
-        "20:30",
-        "23:00" ;
-    ns1:workPresented :Movie_Godzilla_Vs._Kong .
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T13:00:00"^^xsd:dateTime,
+        "1900-01-01T15:30:00"^^xsd:dateTime,
+        "1900-01-01T18:00:00"^^xsd:dateTime,
+        "1900-01-01T20:30:00"^^xsd:dateTime,
+        "1900-01-01T23:00:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Godzilla_Vs._Kong .
 
 :ScreeningEvent_CINEMA_PARADISO_HD_Habitacion_212 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "SUBTITULADA" ;
-    ns1:startTime "14:00",
-        "18:00",
-        "20:00",
-        "22:00" ;
-    ns1:workPresented :Movie_Habitacion_212 .
+        sch:ScreeningEvent ;
+    :inLanguage "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T14:00:00"^^xsd:dateTime,
+        "1900-01-01T18:00:00"^^xsd:dateTime,
+        "1900-01-01T20:00:00"^^xsd:dateTime,
+        "1900-01-01T22:00:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Habitacion_212 .
 
 :ScreeningEvent_CINEMA_PARADISO_HD_La_Fabrica_De_Sueños a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "SUBTITULADA" ;
-    ns1:startTime "19:45" ;
-    ns1:workPresented :Movie_La_Fabrica_De_Sueños .
+        sch:ScreeningEvent ;
+    :inLanguage "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T19:45:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_La_Fabrica_De_Sueños .
 
 :ScreeningEvent_CINEMA_PARADISO_HD_La_Noche_Magica a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "CASTELLANO" ;
-    ns1:startTime "20:45",
-        "23:10" ;
-    ns1:workPresented :Movie_La_Noche_Magica .
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T20:45:00"^^xsd:dateTime,
+        "1900-01-01T23:10:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_La_Noche_Magica .
 
 :ScreeningEvent_CINEMA_PARADISO_HD_Raya_Y_El_Ultimo_Dragon a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "CASTELLANO" ;
-    ns1:startTime "13:00",
-        "15:15",
-        "17:30" ;
-    ns1:workPresented :Movie_Raya_Y_El_Ultimo_Dragon .
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T13:00:00"^^xsd:dateTime,
+        "1900-01-01T15:15:00"^^xsd:dateTime,
+        "1900-01-01T17:30:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Raya_Y_El_Ultimo_Dragon .
 
 <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#ScreeningEvent_CINEMA_PARADISO_HD_Scooby!> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "CASTELLANO" ;
-    ns1:startTime "16:00" ;
-    ns1:workPresented <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Movie_Scooby!> .
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T16:00:00"^^xsd:dateTime ;
+    sch:workPresented <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Movie_Scooby!> .
 
 :ScreeningEvent_CINEMA_PARADISO_HD_Tenet a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "SUBTITULADA" ;
-    ns1:startTime "22:45" ;
-    ns1:workPresented :Movie_Tenet .
+        sch:ScreeningEvent ;
+    :inLanguage "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T22:45:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Tenet .
 
 :ScreeningEvent_CINEMA_PARADISO_HD_Tom_Y_Jerry a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "CASTELLANO" ;
-    ns1:startTime "13:20",
-        "15:40",
-        "18:00" ;
-    ns1:workPresented :Movie_Tom_Y_Jerry .
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T13:20:00"^^xsd:dateTime,
+        "1900-01-01T15:40:00"^^xsd:dateTime,
+        "1900-01-01T18:00:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Tom_Y_Jerry .
 
 :ScreeningEvent_CINEMA_ROCHA_HD_Godzilla_Vs._Kong a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "CASTELLANO",
-        "SUBTITULADA" ;
-    ns1:startTime "15:00",
-        "17:40",
-        "20:20",
-        "23:00" ;
-    ns1:workPresented :Movie_Godzilla_Vs._Kong .
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string,
+        "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T15:00:00"^^xsd:dateTime,
+        "1900-01-01T17:40:00"^^xsd:dateTime,
+        "1900-01-01T20:20:00"^^xsd:dateTime,
+        "1900-01-01T23:00:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Godzilla_Vs._Kong .
 
 :ScreeningEvent_CINEMA_ROCHA_HD_Los_Nuevos_Mutantes a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "CASTELLANO" ;
-    ns1:startTime "20:45",
-        "23:10" ;
-    ns1:workPresented :Movie_Los_Nuevos_Mutantes .
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T20:45:00"^^xsd:dateTime,
+        "1900-01-01T23:10:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Los_Nuevos_Mutantes .
 
 :ScreeningEvent_CINEMA_ROCHA_HD_Mujer_Maravilla_1984 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "CASTELLANO" ;
-    ns1:startTime "22:10" ;
-    ns1:workPresented :Movie_Mujer_Maravilla_1984 .
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T22:10:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Mujer_Maravilla_1984 .
 
 :ScreeningEvent_CINEMA_ROCHA_HD_Raya_Y_El_Ultimo_Dragon a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "CASTELLANO" ;
-    ns1:startTime "13:45",
-        "16:45",
-        "19:45" ;
-    ns1:workPresented :Movie_Raya_Y_El_Ultimo_Dragon .
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T13:45:00"^^xsd:dateTime,
+        "1900-01-01T16:45:00"^^xsd:dateTime,
+        "1900-01-01T19:45:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Raya_Y_El_Ultimo_Dragon .
 
 :ScreeningEvent_CINEMA_ROCHA_HD_Tom_Y_Jerry a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "CASTELLANO" ;
-    ns1:startTime "14:00",
-        "16:15",
-        "18:30" ;
-    ns1:workPresented :Movie_Tom_Y_Jerry .
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T14:00:00"^^xsd:dateTime,
+        "1900-01-01T16:15:00"^^xsd:dateTime,
+        "1900-01-01T18:30:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Tom_Y_Jerry .
 
 :ScreeningEvent_CINEMA_SAN_MARTIN_HD_Caos:_El_Inicio a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "CASTELLANO",
-        "SUBTITULADA" ;
-    ns1:startTime "13:45",
-        "18:15",
-        "22:45" ;
-    ns1:workPresented :Movie_Caos:_El_Inicio .
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string,
+        "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T13:45:00"^^xsd:dateTime,
+        "1900-01-01T18:15:00"^^xsd:dateTime,
+        "1900-01-01T22:45:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Caos:_El_Inicio .
 
 :ScreeningEvent_CINEMA_SAN_MARTIN_HD_El_Secreto_Del_Bosque a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "CASTELLANO" ;
-    ns1:startTime "20:45",
-        "23:10" ;
-    ns1:workPresented :Movie_El_Secreto_Del_Bosque .
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T20:45:00"^^xsd:dateTime,
+        "1900-01-01T23:10:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_El_Secreto_Del_Bosque .
 
 :ScreeningEvent_CINEMA_SAN_MARTIN_HD_Godzilla_Vs._Kong a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "CASTELLANO" ;
-    ns1:startTime "14:00",
-        "17:00",
-        "19:50",
-        "22:40" ;
-    ns1:workPresented :Movie_Godzilla_Vs._Kong .
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T14:00:00"^^xsd:dateTime,
+        "1900-01-01T17:00:00"^^xsd:dateTime,
+        "1900-01-01T19:50:00"^^xsd:dateTime,
+        "1900-01-01T22:40:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Godzilla_Vs._Kong .
 
 :ScreeningEvent_CINEMA_SAN_MARTIN_HD_Los_Intrusos a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "SUBTITULADA" ;
-    ns1:startTime "16:00",
-        "20:30" ;
-    ns1:workPresented :Movie_Los_Intrusos .
+        sch:ScreeningEvent ;
+    :inLanguage "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T16:00:00"^^xsd:dateTime,
+        "1900-01-01T20:30:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Los_Intrusos .
 
 :ScreeningEvent_CINEMA_SAN_MARTIN_HD_Los_Nuevos_Mutantes a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "CASTELLANO",
-        "SUBTITULADA" ;
-    ns1:startTime "13:00",
-        "15:30",
-        "18:00",
-        "20:30",
-        "23:00" ;
-    ns1:workPresented :Movie_Los_Nuevos_Mutantes .
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string,
+        "SUBTITULADA"^^xsd:string ;
+    :startTime "1900-01-01T13:00:00"^^xsd:dateTime,
+        "1900-01-01T15:30:00"^^xsd:dateTime,
+        "1900-01-01T18:00:00"^^xsd:dateTime,
+        "1900-01-01T20:30:00"^^xsd:dateTime,
+        "1900-01-01T23:00:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Los_Nuevos_Mutantes .
 
 :ScreeningEvent_CINEMA_SAN_MARTIN_HD_Tom_Y_Jerry a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "CASTELLANO" ;
-    ns1:startTime "14:00",
-        "18:25" ;
-    ns1:workPresented :Movie_Tom_Y_Jerry .
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T14:00:00"^^xsd:dateTime,
+        "1900-01-01T18:25:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Tom_Y_Jerry .
 
 :ScreeningEvent_CINEMA_SAN_MARTIN_HD_Trolls_2:_World_Tour a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:ScreeningEvent ;
-    ns1:inLanguage "CASTELLANO" ;
-    ns1:startTime "16:10" ;
-    ns1:workPresented :Movie_Trolls_2:_World_Tour .
+        sch:ScreeningEvent ;
+    :inLanguage "CASTELLANO"^^xsd:string ;
+    :startTime "1900-01-01T16:10:00"^^xsd:dateTime ;
+    sch:workPresented :Movie_Trolls_2:_World_Tour .
 
 :Person_Maisie_Williams a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "Maisie Williams" .
+        sch:Person ;
+    :name "Maisie Williams"^^xsd:string .
 
 :Movie_Tom_Y_Jerry a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Movie ;
-    ns1:actor :Person_animación ;
-    ns1:contentRating "Apta todo público" ;
-    ns1:description """Película del clásico dibujo animado de Tom y Jerry que mezcla live-action con animación. \r
+        sch:Movie ;
+    :contentRating "Apta todo público"^^xsd:string ;
+    :description """Película del clásico dibujo animado de Tom y Jerry que mezcla live-action con animación. \r
 Jerry se muda al hotel más lujoso de Nueva York justo antes del "casamiento del siglo"; la coordinadora de la ceremonia, desesperada, no tiene más opción que contratar a Tom para eliminar a Jerry. Esto desata una batalla entre gato y ratón que amenaza con destruir la carrera de la coordinadora, la ceremonia e incluso quizás el hotel mismo.\r
-Pero pronto surge un problema más grave: un empleado ambicioso y diabólico que conspira contra los tres.""" ;
-    ns1:director :Person_Tim_Story ;
-    ns1:duration 101 ;
-    ns1:inLanguage "Inglés subtitulada" ;
-    ns1:locationCreated :Country_EEUU ;
-    ns1:name "Tom Y Jerry" ;
-    ns1:url "No disponible" .
+Pero pronto surge un problema más grave: un empleado ambicioso y diabólico que conspira contra los tres."""^^xsd:string ;
+    :duration 101 ;
+    :inLanguage "Inglés subtitulada"^^xsd:string ;
+    :name "Tom Y Jerry"^^xsd:string ;
+    sch:actor :Person_animación ;
+    sch:director :Person_Tim_Story ;
+    sch:locationCreated :Country_EEUU .
 
 :Person_animación a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Person ;
-    ns1:name "animación" .
+        sch:Person ;
+    :name "animación"^^xsd:string .
 
 :Movie_Los_Nuevos_Mutantes a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Movie ;
-    ns1:actor :Person_Antonio_Banderas,
+        sch:Movie ;
+    :contentRating "Apta mayores de 13 años"^^xsd:string ;
+    :description """Encerrados contra su voluntad en una institución secreta, 5 jóvenes mutantes descubren sus poderosas habilidades. Están bajo el estudio y análisis de la Doctora Cecilia Reyes quién tiene como objetivo curarlos.\r
+Wolfsbane, Cannonball, Magik, Mirage y Sunspot deberán enfrentar sus miedos, poderes y peligros que los rodean para intentar escapar a su pasado y salvarse a si mismos."""^^xsd:string ;
+    :duration 98 ;
+    :inLanguage "Inglés subtitulada"^^xsd:string ;
+    :name "Los Nuevos Mutantes"^^xsd:string ;
+    sch:actor :Person_Antonio_Banderas,
         :Person_Anya_Taylor-Joy,
         :Person_Blu_Hunt,
         :Person_Charlie_Heaton,
@@ -856,51 +850,42 @@ Pero pronto surge un problema más grave: un empleado ambicioso y diabólico que
         :Person_Henry_Zaga,
         :Person_Maisie_Williams,
         :Person_Rosario_Dawson ;
-    ns1:contentRating "Apta mayores de 13 años" ;
-    ns1:description """Encerrados contra su voluntad en una institución secreta, 5 jóvenes mutantes descubren sus poderosas habilidades. Están bajo el estudio y análisis de la Doctora Cecilia Reyes quién tiene como objetivo curarlos.\r
-Wolfsbane, Cannonball, Magik, Mirage y Sunspot deberán enfrentar sus miedos, poderes y peligros que los rodean para intentar escapar a su pasado y salvarse a si mismos.""" ;
-    ns1:director :Person_Josh_Boone ;
-    ns1:duration 98 ;
-    ns1:inLanguage "Inglés subtitulada" ;
-    ns1:locationCreated :Country_EEUU ;
-    ns1:name "Los Nuevos Mutantes" ;
-    ns1:url "No disponible" .
+    sch:director :Person_Josh_Boone ;
+    sch:locationCreated :Country_EEUU .
 
 :Movie_Raya_Y_El_Ultimo_Dragon a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Movie ;
-    ns1:actor :Person_Awkwafina,
+        sch:Movie ;
+    :contentRating "Apta todo público C/L"^^xsd:string ;
+    :description "Ambientada en el sudeste asiático, la cinta sigue la historia de Raya, una niña de un gran espíritu aventurero que vive en un reino llamado Kumandra. Este lejano y recóndito territorio está habitado por una civilización milenaria. Cinco son los clanes que forman esta tierra conocida como la del dragón y Raya, con el objetivo de devolver el equilibrio a su tierra, será la encargada de encontrar al último de los dragones en la mayor aventura de su vida."^^xsd:string ;
+    :duration 114 ;
+    :inLanguage "Castellano"^^xsd:string ;
+    :name "Raya Y El Ultimo Dragon"^^xsd:string ;
+    sch:actor :Person_Awkwafina,
         :Person_Daniel_Dae_Kim,
         :Person_Kelly_Marie_Tran ;
-    ns1:contentRating "Apta todo público C/L" ;
-    ns1:description "Ambientada en el sudeste asiático, la cinta sigue la historia de Raya, una niña de un gran espíritu aventurero que vive en un reino llamado Kumandra. Este lejano y recóndito territorio está habitado por una civilización milenaria. Cinco son los clanes que forman esta tierra conocida como la del dragón y Raya, con el objetivo de devolver el equilibrio a su tierra, será la encargada de encontrar al último de los dragones en la mayor aventura de su vida." ;
-    ns1:director :Person_Carlos_Lopez_Estrada,
+    sch:director :Person_Carlos_Lopez_Estrada,
         :Person_Don_Hall,
         :Person_Paul_Briggs ;
-    ns1:duration 114 ;
-    ns1:inLanguage "Castellano" ;
-    ns1:locationCreated :Country_EEUU ;
-    ns1:name "Raya Y El Ultimo Dragon" ;
-    ns1:url "No disponible" .
+    sch:locationCreated :Country_EEUU .
 
 :Movie_Godzilla_Vs._Kong a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Movie ;
-    ns1:actor :Person_Alexander_Skarsgård,
+        sch:Movie ;
+    :contentRating "Apta mayores de 13 años"^^xsd:string ;
+    :description "Godzilla y Kong, dos de las fuerzas más poderosas de un planeta habitado por todo tipo de aterradoras criaturas, se enfrentan en un espectacular combate que sacude los cimientos de la humanidad. Monarch se embarca en una misión de alto riesgo y pone rumbo hacia territorios inexplorados para descubrir los orígenes de estos dos titanes, en un último esfuerzo por tratar de salvar a dos bestias que parecen tener las horas contadas sobre la faz de la Tierra."^^xsd:string ;
+    :duration 117 ;
+    :inLanguage "Inglés subtitulada"^^xsd:string ;
+    :name "Godzilla Vs. Kong"^^xsd:string ;
+    sch:actor :Person_Alexander_Skarsgård,
         :Person_Demian_Bichir,
         :Person_Eiza_González,
         :Person_Kyle_Chandler,
         :Person_Millie_Bobby_Brown,
         :Person_Rebecca_Hall,
         :Person_Shun_Oguri ;
-    ns1:contentRating "Apta mayores de 13 años" ;
-    ns1:description "Godzilla y Kong, dos de las fuerzas más poderosas de un planeta habitado por todo tipo de aterradoras criaturas, se enfrentan en un espectacular combate que sacude los cimientos de la humanidad. Monarch se embarca en una misión de alto riesgo y pone rumbo hacia territorios inexplorados para descubrir los orígenes de estos dos titanes, en un último esfuerzo por tratar de salvar a dos bestias que parecen tener las horas contadas sobre la faz de la Tierra." ;
-    ns1:director :Person_Adam_Wingard ;
-    ns1:duration 117 ;
-    ns1:inLanguage "Inglés subtitulada" ;
-    ns1:locationCreated :Country_EEUU ;
-    ns1:name "Godzilla Vs. Kong" ;
-    ns1:url "No disponible" .
+    sch:director :Person_Adam_Wingard ;
+    sch:locationCreated :Country_EEUU .
 
 :Country_EEUU a <http://www.w3.org/2002/07/owl#NamedIndividual>,
-        ns1:Country ;
-    ns1:name "EEUU" .
+        sch:Country ;
+    :name "EEUU"^^xsd:string .
 
