@@ -6,12 +6,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.expected_conditions import visibility_of, element_to_be_clickable
 from selenium.webdriver.common.by import By
 from rdflib import Namespace, Graph, Literal
-from rdflib.namespace import OWL, RDF
+from rdflib.namespace import OWL, RDF, XSD
+from datetime import datetime
 
 SCHEMA = Namespace("https://schema.org/")
 MY_ONTOLOGY = Namespace("https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#")
 GRAPH = Graph()
 GRAPH.namespace_manager.bind('', MY_ONTOLOGY)
+GRAPH.namespace_manager.bind('sch', SCHEMA)
 
 def create_data_directory_path(file_name):
     return os.path.abspath(os.path.join(*[os.path.dirname(__file__), os.pardir, "data", file_name]))
@@ -21,7 +23,7 @@ def create_individual_and_connect(tipo, data, relation, URI_to_connect):
     each_URI = MY_ONTOLOGY[string_name.replace(" ", "_")]
     GRAPH.add((each_URI, RDF.type, OWL.NamedIndividual))
     GRAPH.add((each_URI, RDF.type, SCHEMA[tipo]))
-    GRAPH.add((each_URI, SCHEMA['name'], Literal(data)))
+    GRAPH.add((each_URI, MY_ONTOLOGY['name'], Literal(data, datatype=XSD.string)))
     GRAPH.add((URI_to_connect, SCHEMA[relation], each_URI))
     return each_URI
 
@@ -49,11 +51,10 @@ def main():
         GRAPH.add((MOVIE_URI, RDF.type, OWL.NamedIndividual))
         GRAPH.add((MOVIE_URI, RDF.type, SCHEMA['Movie']))
 
-        name_literal = Literal(MOVIE_NAME)
-        GRAPH.add((MOVIE_URI, SCHEMA['name'], name_literal))
+        GRAPH.add((MOVIE_URI, MY_ONTOLOGY['name'], Literal(MOVIE_NAME, datatype=XSD.string)))
 
-        description_literal = Literal(driver.find_element_by_xpath("//*[@id='sinopsis']").text)
-        GRAPH.add((MOVIE_URI, SCHEMA['description'], description_literal))
+        description_literal = Literal(driver.find_element_by_xpath("//*[@id='sinopsis']").text, datatype=XSD.string)
+        GRAPH.add((MOVIE_URI, MY_ONTOLOGY['description'], description_literal))
 
         #clickea y espera para que aparezca la info técnica
         movie_info = driver.find_element_by_xpath("//*[@id='tecnicos']")
@@ -80,17 +81,17 @@ def main():
                 elif data[0] == "Género":
                     data_list = data[1].split(", ")
                     for each in data_list:
-                        GRAPH.add((MOVIE_URI, SCHEMA['genre'], Literal(each)))
+                        GRAPH.add((MOVIE_URI, MY_ONTOLOGY['genre'], Literal(each, datatype=XSD.string)))
                 elif data[0] == "Duración":
                     #transforma la duracion de string a en numero
                     aux = int(data[1].split(" ")[0])
-                    GRAPH.add((MOVIE_URI, SCHEMA['duration'], Literal(aux)))
+                    GRAPH.add((MOVIE_URI, MY_ONTOLOGY['duration'], Literal(aux, datatype=XSD.integer)))
                 elif data[0] == "Distribuidora":
                     create_individual_and_connect('Organization', data[1], 'publisher', MOVIE_URI)
                 elif data[0] == "Calificación":
-                    GRAPH.add((MOVIE_URI, SCHEMA['contentRating'], Literal(data[1])))
+                    GRAPH.add((MOVIE_URI, MY_ONTOLOGY['contentRating'], Literal(data[1], datatype=XSD.string)))
                 elif data[0] == "Título Original":
-                    GRAPH.add((MOVIE_URI, SCHEMA['name'], Literal(data[1])))     
+                    GRAPH.add((MOVIE_URI, MY_ONTOLOGY['name'], Literal(data[1], datatype=XSD.string)))     
 
         #espera a que esté el panel
         WebDriverWait(driver, timeout=5).until(element_to_be_clickable((By.XPATH, "//*[@id='app']/main/div[2]/div/div[2]/div/div/div[2]")))
@@ -109,14 +110,14 @@ def main():
             CINE_URI = MY_ONTOLOGY[string_name.replace(" ", "_")]
             GRAPH.add((CINE_URI, RDF.type, OWL.NamedIndividual))
             GRAPH.add((CINE_URI, RDF.type, SCHEMA['MovieTheater']))
-            GRAPH.add((CINE_URI, SCHEMA['name'], Literal(CINE_NAME)))
+            GRAPH.add((CINE_URI, MY_ONTOLOGY['name'], Literal(CINE_NAME, datatype=XSD.string)))
             
             #pueden aparecer datos con l6a misma sala y formato pero separados
             appeared_types = {}
             actual_type = ''
             for data in data_list:
                 try:
-                    datetime.datetime.strptime(data,'%H:%M')
+                    datetime.strptime(data,'%H:%M')
                     appeared_types[actual_type].append(data)
                 except:
                     actual_type = data
@@ -131,10 +132,10 @@ def main():
                 GRAPH.add((event_URI, RDF.type, OWL.NamedIndividual))
                 GRAPH.add((event_URI, RDF.type, SCHEMA['ScreeningEvent']))
                 GRAPH.add((event_URI, SCHEMA['workPresented'], MOVIE_URI))
-                GRAPH.add((event_URI, SCHEMA['videoFormat'], Literal(SALA)))
-                GRAPH.add((event_URI, SCHEMA['inLanguage'], Literal(typesList[2])))
+                GRAPH.add((event_URI, MY_ONTOLOGY['videoFormat'], Literal(SALA, datatype=XSD.string)))
+                GRAPH.add((event_URI, MY_ONTOLOGY['inLanguage'], Literal(typesList[2], datatype=XSD.string)))
                 for time in appeared_types[key]:
-                    GRAPH.add((event_URI, SCHEMA['startTime'], Literal(time)))
+                    GRAPH.add((event_URI, MY_ONTOLOGY['startTime'], Literal(datetime.strptime(time, '%H:%M'), datatype=XSD.dateTime)))
                 GRAPH.add((CINE_URI, SCHEMA['event'], event_URI))
             
 
