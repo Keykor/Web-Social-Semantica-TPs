@@ -1055,7 +1055,7 @@ Everybody else"""^^xsd:string ;
     :embedUrl "/video/imdb/vi3240214809"^^xsd:anyURL ;
     :name "Stream on HBO Max for a Limited Time"^^xsd:string ;
     :thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZjQ0NGM2NGMtMDE1Yi00YzQyLWI1ZWYtMmQ2OWEzZTA5YjEyXkEyXkFqcGdeQWRvb2xpbmhk._V1_.jpg"^^xsd:anyURL ;
-    :uploadDate "2020-12-07T01:51:07Z"^^xsd:string ;
+    :uploadDate "2020-12-07T01:51:07+00:00"^^xsd:dateTime ;
     sch:thumbnail :Wonder_Woman_1984_ImageObject_0 .
 
 <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#Wonder_Woman_1984_VideoObject_Wonder_Woman_1984_(Trailer_2)> a <http://www.w3.org/2002/07/owl#NamedIndividual>,
@@ -1063,7 +1063,7 @@ Everybody else"""^^xsd:string ;
     :description "Video Clip of Wonder Woman 1984"^^xsd:string ;
     :name "Wonder Woman 1984 (Trailer 2)"^^xsd:string ;
     :thumbnailUrl "https://content.internetvideoarchive.com/content/hdphotos/13126/013126/013126_820x461_637413475681110755.jpg"^^xsd:anyURL ;
-    :uploadDate "2020-11-21 17:41:36"^^xsd:string .
+    :uploadDate "2020-11-21T17:41:36"^^xsd:dateTime .
 
 :Wonder_Woman_1984_WatchAction_0 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:WatchAction ;

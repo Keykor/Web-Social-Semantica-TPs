@@ -20,11 +20,11 @@ ACTUAL_PAGE = ""
 def datatype(tipo):
     if tipo in ['worstRating', 'ratingValue', 'bestRating']:
         return XSD.float
-    elif tipo in ['videoFormat', 'timeRequired', 'reviewBody', 'name', 'keywords', 'inLanguage', 'genre', 'description', 'countryOfOrigin', 'contentUrl', 'contentRating', 'character', 'category', 'datePublished', 'uploadDate']:
+    elif tipo in ['videoFormat', 'timeRequired', 'reviewBody', 'name', 'keywords', 'inLanguage', 'genre', 'description', 'countryOfOrigin', 'contentUrl', 'contentRating', 'character', 'category', 'datePublished']:
         return XSD.string
     elif tipo in ['urlTemplate', 'url', 'thumbnailUrl', 'sameAs', 'mainEntityOfPage', 'image', 'embedUrl', 'actionPlatform']:
         return XSD.anyURL
-    elif tipo in ['startTime', 'startDate', 'dateModified', 'dateCreated', 'availabilityStarts']:
+    elif tipo in ['startTime', 'startDate', 'dateModified', 'dateCreated', 'availabilityStarts', 'uploadDate']:
         return XSD.dateTime
     elif tipo in ['reviewCount', 'ratingCount', 'duration']:
         return XSD.integer

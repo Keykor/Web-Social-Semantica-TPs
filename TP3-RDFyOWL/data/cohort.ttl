@@ -91,7 +91,7 @@ sch:actors rdf:type owl:ObjectProperty .
 ###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#datePublished
 :datePublished rdf:type owl:DatatypeProperty ;
                rdfs:domain sch:CreativeWork ;
-               rdfs:range xsd:dateTime .
+               rdfs:range xsd:string .
 
 
 ###  https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/TP3-RDFyOWL/cohort.ttl#description
