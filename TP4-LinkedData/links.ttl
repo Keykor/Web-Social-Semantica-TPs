@@ -1,3 +1,13 @@
 @prefix : <https://raw.githubusercontent.com/Keykor/Web-Social-Semantica-TPs/main/cohort.ttl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix dbpedia: <http://dbpedia.org/resource/> .
+
+:Person_Gal_Gadot owl:sameAs <http://dbpedia.org/resource/Gal_Gadot> .
+:Person_Chris_Pine owl:sameAs <http://dbpedia.org/resource/Chris_Pine> .
+:Person_Kristen_Wiig owl:sameAs <http://dbpedia.org/resource/Kristen_Wiig> .
+:Person_Pedro_Pascal owl:sameAs <http://dbpedia.org/resource/Pedro_Pascal> .
+:Person_Robin_Wright owl:sameAs <http://dbpedia.org/resource/Robin_Wright> .
+:Person_Connie_Nielsen owl:sameAs <http://dbpedia.org/resource/Connie_Nielsen> .
+:Person_Amr_Waked owl:sameAs <http://dbpedia.org/resource/Amr_Waked> .
+:Person_Kristoffer_Polaha owl:sameAs <http://dbpedia.org/resource/Kristoffer_Polaha> .
+:Person_Natasha_Rothwell owl:sameAs <http://dbpedia.org/resource/Natasha_Rothwell> .
+:Person_Ravi_Patel owl:sameAs <http://dbpedia.org/resource/Ravi_Patel_(actor)> .
