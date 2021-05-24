@@ -2,7 +2,7 @@
 @prefix sch: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:Wonder_Woman_1984_Movie_Wonder_Woman_1984 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
+:Movie_Wonder_Woman_1984 a <http://www.w3.org/2002/07/owl#NamedIndividual>,
         sch:Movie ;
     :character "Antiope"^^xsd:string,
         "Barbara Minerva / Cheetah"^^xsd:string,

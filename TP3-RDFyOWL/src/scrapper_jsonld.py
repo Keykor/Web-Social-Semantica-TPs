@@ -60,6 +60,8 @@ def transform_to_triplets(objeto):
         string_name += objeto['author']['name']
     elif tipo == 'AggregateRating':
         string_name += ACTUAL_PAGE
+    elif tipo == 'Movie':
+        string_name = 'Movie' + '_' + MOVIE_NAME
     elif 'name' in objeto:
         if tipo in ["Person", "Organization", "Country"]:
             string_name = tipo + '_' + objeto['name'] 

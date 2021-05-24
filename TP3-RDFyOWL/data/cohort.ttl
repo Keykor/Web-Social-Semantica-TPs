@@ -24,6 +24,94 @@ sch:actor rdf:type owl:ObjectProperty ;
 sch:actors rdf:type owl:ObjectProperty .
 
 
+###  https://schema.org/aggregateRating
+sch:aggregateRating rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/author
+sch:author rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/creator
+sch:creator rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/director
+sch:director rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/eligibleRegion
+sch:eligibleRegion rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/event
+sch:event rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/expectsAcceptanceOf
+sch:expectsAcceptanceOf rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/hasPart
+sch:hasPart rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/image
+sch:image rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/itemReviewed
+sch:itemReviewed rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/location
+sch:location rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/locationCreated
+sch:locationCreated rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/potentialAction
+sch:potentialAction rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/productionCompany
+sch:productionCompany rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/publisher
+sch:publisher rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/releasedEvent
+sch:releasedEvent rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/review
+sch:review rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/reviewRating
+sch:reviewRating rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/target
+sch:target rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/thumbnail
+sch:thumbnail rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/trailer
+sch:trailer rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/workPresented
+sch:workPresented rdf:type owl:ObjectProperty .
+
+
 #################################################################
 #    Data properties
 #################################################################
