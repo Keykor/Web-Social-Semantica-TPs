@@ -1,0 +1,53 @@
+¿Qué requisitos debe cumplir el archivo dataset-original.ttl para que su programa funcione adecuadamente?
+El requisito que debe cumplir el archivo dataset-original.ttl es que su contenido posea tripletas
+especificadas de forma correcta en formato turtle.
+
+¿Cree que funcionará si le damos como entrada el archivo generado por alguno de sus compañeros?
+Respuesta antes de probar: Creo que debería funcionar, ya que si el dataset-original respeta el formato
+y los links de las URIs son los correctos, el enriquecedor debería poder encontrar los nuevos datos y
+conectarlos.
+Respuesta luego de probar: Probé todos los datos que pasaron mis compañerxs y ocurrieron dos situaciones:
+- Ocurrió que con dos datasets lograba conectarlos en el grafo que provee rdflib pero a la hora de hacer 
+el output me saltaba una excepción "charmap codec can't encode character". Después de cambiar varias veces 
+los métodos de cómo decodificaba 'utf-8', y no poder solucionar el error, se me ocurrió probar mi script 
+original en una máquina con alguna distro de Linux y funcionó perfectamente. Concluí que el error se 
+originaba en alguna codificación específica de Windows.
+- Ocurrió que con un dataset no se hacían bien las relaciones con los datos de DBpedia. Esto ocurría porque 
+los links provistos en estos archivos relacionaban las URIs de lxs actores con URIs de DBpedia pero con el 
+protocolo 'https'. Entonces, lograba extraer los datos al hacer la negociacion con esas URIs, pero las 
+tripletas que  venían no identificaban a lxs actores con la misma URI, sino con otra parecida que utilizaba 
+'http'. Ejemplo:
+    URI provista en el archivo -> <https://dbpedia.org/resource/Aaron_Taylor-Johnson>
+    URI de las tripletas extraídas -> <http://dbpedia.org/resource/Aaron_Taylor-Johnson>
+  Pensaba realizar un cambio simple en mi programa para cambiar el 'https' por 'http' en los links que me 
+proveyeran, pero consideré que era un parche muy especifico para arreglar la relación que había hecho mi 
+compañero. Opté por comunicarme con él y contarle este tema. Me comentó que era un problema que se había
+dado cuenta hace unas horas y me pasó un nuevo archivo de links con las URIs correctas, con el cuál mi
+programa funcionaba.
+
+¿Cómo efectuó la búsqueda de correspondencias entre su dataset y dbpedia?
+Realicé una búsqueda manual en DBpedia tomando 10 actores y buscando la página de cada  unx en DBpedia 
+mediante el buscador de Google y verificando que la información que esté allí sea la del actor para no 
+hacer relaciones incorrectas.
+Me ocurrió que había actores que creía que no estaban en DBpedia, pero era que tenían URIs más complejas 
+y lxs encontraba desde las películas que participaron. 
+
+¿Se podría automatizar la búsqueda de correspondencias? ¿Cómo? ¿Con qué efectividad?
+Creo que se podría automatizar la búsqueda, yo tuve una idea en base a cómo se construyen las IRI de los
+recursos de DBpedia pero tenía muchas contras.
+La idea consiste en chequear si existe la URI "http://dbpedia.org/resource/" + "nombre_de_actor". El problema 
+es que puede ocurrir que la URI no exista o que exista pero que sea de otra persona con el mismo nombre.
+Una forma de reducir el problema de que no exista la URI, es probar luego con la misma URI pero concatenando
+al final el string "_(actor)". No soluciona completamente el problema y puede ser que sea de otrx actor
+con el mismo nombre.
+Una forma de reducir el problema de que la URI sea la de otra persona es chequear si hay tripletas que me 
+indiquen si posee una ocupación es actor y si participó de alguna de las películas que estan en el 
+'dataset-original.ttl'. El problema es que puede ser que esta info no este en DBpedia para compararla. También
+podría ocurrir que dos actores con el mismo nombre hayan participado de la misma película e identifiquemos a
+una persona equivocada (lo cuál veo casi imposible).
+
+Le pedimos que incluya la información obtenida de dbpedia en el archivo resultante. Desde el punto de vista de alguien que va a utilizar su dataset, ¿era necesario incluir esa información o alcanzaba con solo proveer los links sameAs?
+Con solo proveer los links sameAs ya sirve para relacionar los datos, entonces una persona que utilice el 
+dataset podría consultar a esa URI y pedir los datos requeridos.
+Creo que está bueno incluir los datos en el dataset si son pocos (como es el caso del ejercicio) y van a
+ser utilizados constantemente, para evitar al usuario hacer las consultas a Internet por las relaciones.
